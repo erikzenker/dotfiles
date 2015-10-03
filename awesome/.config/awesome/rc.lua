@@ -314,9 +314,11 @@ globalkeys = awful.util.table.join(
     -- Multimedia Keys
     awful.key({ }, "XF86AudioRaiseVolume",    function () awful.util.spawn("amixer set Master 2%+",false) end),
     awful.key({ }, "XF86AudioLowerVolume",    function () awful.util.spawn("amixer set Master 2%-",false) end),
-    awful.key({ }, "XF86AudioMute",    function () awful.util.spawn("amixer set Master toggle",false) end),
-    awful.key({ }, "XF86AudioPause",    function () awful.util.spawn("sudo pm-suspend",false) end),
-    awful.key({ }, "XF86AudioPlay",    function () awful.util.spawn("sudo pm-suspend",false) end),
+    awful.key({ }, "XF86AudioMute",           function () awful.util.spawn("amixer set Master toggle",false) end),
+    awful.key({ }, "XF86AudioPause",          function () awful.util.spawn("sudo pm-suspend",false) end),
+    awful.key({ }, "XF86AudioPlay",           function () awful.util.spawn("sudo pm-suspend",false) end),
+    awful.key({ }, "XF86MonBrightnessUp",     function () awful.util.spawn("xbacklight -inc 5",false) end),
+    awful.key({ }, "XF86MonBrightnessDown",   function () awful.util.spawn("xbacklight -dec 5",false) end),    
     -- move focus to a different screen
     awful.key({ modkey }, "p",  	    function () awful.screen.focus_relative( 1) end)
 )

@@ -1,0 +1,92 @@
+;; Object detail/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "detail/"
+  :tables
+  (list
+    (semanticdb-table "pack.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_PROTO_TRANSFORM_DETAIL_PACK_HPP_EAN_2012_07_11" variable (:constant-flag t) nil [409 461])
+            ("boost/preprocessor/cat.hpp" include (:system-flag t) nil [463 500])
+            ("boost/preprocessor/arithmetic/inc.hpp" include (:system-flag t) nil [501 549])
+            ("boost/preprocessor/arithmetic/dec.hpp" include (:system-flag t) nil [550 598])
+            ("boost/preprocessor/arithmetic/sub.hpp" include (:system-flag t) nil [599 647])
+            ("boost/preprocessor/punctuation/comma_if.hpp" include (:system-flag t) nil [648 702])
+            ("boost/preprocessor/repetition/enum.hpp" include (:system-flag t) nil [703 752])
+            ("boost/preprocessor/repetition/enum_params.hpp" include (:system-flag t) nil [753 809])
+            ("boost/preprocessor/repetition/enum_trailing_params.hpp" include (:system-flag t) nil [810 875])
+            ("boost/preprocessor/repetition/enum_params_with_a_default.hpp" include (:system-flag t) nil [876 947])
+            ("boost/preprocessor/repetition/repeat.hpp" include (:system-flag t) nil [948 999])
+            ("boost/preprocessor/iteration/local.hpp" include (:system-flag t) nil [1000 1049])
+            ("boost/preprocessor/iteration/iterate.hpp" include (:system-flag t) nil [1050 1101])
+            ("boost/mpl/bool.hpp" include (:system-flag t) nil [1102 1131])
+            ("boost/mpl/assert.hpp" include (:system-flag t) nil [1132 1163])
+            ("boost/type_traits/is_same.hpp" include (:system-flag t) nil [1164 1204])
+            ("boost/proto/proto_fwd.hpp" include (:system-flag t) nil [1205 1241])
+            ("boost" type
+               (:members 
+                  ( ("proto" type
+                       (:members 
+                          ( ("detail" type
+                               (:members 
+                                  ( ("msvc_fun_workaround" type
+                                       (:template 
+                                          ( ("Fun" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [1436 1494])
+                                    ("expand_pattern_helper" type
+                                       (:template 
+                                          ( ("Tfx" type (:type "class") nil nil)
+                                            ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("T" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1598 1613])
+                                            ("applied" type
+                                               (:typedef ("mpl::false_" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1626 1654]))                                          )
+                                        (reparse-symbol namespacesubparts) [1504 1665])
+                                    ("expand_pattern_helper" type
+                                       (:template 
+                                          ( ("Tfx" type (:type "class") nil nil)
+                                            ("Fun" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :superclasses 
+                                          ( ("expand_pattern_helper" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :template-specifier 
+                                          ( ("Tfx" type nil nil nil)
+                                            ("Fun" type (:pointer 1) nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [1675 1816])
+                                    ("expand_pattern" type
+                                       (:template 
+                                          ( ("long" type nil nil nil)
+                                            ("Fun" type (:type "class") nil nil)
+                                            ("Cont" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [2521 2601]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1405 3077]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1383 3079]))                  
+                :type "namespace")
+                nil [1365 3080]))          
+      :file "pack.hpp"
+      :pointmax 3141
+      :fsize 3140
+      :lastmodtime '(21790 57546 0 0)
+      :unmatched-syntax '((spp-system-include "boost/proto/transform/detail/pack_impl.hpp" 3010 . 3071) (punctuation 3007 . 3008) (semantic-list 2790 . 3007) (punctuation 2780 . 2781) (symbol 2776 . 2780) (punctuation 2775 . 2776) (punctuation 2774 . 2775) (punctuation 2773 . 2774) (symbol 2770 . 2773) (punctuation 2768 . 2769) (symbol 2762 . 2768) (punctuation 2761 . 2762) (punctuation 2760 . 2761) (symbol 2755 . 2760) (punctuation 2754 . 2755) (symbol 2733 . 2754) (TYPENAME 2724 . 2732) (punctuation 2723 . 2724) (symbol 2720 . 2723) (TEMPLATE 2711 . 2719) (punctuation 2710 . 2711) (punctuation 2709 . 2710) (symbol 2705 . 2709) (punctuation 2703 . 2704) (punctuation 2691 . 2692) (symbol 2687 . 2691) (punctuation 2685 . 2686) (symbol 2682 . 2685) (punctuation 2680 . 2681) (number 2679 . 2680) (punctuation 2678 . 2679) (symbol 2664 . 2678) (STRUCT 2657 . 2663) (punctuation 2647 . 2648) (symbol 2643 . 2647) (TYPENAME 2634 . 2642) (punctuation 2632 . 2633) (symbol 2629 . 2632) (TYPENAME 2620 . 2628) (punctuation 2619 . 2620) (TEMPLATE 2611 . 2619) (spp-system-include "boost/proto/transform/detail/expand_pack.hpp" 2448 . 2511) (punctuation 2445 . 2446) (semantic-list 2364 . 2445) (punctuation 2354 . 2355) (semantic-list 2351 . 2354) (symbol 2347 . 2351) (punctuation 2345 . 2346) (symbol 2342 . 2345) (punctuation 2341 . 2342) (symbol 2320 . 2341) (STRUCT 2313 . 2319) (punctuation 2303 . 2304) (symbol 2300 . 2303) (TYPENAME 2291 . 2299) (punctuation 2290 . 2291) (TEMPLATE 2282 . 2290) (punctuation 2271 . 2272) (semantic-list 1920 . 2271) (punctuation 1910 . 1911) (semantic-list 1907 . 1910) (symbol 1903 . 1907) (punctuation 1901 . 1902) (symbol 1898 . 1901) (punctuation 1897 . 1898) (symbol 1876 . 1897) (STRUCT 1869 . 1875) (punctuation 1859 . 1860) (symbol 1858 . 1859) (TYPENAME 1849 . 1857) (punctuation 1847 . 1848) (symbol 1844 . 1847) (TYPENAME 1835 . 1843) (punctuation 1834 . 1835) (TEMPLATE 1826 . 1834))
+      :lexical-table 
+        '(("BOOST_PROTO_TRANSFORM_DETAIL_PACK_HPP_EAN_2012_07_11")
+          )
+))
+  :file "!usr!include!boost!proto!transform!detail!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

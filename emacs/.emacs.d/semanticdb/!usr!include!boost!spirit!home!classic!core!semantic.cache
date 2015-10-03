@@ -1,0 +1,26 @@
+;; Object core/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "core/"
+  :tables
+  (list
+    (semanticdb-table "assert.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_SPIRIT_ASSERT_HPP" variable (:constant-flag t) nil [480 503])
+            ("boost/config.hpp" include (:system-flag t) nil [505 532])
+            ("boost/throw_exception.hpp" include (:system-flag t) nil [533 569])
+            ("boost/assert.hpp" include (:system-flag t) nil [1521 1552])
+            ("BOOST_SPIRIT_ASSERT" variable (:constant-flag t) nil [1565 1584]))          
+      :file "assert.hpp"
+      :pointmax 1686
+      :fsize 1685
+      :lastmodtime '(21790 57547 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_SPIRIT_ASSERT_HPP")
+          ("BOOST_SPIRIT_ASSERT" (spp-arg-list ("x") 1584 . 1587) . ((symbol "BOOST_ASSERT" 1588 . 1600) (semantic-list "(x)" 1600 . 1603)))
+          )
+))
+  :file "!usr!include!boost!spirit!home!classic!core!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

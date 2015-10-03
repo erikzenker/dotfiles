@@ -1,0 +1,144 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "gol.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("graybat.hpp" include (:system-flag t) nil [12 34])
+            ("mapping/Consecutive.hpp" include (:system-flag t) nil [48 82])
+            ("mapping/Random.hpp" include (:system-flag t) nil [83 112])
+            ("mapping/Roundrobin.hpp" include (:system-flag t) nil [113 146])
+            ("pattern/GridDiagonal.hpp" include (:system-flag t) nil [199 234])
+            ("iostream" include (:system-flag t) nil [283 302])
+            ("vector" include (:system-flag t) nil [321 338])
+            ("array" include (:system-flag t) nil [361 377])
+            ("cmath" include (:system-flag t) nil [400 416])
+            ("cstdlib" include (:system-flag t) nil [433 451])
+            ("Cell" type
+               (:superclasses 
+                  ( ("graybat::graphPolicy::SimpleProperty" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("Cell" function
+                       (:constructor-flag t
+                        :type ("Cell" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [530 558])
+                    ("Cell" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("id" variable (:type ("ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [568 574]))                          
+                        :type ("Cell" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [563 726])
+                    ("isAlive" variable (:type ("std::array" type
+                         (:template-specifier 
+                            ( ("unsigned int" type nil nil nil)
+                              ("1"))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [733 765])
+                    ("aliveNeighbors" variable (:type "unsigned int") (reparse-symbol classsubparts) [770 794]))                  
+                :type "struct")
+                nil [467 798])
+            ("printGolDomain" function
+               (:arguments 
+                  ( ("domain" variable
+                       (:constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("unsigned int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [821 856])
+                    ("width" variable
+                       (:constant-flag t
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [857 878])
+                    ("height" variable
+                       (:constant-flag t
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [879 901])
+                    ("generation" variable
+                       (:constant-flag t
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [902 928]))                  
+                :type "void")
+                nil [801 1258])
+            ("updateState" function
+               (:template 
+                  ( ("T_Cell" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("cells" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("T_Cell" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1302 1329]))                  )
+                nil [1261 1391])
+            ("updateState" function
+               (:template 
+                  ( ("T_Cell" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("cell" variable
+                       (:reference 1
+                        :type ("T_Cell" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1435 1448]))                  )
+                nil [1394 1699])
+            ("gol" function
+               (:arguments 
+                  ( ("nCells" variable
+                       (:constant-flag t
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [1710 1732])
+                    ("nTimeSteps" variable
+                       (:constant-flag t
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [1733 1760]))                  
+                :type "int")
+                nil [1702 4425])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [4436 4445])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4446 4458]))                  
+                :type "int")
+                nil [4427 4701]))          
+      :file "gol.cc"
+      :pointmax 4702
+      :fsize 4701
+      :lastmodtime '(21832 50936 971778 522000)
+      :unmatched-syntax '((thing 275 . 275) (thing 275 . 275) (thing 275 . 275) (thing 275 . 275) (thing 275 . 275) (thing 275 . 275) (thing 275 . 275) (thing 275 . 275) (thing 275 . 275) (thing 275 . 275) (thing 275 . 275) (thing 275 . 275) (thing 275 . 275) (thing 275 . 275) (thing 275 . 275) (thing 275 . 275) (thing 275 . 275) (thing 275 . 275) (thing 275 . 275) (thing 275 . 275) (thing 188 . 188) (thing 188 . 188) (thing 188 . 188) (thing 188 . 188) (thing 188 . 188) (thing 188 . 188) (thing 188 . 188) (thing 188 . 188)))
+    (semanticdb-table "unit_gvon.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("Graph.hpp" include (:system-flag t) nil [18 38])
+            ("CommunicationAbstractionLayer.hpp" include (:system-flag t) nil [77 121])
+            ("MPI.hpp" include (:system-flag t) nil [160 178])
+            ("GraphBasedVirtualOverlayNetwork.hpp" include (:system-flag t) nil [237 283])
+            ("distribution.hpp" include (:system-flag t) nil [334 361])
+            ("topology.hpp" include (:system-flag t) nil [379 402])
+            ("evals.hpp" include (:system-flag t) nil [426 446])
+            ("iostream" include (:system-flag t) nil [490 509])
+            ("vector" include (:system-flag t) nil [528 545])
+            ("array" include (:system-flag t) nil [568 584])
+            ("algorithm" include (:system-flag t) nil [607 627])
+            ("functional" include (:system-flag t) nil [656 677])
+            ("assert.h" include (:system-flag t) nil [720 739])
+            ("test" function (:type "void") nil [756 4038])
+            ("main" function (:type "int") nil [4042 4083]))          
+      :file "unit_gvon.cc"
+      :pointmax 4084
+      :fsize 4083
+      :lastmodtime '(21824 50982 230208 35000)
+      :unmatched-syntax nil))
+  :file "!home!erik!projects!GrayBat!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

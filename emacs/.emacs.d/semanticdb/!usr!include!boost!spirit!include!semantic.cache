@@ -1,0 +1,22 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables
+  (list
+    (semanticdb-table "classic_multi_pass.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_SPIRIT_INCLUDE_CLASSIC_MULTI_PASS" variable (:constant-flag t) nil [484 523])
+            ("boost/spirit/home/classic/iterator/multi_pass.hpp" include (:system-flag t) nil [524 584]))          
+      :file "classic_multi_pass.hpp"
+      :pointmax 592
+      :fsize 591
+      :lastmodtime '(21790 57546 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_SPIRIT_INCLUDE_CLASSIC_MULTI_PASS")
+          )
+))
+  :file "!usr!include!boost!spirit!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

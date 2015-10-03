@@ -1,0 +1,57 @@
+;; Object comparison/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "comparison/"
+  :tables
+  (list
+    (semanticdb-table "enable_comparison.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("FUSION_ENABLE_COMPARISON_09232005_1958" variable (:constant-flag t) nil [422 460])
+            ("boost/fusion/support/config.hpp" include (:system-flag t) nil [462 504])
+            ("boost/mpl/or.hpp" include (:system-flag t) nil [505 532])
+            ("boost/mpl/and.hpp" include (:system-flag t) nil [533 561])
+            ("boost/mpl/not.hpp" include (:system-flag t) nil [562 590])
+            ("boost/mpl/equal_to.hpp" include (:system-flag t) nil [591 624])
+            ("boost/fusion/support/sequence_base.hpp" include (:system-flag t) nil [625 674])
+            ("boost/fusion/support/is_sequence.hpp" include (:system-flag t) nil [675 722])
+            ("boost/fusion/sequence/intrinsic/size.hpp" include (:system-flag t) nil [723 774])
+            ("boost" type
+               (:members 
+                  ( ("fusion" type
+                       (:members 
+                          ( ("traits" type
+                               (:members 
+                                  ( ("enable_equality" type
+                                       (:superclasses 
+                                          ( ("mpl::or_" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [904 1008])
+                                    ("enable_comparison" type
+                                       (:superclasses 
+                                          ( ("mpl::and_" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [1082 1294]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [813 1296]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [794 1297]))                  
+                :type "namespace")
+                nil [776 1298]))          
+      :file "enable_comparison.hpp"
+      :pointmax 1307
+      :fsize 1306
+      :lastmodtime '(21790 57546 0 0)
+      :unmatched-syntax '((punctuation 1076 . 1077) (VOID 1072 . 1076) (punctuation 1070 . 1071) (symbol 1063 . 1069) (TYPENAME 1054 . 1062) (punctuation 1052 . 1053) (symbol 1048 . 1052) (TYPENAME 1039 . 1047) (punctuation 1037 . 1038) (symbol 1033 . 1037) (TYPENAME 1024 . 1032) (punctuation 1023 . 1024) (TEMPLATE 1014 . 1022) (punctuation 898 . 899) (VOID 894 . 898) (punctuation 892 . 893) (symbol 885 . 891) (TYPENAME 876 . 884) (punctuation 874 . 875) (symbol 870 . 874) (TYPENAME 861 . 869) (punctuation 859 . 860) (symbol 855 . 859) (TYPENAME 846 . 854) (punctuation 845 . 846) (TEMPLATE 836 . 844))
+      :lexical-table 
+        '(("FUSION_ENABLE_COMPARISON_09232005_1958")
+          )
+))
+  :file "!usr!include!boost!fusion!sequence!comparison!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,199 @@
+;; Object type_index/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "type_index/"
+  :tables
+  (list
+    (semanticdb-table "stl_type_index.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_TYPE_INDEX_STL_TYPE_INDEX_HPP" variable (:constant-flag t) nil [264 299])
+            ("boost/type_index/type_index_facade.hpp" include (:system-flag t) nil [771 820])
+            ("typeinfo" include (:system-flag t) nil [1039 1058])
+            ("cstring" include (:system-flag t) nil [1059 1077])
+            ("stdexcept" include (:system-flag t) nil [1152 1172])
+            ("boost/static_assert.hpp" include (:system-flag t) nil [1173 1207])
+            ("boost/throw_exception.hpp" include (:system-flag t) nil [1208 1244])
+            ("boost/core/demangle.hpp" include (:system-flag t) nil [1245 1279])
+            ("boost/type_traits/is_const.hpp" include (:system-flag t) nil [1280 1321])
+            ("boost/type_traits/is_reference.hpp" include (:system-flag t) nil [1322 1367])
+            ("boost/type_traits/is_volatile.hpp" include (:system-flag t) nil [1368 1412])
+            ("boost/type_traits/remove_cv.hpp" include (:system-flag t) nil [1413 1455])
+            ("boost/type_traits/remove_reference.hpp" include (:system-flag t) nil [1456 1505])
+            ("boost/mpl/if.hpp" include (:system-flag t) nil [1506 1533])
+            ("boost/mpl/or.hpp" include (:system-flag t) nil [1534 1561])
+            ("boost/functional/hash_fwd.hpp" include (:system-flag t) nil [1562 1602])
+            ("boost" type
+               (:members 
+                  ( ("typeindex" type
+                       (:members 
+                          ( ("stl_type_index" type
+                               (:superclasses 
+                                  ( ("type_index_facade" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [2491 2498])
+                                    ("type_info_t" type
+                                       (:typedef ("std::type_info" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2573 2608])
+                                    ("private" label nil (reparse-symbol classsubparts) [2617 2625])
+                                    ("data_" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("type_info_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2630 2655])
+                                    ("public" label nil (reparse-symbol classsubparts) [2657 2664])
+                                    ("data_" function
+                                       (:arguments 
+                                          ( ("" variable (:type ("typeid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2725 2737]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [2718 2745])
+                                    ("data_" function
+                                       (:arguments 
+                                          ( ("" variable (:type ("data" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2830 2835]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [2823 2842])
+                                    ("BOOST_NOEXCEPT" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [2887 2908])
+                                    ("BOOST_NOEXCEPT" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [2945 2966])
+                                    ("BOOST_NOEXCEPT" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [2998 3019])
+                                    ("pretty_name" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("inline")
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3024 3064])
+                                    ("BOOST_NOEXCEPT" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [3102 3123])
+                                    ("BOOST_NOEXCEPT" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [3181 3202])
+                                    ("BOOST_NOEXCEPT" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [3261 3282])
+                                    ("BOOST_NOEXCEPT" variable (:type "int") (reparse-symbol classsubparts) [3350 3365])
+                                    ("BOOST_NOEXCEPT" variable (:type "int") (reparse-symbol classsubparts) [3442 3457])
+                                    ("BOOST_NOEXCEPT" variable (:type "int") (reparse-symbol classsubparts) [3547 3562]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [2289 3565])
+                            ("pretty_name" function
+                               (:parent "stl_type_index"
+                                :typemodifiers ("inline")
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3934 5546])
+                            ("detail" type
+                               (:members 
+                                  ( ("cvr_saver" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [7992 8029]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [7969 8031]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1956 8583]))                  
+                :type "namespace")
+                nil [1938 8584]))          
+      :file "stl_type_index.hpp"
+      :pointmax 8662
+      :fsize 8661
+      :lastmodtime '(21790 57544 0 0)
+      :unmatched-syntax '((semantic-list 8463 . 8580) (symbol 8448 . 8462) (semantic-list 8431 . 8447) (symbol 8416 . 8431) (punctuation 8415 . 8416) (punctuation 8414 . 8415) (symbol 8400 . 8414) (symbol 8385 . 8399) (INLINE 8378 . 8384) (punctuation 8376 . 8377) (symbol 8375 . 8376) (CLASS 8369 . 8374) (punctuation 8368 . 8369) (TEMPLATE 8359 . 8367) (semantic-list 8124 . 8356) (symbol 8109 . 8123) (semantic-list 8106 . 8108) (symbol 8090 . 8106) (punctuation 8089 . 8090) (punctuation 8088 . 8089) (symbol 8074 . 8088) (symbol 8059 . 8073) (INLINE 8052 . 8058) (punctuation 8050 . 8051) (symbol 8049 . 8050) (CLASS 8043 . 8048) (punctuation 8042 . 8043) (TEMPLATE 8033 . 8041) (semantic-list 7032 . 7967) (symbol 7017 . 7031) (semantic-list 7014 . 7016) (symbol 7007 . 7014) (punctuation 7006 . 7007) (punctuation 7005 . 7006) (symbol 6991 . 7005) (symbol 6976 . 6990) (INLINE 6969 . 6975) (punctuation 6967 . 6968) (symbol 6966 . 6967) (CLASS 6960 . 6965) (punctuation 6959 . 6960) (TEMPLATE 6950 . 6958) (semantic-list 6674 . 6858) (symbol 6659 . 6673) (CONST 6653 . 6658) (semantic-list 6625 . 6652) (symbol 6619 . 6625) (punctuation 6618 . 6619) (punctuation 6617 . 6618) (symbol 6603 . 6617) (BOOL 6598 . 6602) (INLINE 6591 . 6597) (semantic-list 6415 . 6589) (symbol 6400 . 6414) (CONST 6394 . 6399) (semantic-list 6366 . 6393) (symbol 6361 . 6366) (punctuation 6360 . 6361) (punctuation 6359 . 6360) (symbol 6345 . 6359) (BOOL 6340 . 6344) (INLINE 6333 . 6339) (semantic-list 5617 . 5844) (symbol 5602 . 5616) (CONST 5596 . 5601) (semantic-list 5593 . 5595) (symbol 5584 . 5593) (punctuation 5583 . 5584) (punctuation 5582 . 5583) (symbol 5568 . 5582) (symbol 5561 . 5567) (punctuation 5560 . 5561) (punctuation 5559 . 5560) (symbol 5556 . 5559) (INLINE 5549 . 5555) (semantic-list 3903 . 3932) (symbol 3888 . 3902) (CONST 3882 . 3887) (semantic-list 3879 . 3881) (symbol 3875 . 3879) (punctuation 3874 . 3875) (punctuation 3873 . 3874) (symbol 3859 . 3873) (punctuation 3857 . 3858) (CHAR 3853 . 3857) (CONST 3847 . 3852) (INLINE 3840 . 3846) (semantic-list 3750 . 3838) (symbol 3735 . 3749) (CONST 3729 . 3734) (semantic-list 3726 . 3728) (symbol 3718 . 3726) (punctuation 3717 . 3718) (punctuation 3716 . 3717) (symbol 3702 . 3716) (punctuation 3700 . 3701) (CHAR 3696 . 3700) (CONST 3690 . 3695) (INLINE 3683 . 3689) (semantic-list 3658 . 3680) (symbol 3643 . 3657) (CONST 3637 . 3642) (semantic-list 3634 . 3636) (symbol 3625 . 3634) (punctuation 3624 . 3625) (punctuation 3623 . 3624) (symbol 3609 . 3623) (punctuation 3607 . 3608) (symbol 3596 . 3607) (punctuation 3595 . 3596) (punctuation 3594 . 3595) (symbol 3580 . 3594) (CONST 3574 . 3579) (INLINE 3567 . 3573) (semantic-list 3530 . 3546) (symbol 3515 . 3530) (symbol 3500 . 3514) (STATIC 3493 . 3499) (INLINE 3486 . 3492) (punctuation 3480 . 3481) (symbol 3479 . 3480) (CLASS 3473 . 3478) (punctuation 3472 . 3473) (TEMPLATE 3463 . 3471) (semantic-list 3439 . 3441) (symbol 3423 . 3439) (symbol 3408 . 3422) (STATIC 3401 . 3407) (INLINE 3394 . 3400) (punctuation 3388 . 3389) (symbol 3387 . 3388) (CLASS 3381 . 3386) (punctuation 3380 . 3381) (TEMPLATE 3371 . 3379) (semantic-list 3347 . 3349) (symbol 3340 . 3347) (symbol 3325 . 3339) (STATIC 3318 . 3324) (INLINE 3311 . 3317) (punctuation 3305 . 3306) (symbol 3304 . 3305) (CLASS 3298 . 3303) (punctuation 3297 . 3298) (TEMPLATE 3288 . 3296) (semantic-list 3233 . 3260) (symbol 3227 . 3233) (BOOL 3214 . 3218) (INLINE 3207 . 3213) (semantic-list 3153 . 3180) (symbol 3148 . 3153) (BOOL 3135 . 3139) (INLINE 3128 . 3134) (semantic-list 3099 . 3101) (symbol 3090 . 3099) (symbol 3082 . 3088) (punctuation 3081 . 3082) (punctuation 3080 . 3081) (symbol 3077 . 3080) (INLINE 3070 . 3076) (semantic-list 2995 . 2997) (symbol 2991 . 2995) (punctuation 2988 . 2989) (CHAR 2984 . 2988) (CONST 2978 . 2983) (INLINE 2971 . 2977) (semantic-list 2942 . 2944) (symbol 2934 . 2942) (punctuation 2931 . 2932) (CHAR 2927 . 2931) (CONST 2921 . 2926) (INLINE 2914 . 2920) (semantic-list 2884 . 2886) (symbol 2875 . 2884) (punctuation 2872 . 2873) (symbol 2861 . 2872) (CONST 2855 . 2860) (INLINE 2848 . 2854) (punctuation 2829 . 2830) (punctuation 2821 . 2822) (symbol 2798 . 2812) (semantic-list 2772 . 2797) (symbol 2758 . 2772) (INLINE 2751 . 2757) (semantic-list 2731 . 2737) (punctuation 2724 . 2725) (punctuation 2716 . 2717) (symbol 2693 . 2707) (semantic-list 2690 . 2692) (symbol 2676 . 2690) (INLINE 2669 . 2675))
+      :lexical-table 
+        '(("BOOST_TYPE_INDEX_STL_TYPE_INDEX_HPP")
+          )
+)
+    (semanticdb-table "type_index_facade.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_TYPE_INDEX_TYPE_INDEX_FACADE_HPP" variable (:constant-flag t) nil [267 305])
+            ("boost/config.hpp" include (:system-flag t) nil [307 334])
+            ("boost/functional/hash_fwd.hpp" include (:system-flag t) nil [335 375])
+            ("string" include (:system-flag t) nil [376 393])
+            ("cstring" include (:system-flag t) nil [394 412])
+            ("iosfwd" include (:system-flag t) nil [476 493])
+            ("boost" type
+               (:members 
+                  ( ("typeindex" type
+                       (:members 
+                          ( ("type_index_facade" type
+                               (:template 
+                                  ( ("Derived" type (:type "class") nil nil)
+                                    ("TypeInfo" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("private" label nil (reparse-symbol classsubparts) [1806 1814])
+                                    ("public" label nil (reparse-symbol classsubparts) [1954 1961])
+                                    ("type_info_t" type
+                                       (:typedef ("TypeInfo" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1966 2026])
+                                    ("pretty_name" function
+                                       (:typemodifiers ("inline")
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2475 2554]))                                  )
+                                (reparse-symbol namespacesubparts) [1739 6104])
+                            ("<<" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("TriatT" type (:type "class") nil nil)
+                                    ("Derived" type (:type "class") nil nil)
+                                    ("TypeInfo" type (:type "class") nil nil))                                  
+                                :type ("std::basic_ostream" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil)
+                                          ("TriatT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("ostr" variable
+                                       (:reference 1
+                                        :type ("std::basic_ostream" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil)
+                                                  ("TriatT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [11077 11117])
+                                    ("ind" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("type_index_facade" type
+                                             (:template-specifier 
+                                                ( ("Derived" type nil nil nil)
+                                                  ("TypeInfo" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [11123 11171]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [10951 11253]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [643 11667]))                  
+                :type "namespace")
+                nil [625 11668]))          
+      :file "type_index_facade.hpp"
+      :pointmax 11750
+      :fsize 11749
+      :lastmodtime '(21790 57544 0 0)
+      :unmatched-syntax '((semantic-list 11604 . 11664) (symbol 11589 . 11603) (semantic-list 11539 . 11588) (symbol 11529 . 11539) (symbol 11522 . 11528) (punctuation 11521 . 11522) (punctuation 11520 . 11521) (symbol 11517 . 11520) (INLINE 11510 . 11516) (punctuation 11508 . 11509) (symbol 11500 . 11508) (CLASS 11494 . 11499) (punctuation 11492 . 11493) (symbol 11485 . 11492) (CLASS 11479 . 11484) (punctuation 11478 . 11479) (TEMPLATE 11469 . 11477) (semantic-list 9799 . 9837) (symbol 9784 . 9798) (semantic-list 9713 . 9783) (punctuation 9711 . 9712) (punctuation 9710 . 9711) (OPERATOR 9701 . 9709) (BOOL 9696 . 9700) (INLINE 9689 . 9695) (punctuation 9687 . 9688) (symbol 9679 . 9687) (CLASS 9673 . 9678) (punctuation 9671 . 9672) (symbol 9664 . 9671) (CLASS 9658 . 9663) (punctuation 9657 . 9658) (TEMPLATE 9648 . 9656) (semantic-list 9609 . 9646) (symbol 9594 . 9608) (semantic-list 9523 . 9593) (punctuation 9521 . 9522) (punctuation 9520 . 9521) (OPERATOR 9511 . 9519) (BOOL 9506 . 9510) (INLINE 9499 . 9505) (punctuation 9497 . 9498) (symbol 9489 . 9497) (CLASS 9483 . 9488) (punctuation 9481 . 9482) (symbol 9474 . 9481) (CLASS 9468 . 9473) (punctuation 9467 . 9468) (TEMPLATE 9458 . 9466) (semantic-list 9419 . 9456) (symbol 9404 . 9418) (semantic-list 9333 . 9403) (punctuation 9331 . 9332) (punctuation 9330 . 9331) (OPERATOR 9321 . 9329) (BOOL 9316 . 9320) (INLINE 9309 . 9315) (punctuation 9307 . 9308) (symbol 9299 . 9307) (CLASS 9293 . 9298) (punctuation 9291 . 9292) (symbol 9284 . 9291) (CLASS 9278 . 9283) (punctuation 9277 . 9278) (TEMPLATE 9268 . 9276) (semantic-list 9232 . 9266) (symbol 9217 . 9231) (semantic-list 9146 . 9216) (punctuation 9144 . 9145) (OPERATOR 9135 . 9143) (BOOL 9130 . 9134) (INLINE 9123 . 9129) (punctuation 9121 . 9122) (symbol 9113 . 9121) (CLASS 9107 . 9112) (punctuation 9105 . 9106) (symbol 9098 . 9105) (CLASS 9092 . 9097) (punctuation 9091 . 9092) (TEMPLATE 9082 . 9090) (semantic-list 9046 . 9080) (symbol 9031 . 9045) (semantic-list 8960 . 9030) (punctuation 8958 . 8959) (OPERATOR 8949 . 8957) (BOOL 8944 . 8948) (INLINE 8937 . 8943) (punctuation 8935 . 8936) (symbol 8927 . 8935) (CLASS 8921 . 8926) (punctuation 8919 . 8920) (symbol 8912 . 8919) (CLASS 8906 . 8911) (punctuation 8905 . 8906) (TEMPLATE 8896 . 8904) (semantic-list 8859 . 8894) (symbol 8844 . 8858) (semantic-list 8773 . 8843) (punctuation 8771 . 8772) (punctuation 8770 . 8771) (OPERATOR 8761 . 8769) (BOOL 8756 . 8760) (INLINE 8749 . 8755) (punctuation 8747 . 8748) (symbol 8739 . 8747) (CLASS 8733 . 8738) (punctuation 8731 . 8732) (symbol 8724 . 8731) (CLASS 8718 . 8723) (punctuation 8717 . 8718) (TEMPLATE 8708 . 8716) (semantic-list 8667 . 8705) (symbol 8652 . 8666) (semantic-list 8581 . 8651) (punctuation 8579 . 8580) (punctuation 8578 . 8579) (OPERATOR 8569 . 8577) (BOOL 8564 . 8568) (INLINE 8557 . 8563) (punctuation 8555 . 8556) (symbol 8547 . 8555) (CLASS 8541 . 8546) (punctuation 8539 . 8540) (symbol 8532 . 8539) (CLASS 8526 . 8531) (punctuation 8525 . 8526) (TEMPLATE 8516 . 8524) (semantic-list 8477 . 8514) (symbol 8462 . 8476) (semantic-list 8391 . 8461) (punctuation 8389 . 8390) (punctuation 8388 . 8389) (OPERATOR 8379 . 8387) (BOOL 8374 . 8378) (INLINE 8367 . 8373) (punctuation 8365 . 8366) (symbol 8357 . 8365) (CLASS 8351 . 8356) (punctuation 8349 . 8350) (symbol 8342 . 8349) (CLASS 8336 . 8341) (punctuation 8335 . 8336) (TEMPLATE 8326 . 8334) (semantic-list 8287 . 8324) (symbol 8272 . 8286) (semantic-list 8201 . 8271) (punctuation 8199 . 8200) (punctuation 8198 . 8199) (OPERATOR 8189 . 8197) (BOOL 8184 . 8188) (INLINE 8177 . 8183) (punctuation 8175 . 8176) (symbol 8167 . 8175) (CLASS 8161 . 8166) (punctuation 8159 . 8160) (symbol 8152 . 8159) (CLASS 8146 . 8151) (punctuation 8145 . 8146) (TEMPLATE 8136 . 8144) (semantic-list 8100 . 8134) (symbol 8085 . 8099) (semantic-list 8014 . 8084) (punctuation 8012 . 8013) (OPERATOR 8003 . 8011) (BOOL 7998 . 8002) (INLINE 7991 . 7997) (punctuation 7989 . 7990) (symbol 7981 . 7989) (CLASS 7975 . 7980) (punctuation 7973 . 7974) (symbol 7966 . 7973) (CLASS 7960 . 7965) (punctuation 7959 . 7960) (TEMPLATE 7950 . 7958) (semantic-list 7914 . 7948) (symbol 7899 . 7913) (semantic-list 7828 . 7898) (punctuation 7826 . 7827) (OPERATOR 7817 . 7825) (BOOL 7812 . 7816) (INLINE 7805 . 7811) (punctuation 7803 . 7804) (symbol 7795 . 7803) (CLASS 7789 . 7794) (punctuation 7787 . 7788) (symbol 7780 . 7787) (CLASS 7774 . 7779) (punctuation 7773 . 7774) (TEMPLATE 7764 . 7772) (semantic-list 7727 . 7762) (symbol 7712 . 7726) (semantic-list 7641 . 7711) (punctuation 7639 . 7640) (punctuation 7638 . 7639) (OPERATOR 7629 . 7637) (BOOL 7624 . 7628) (INLINE 7617 . 7623) (punctuation 7615 . 7616) (symbol 7607 . 7615) (CLASS 7601 . 7606) (punctuation 7599 . 7600) (symbol 7592 . 7599) (CLASS 7586 . 7591) (punctuation 7585 . 7586) (TEMPLATE 7576 . 7584) (semantic-list 7459 . 7488) (symbol 7444 . 7458) (semantic-list 7345 . 7443) (punctuation 7343 . 7344) (punctuation 7342 . 7343) (OPERATOR 7333 . 7341) (BOOL 7328 . 7332) (INLINE 7321 . 7327) (punctuation 7319 . 7320) (symbol 7311 . 7319) (CLASS 7305 . 7310) (punctuation 7303 . 7304) (symbol 7296 . 7303) (CLASS 7290 . 7295) (punctuation 7289 . 7290) (TEMPLATE 7280 . 7288) (semantic-list 7250 . 7278) (symbol 7235 . 7249) (semantic-list 7136 . 7234) (punctuation 7134 . 7135) (punctuation 7133 . 7134) (OPERATOR 7124 . 7132) (BOOL 7119 . 7123) (INLINE 7112 . 7118) (punctuation 7110 . 7111) (symbol 7102 . 7110) (CLASS 7096 . 7101) (punctuation 7094 . 7095) (symbol 7087 . 7094) (CLASS 7081 . 7086) (punctuation 7080 . 7081) (TEMPLATE 7071 . 7079) (semantic-list 7041 . 7069) (symbol 7026 . 7040) (semantic-list 6927 . 7025) (punctuation 6925 . 6926) (punctuation 6924 . 6925) (OPERATOR 6915 . 6923) (BOOL 6910 . 6914) (INLINE 6903 . 6909) (punctuation 6901 . 6902) (symbol 6893 . 6901) (CLASS 6887 . 6892) (punctuation 6885 . 6886) (symbol 6878 . 6885) (CLASS 6872 . 6877) (punctuation 6871 . 6872) (TEMPLATE 6862 . 6870) (semantic-list 6835 . 6860) (symbol 6820 . 6834) (semantic-list 6721 . 6819) (punctuation 6719 . 6720) (OPERATOR 6710 . 6718) (BOOL 6705 . 6709) (INLINE 6698 . 6704) (punctuation 6696 . 6697) (symbol 6688 . 6696) (CLASS 6682 . 6687) (punctuation 6680 . 6681) (symbol 6673 . 6680) (CLASS 6667 . 6672) (punctuation 6666 . 6667) (TEMPLATE 6657 . 6665) (semantic-list 6563 . 6653) (symbol 6548 . 6562) (semantic-list 6449 . 6547) (punctuation 6447 . 6448) (OPERATOR 6438 . 6446) (BOOL 6433 . 6437) (INLINE 6426 . 6432) (punctuation 6424 . 6425) (symbol 6416 . 6424) (CLASS 6410 . 6415) (punctuation 6408 . 6409) (symbol 6401 . 6408) (CLASS 6395 . 6400) (punctuation 6394 . 6395) (TEMPLATE 6385 . 6393) (semantic-list 6295 . 6383) (symbol 6280 . 6294) (semantic-list 6181 . 6279) (punctuation 6179 . 6180) (punctuation 6178 . 6179) (OPERATOR 6169 . 6177) (BOOL 6164 . 6168) (INLINE 6157 . 6163) (punctuation 6155 . 6156) (symbol 6147 . 6155) (CLASS 6141 . 6146) (punctuation 6139 . 6140) (symbol 6132 . 6139) (CLASS 6126 . 6131) (punctuation 6125 . 6126) (TEMPLATE 6116 . 6124) (semantic-list 3734 . 3862) (symbol 3719 . 3733) (CONST 3713 . 3718) (semantic-list 3710 . 3712) (symbol 3701 . 3710) (symbol 3694 . 3700) (punctuation 3693 . 3694) (punctuation 3692 . 3693) (symbol 3689 . 3692) (INLINE 3682 . 3688) (semantic-list 3237 . 3411) (symbol 3222 . 3236) (CONST 3216 . 3221) (semantic-list 3195 . 3215) (symbol 3189 . 3195) (BOOL 3184 . 3188) (INLINE 3177 . 3183) (semantic-list 2807 . 2978) (symbol 2792 . 2806) (CONST 2786 . 2791) (semantic-list 2765 . 2785) (symbol 2760 . 2765) (BOOL 2755 . 2759) (INLINE 2748 . 2754) (semantic-list 2253 . 2297) (symbol 2238 . 2252) (CONST 2232 . 2237) (semantic-list 2229 . 2231) (symbol 2225 . 2229) (punctuation 2223 . 2224) (CHAR 2219 . 2223) (CONST 2213 . 2218) (INLINE 2206 . 2212) (semantic-list 1880 . 1936) (symbol 1865 . 1879) (CONST 1859 . 1864) (semantic-list 1856 . 1858) (symbol 1849 . 1856) (punctuation 1847 . 1848) (symbol 1839 . 1846) (CONST 1833 . 1838))
+      :lexical-table 
+        '(("BOOST_TYPE_INDEX_TYPE_INDEX_FACADE_HPP")
+          )
+))
+  :file "!usr!include!boost!type_index!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,270 @@
+;; Object iteration/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "iteration/"
+  :tables
+  (list
+    (semanticdb-table "fold.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_FUSION_ALGORITHM_ITERATION_FOLD_HPP" variable (:constant-flag t) nil [502 543])
+            ("boost/fusion/support/config.hpp" include (:system-flag t) nil [545 587])
+            ("boost/fusion/algorithm/iteration/fold_fwd.hpp" include (:system-flag t) nil [588 644])
+            ("boost/config.hpp" include (:system-flag t) nil [645 672])
+            ("boost/fusion/sequence/intrinsic/begin.hpp" include (:system-flag t) nil [673 725])
+            ("boost/fusion/sequence/intrinsic/end.hpp" include (:system-flag t) nil [726 776])
+            ("boost/fusion/sequence/intrinsic/empty.hpp" include (:system-flag t) nil [777 829])
+            ("boost/fusion/sequence/intrinsic/size.hpp" include (:system-flag t) nil [830 881])
+            ("boost/fusion/support/is_segmented.hpp" include (:system-flag t) nil [882 930])
+            ("boost/fusion/iterator/equal_to.hpp" include (:system-flag t) nil [931 976])
+            ("boost/fusion/iterator/deref.hpp" include (:system-flag t) nil [977 1019])
+            ("boost/fusion/iterator/value_of.hpp" include (:system-flag t) nil [1020 1065])
+            ("boost/fusion/iterator/prior.hpp" include (:system-flag t) nil [1066 1108])
+            ("boost/fusion/iterator/next.hpp" include (:system-flag t) nil [1109 1150])
+            ("boost/mpl/eval_if.hpp" include (:system-flag t) nil [1151 1183])
+            ("boost/mpl/if.hpp" include (:system-flag t) nil [1184 1211])
+            ("boost/mpl/bool.hpp" include (:system-flag t) nil [1212 1241])
+            ("boost/utility/result_of.hpp" include (:system-flag t) nil [1242 1280])
+            ("boost/type_traits/add_const.hpp" include (:system-flag t) nil [1281 1323])
+            ("boost/type_traits/add_reference.hpp" include (:system-flag t) nil [1324 1370])
+            ("boost/fusion/algorithm/iteration/detail/preprocessed/fold.hpp" include (:system-flag t) nil [1427 1499])
+            ("boost/fusion/algorithm/iteration/detail/segmented_fold.hpp" include (:system-flag t) nil [2505 2574]))          
+      :file "fold.hpp"
+      :pointmax 2583
+      :fsize 2582
+      :lastmodtime '(21790 57546 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_FUSION_ALGORITHM_ITERATION_FOLD_HPP")
+          )
+)
+    (semanticdb-table "reverse_fold.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_FUSION_ALGORITHM_ITERATION_REVERSE_FOLD_HPP" variable (:constant-flag t) nil [471 520])
+            ("boost/fusion/support/config.hpp" include (:system-flag t) nil [522 564])
+            ("boost/fusion/algorithm/iteration/reverse_fold_fwd.hpp" include (:system-flag t) nil [565 629])
+            ("boost/config.hpp" include (:system-flag t) nil [630 657])
+            ("boost/fusion/sequence/intrinsic/begin.hpp" include (:system-flag t) nil [658 710])
+            ("boost/fusion/sequence/intrinsic/end.hpp" include (:system-flag t) nil [711 761])
+            ("boost/fusion/sequence/intrinsic/empty.hpp" include (:system-flag t) nil [762 814])
+            ("boost/fusion/sequence/intrinsic/size.hpp" include (:system-flag t) nil [815 866])
+            ("boost/fusion/support/is_segmented.hpp" include (:system-flag t) nil [867 915])
+            ("boost/fusion/iterator/equal_to.hpp" include (:system-flag t) nil [916 961])
+            ("boost/fusion/iterator/deref.hpp" include (:system-flag t) nil [962 1004])
+            ("boost/fusion/iterator/value_of.hpp" include (:system-flag t) nil [1005 1050])
+            ("boost/fusion/iterator/prior.hpp" include (:system-flag t) nil [1051 1093])
+            ("boost/fusion/iterator/next.hpp" include (:system-flag t) nil [1094 1135])
+            ("boost/mpl/eval_if.hpp" include (:system-flag t) nil [1136 1168])
+            ("boost/mpl/if.hpp" include (:system-flag t) nil [1169 1196])
+            ("boost/mpl/bool.hpp" include (:system-flag t) nil [1197 1226])
+            ("boost/utility/result_of.hpp" include (:system-flag t) nil [1227 1265])
+            ("boost/type_traits/add_const.hpp" include (:system-flag t) nil [1266 1308])
+            ("boost/type_traits/add_reference.hpp" include (:system-flag t) nil [1309 1355])
+            ("BOOST_FUSION_REVERSE_FOLD" variable (:constant-flag t) nil [1365 1390])
+            ("boost/fusion/algorithm/iteration/detail/preprocessed/reverse_fold.hpp" include (:system-flag t) nil [1447 1527]))          
+      :file "reverse_fold.hpp"
+      :pointmax 2547
+      :fsize 2546
+      :lastmodtime '(21790 57546 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_FUSION_ALGORITHM_ITERATION_REVERSE_FOLD_HPP")
+          )
+)
+    (semanticdb-table "fold_fwd.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_FUSION_ALGORITHM_ITERATION_FOLD_FWD_HPP" variable (:constant-flag t) nil [417 462])
+            ("boost" type
+               (:members 
+                  ( ("fusion" type
+                       (:members 
+                          ( ("result_of" type
+                               (:members 
+                                  ( ("fold" type
+                                       (:template 
+                                          ( ("Seq" type (:type "class") nil nil)
+                                            ("State" type (:type "class") nil nil)
+                                            ("F" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [539 610]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [505 616])
+                            ("fold" function
+                               (:prototype-flag t
+                                :typemodifiers ("typename")
+                                :arguments 
+                                  ( ("seq" variable
+                                       (:reference 1
+                                        :type ("Seq" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [795 804])
+                                    ("state" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("State" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [805 824])
+                                    ("f" variable (:type ("F" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [825 829]))                                  
+                                :type ("result_of::fold::type" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [706 830])
+                            ("fold" function
+                               (:prototype-flag t
+                                :typemodifiers ("typename")
+                                :arguments 
+                                  ( ("seq" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Seq" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1015 1030])
+                                    ("state" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("State" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1031 1050])
+                                    ("f" variable (:type ("F" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1051 1055]))                                  
+                                :type ("result_of::fold::type" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [920 1056])
+                            ("fold" function
+                               (:prototype-flag t
+                                :typemodifiers ("typename")
+                                :arguments 
+                                  ( ("seq" variable
+                                       (:reference 1
+                                        :type ("Seq" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1235 1244])
+                                    ("state" variable
+                                       (:reference 1
+                                        :type ("State" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1245 1258])
+                                    ("f" variable (:type ("F" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1259 1263]))                                  
+                                :type ("result_of::fold::type" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1146 1264])
+                            ("fold" function
+                               (:prototype-flag t
+                                :typemodifiers ("typename")
+                                :arguments 
+                                  ( ("seq" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Seq" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1449 1464])
+                                    ("state" variable
+                                       (:reference 1
+                                        :type ("State" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1465 1478])
+                                    ("f" variable (:type ("F" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1479 1483]))                                  
+                                :type ("result_of::fold::type" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1354 1484]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [482 1486]))                  
+                :type "namespace")
+                nil [464 1487]))          
+      :file "fold_fwd.hpp"
+      :pointmax 1496
+      :fsize 1495
+      :lastmodtime '(21790 57546 0 0)
+      :unmatched-syntax '((symbol 1325 . 1349) (punctuation 1319 . 1320) (symbol 1318 . 1319) (TYPENAME 1309 . 1317) (punctuation 1307 . 1308) (symbol 1302 . 1307) (TYPENAME 1293 . 1301) (punctuation 1291 . 1292) (symbol 1288 . 1291) (TYPENAME 1279 . 1287) (punctuation 1278 . 1279) (TEMPLATE 1270 . 1278) (symbol 1117 . 1141) (punctuation 1111 . 1112) (symbol 1110 . 1111) (TYPENAME 1101 . 1109) (punctuation 1099 . 1100) (symbol 1094 . 1099) (TYPENAME 1085 . 1093) (punctuation 1083 . 1084) (symbol 1080 . 1083) (TYPENAME 1071 . 1079) (punctuation 1070 . 1071) (TEMPLATE 1062 . 1070) (symbol 891 . 915) (punctuation 885 . 886) (symbol 884 . 885) (TYPENAME 875 . 883) (punctuation 873 . 874) (symbol 868 . 873) (TYPENAME 859 . 867) (punctuation 857 . 858) (symbol 854 . 857) (TYPENAME 845 . 853) (punctuation 844 . 845) (TEMPLATE 836 . 844) (symbol 677 . 701) (punctuation 671 . 672) (symbol 670 . 671) (TYPENAME 661 . 669) (punctuation 659 . 660) (symbol 654 . 659) (TYPENAME 645 . 653) (punctuation 643 . 644) (symbol 640 . 643) (TYPENAME 631 . 639) (punctuation 630 . 631) (TEMPLATE 622 . 630))
+      :lexical-table 
+        '(("BOOST_FUSION_ALGORITHM_ITERATION_FOLD_FWD_HPP")
+          )
+)
+    (semanticdb-table "reverse_fold_fwd.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_FUSION_ALGORITHM_ITERATION_REVERSE_FOLD_FWD_HPP" variable (:constant-flag t) nil [425 478])
+            ("boost" type
+               (:members 
+                  ( ("fusion" type
+                       (:members 
+                          ( ("result_of" type
+                               (:members 
+                                  ( ("reverse_fold" type
+                                       (:template 
+                                          ( ("Seq" type (:type "class") nil nil)
+                                            ("State" type (:type "class") nil nil)
+                                            ("F" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [555 634]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [521 640])
+                            ("reverse_fold" function
+                               (:prototype-flag t
+                                :typemodifiers ("typename")
+                                :arguments 
+                                  ( ("seq" variable
+                                       (:reference 1
+                                        :type ("Seq" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [835 844])
+                                    ("state" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("State" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [845 864])
+                                    ("f" variable (:type ("F" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [865 869]))                                  
+                                :type ("result_of::reverse_fold::type" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [730 870])
+                            ("reverse_fold" function
+                               (:prototype-flag t
+                                :typemodifiers ("typename")
+                                :arguments 
+                                  ( ("seq" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Seq" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1071 1086])
+                                    ("state" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("State" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1087 1106])
+                                    ("f" variable (:type ("F" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1107 1111]))                                  
+                                :type ("result_of::reverse_fold::type" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [960 1112])
+                            ("reverse_fold" function
+                               (:prototype-flag t
+                                :typemodifiers ("typename")
+                                :arguments 
+                                  ( ("seq" variable
+                                       (:reference 1
+                                        :type ("Seq" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1307 1316])
+                                    ("state" variable
+                                       (:reference 1
+                                        :type ("State" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1317 1330])
+                                    ("f" variable (:type ("F" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1331 1335]))                                  
+                                :type ("result_of::reverse_fold::type" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1202 1336])
+                            ("reverse_fold" function
+                               (:prototype-flag t
+                                :typemodifiers ("typename")
+                                :arguments 
+                                  ( ("seq" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Seq" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1537 1552])
+                                    ("state" variable
+                                       (:reference 1
+                                        :type ("State" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1553 1566])
+                                    ("f" variable (:type ("F" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1567 1571]))                                  
+                                :type ("result_of::reverse_fold::type" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1426 1572]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [498 1574]))                  
+                :type "namespace")
+                nil [480 1575]))          
+      :file "reverse_fold_fwd.hpp"
+      :pointmax 1584
+      :fsize 1583
+      :lastmodtime '(21790 57546 0 0)
+      :unmatched-syntax '((symbol 1397 . 1421) (punctuation 1391 . 1392) (symbol 1390 . 1391) (TYPENAME 1381 . 1389) (punctuation 1379 . 1380) (symbol 1374 . 1379) (TYPENAME 1365 . 1373) (punctuation 1363 . 1364) (symbol 1360 . 1363) (TYPENAME 1351 . 1359) (punctuation 1350 . 1351) (TEMPLATE 1342 . 1350) (symbol 1173 . 1197) (punctuation 1167 . 1168) (symbol 1166 . 1167) (TYPENAME 1157 . 1165) (punctuation 1155 . 1156) (symbol 1150 . 1155) (TYPENAME 1141 . 1149) (punctuation 1139 . 1140) (symbol 1136 . 1139) (TYPENAME 1127 . 1135) (punctuation 1126 . 1127) (TEMPLATE 1118 . 1126) (symbol 931 . 955) (punctuation 925 . 926) (symbol 924 . 925) (TYPENAME 915 . 923) (punctuation 913 . 914) (symbol 908 . 913) (TYPENAME 899 . 907) (punctuation 897 . 898) (symbol 894 . 897) (TYPENAME 885 . 893) (punctuation 884 . 885) (TEMPLATE 876 . 884) (symbol 701 . 725) (punctuation 695 . 696) (symbol 694 . 695) (TYPENAME 685 . 693) (punctuation 683 . 684) (symbol 678 . 683) (TYPENAME 669 . 677) (punctuation 667 . 668) (symbol 664 . 667) (TYPENAME 655 . 663) (punctuation 654 . 655) (TEMPLATE 646 . 654))
+      :lexical-table 
+        '(("BOOST_FUSION_ALGORITHM_ITERATION_REVERSE_FOLD_FWD_HPP")
+          )
+))
+  :file "!usr!include!boost!fusion!algorithm!iteration!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

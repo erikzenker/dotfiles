@@ -1,0 +1,981 @@
+;; Object move/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "move/"
+  :tables
+  (list
+    (semanticdb-table "move.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MOVE_MOVE_HPP" variable (:constant-flag t) nil [602 621])
+            ("boost/move/detail/config_begin.hpp" include (:system-flag t) nil [623 668])
+            ("boost/move/utility.hpp" include (:system-flag t) nil [669 702])
+            ("boost/move/iterator.hpp" include (:system-flag t) nil [703 737])
+            ("boost/move/traits.hpp" include (:system-flag t) nil [738 770])
+            ("boost/move/algorithm.hpp" include (:system-flag t) nil [771 806])
+            ("boost/move/detail/config_end.hpp" include (:system-flag t) nil [807 850]))          
+      :file "move.hpp"
+      :pointmax 889
+      :fsize 888
+      :lastmodtime '(21790 57545 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MOVE_MOVE_HPP")
+          )
+)
+    (semanticdb-table "core.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MOVE_CORE_HPP" variable (:constant-flag t) nil [560 579])
+            ("boost/move/detail/config_begin.hpp" include (:system-flag t) nil [581 626])
+            ("BOOST_MOVE_IMPL_NO_COPY_CTOR_OR_ASSIGN" variable (:constant-flag t) nil [1075 1113])
+            ("BOOST_MOVABLE_BUT_NOT_COPYABLE" variable (:constant-flag t) nil [8533 8563])
+            ("BOOST_COPYABLE_AND_MOVABLE" variable (:constant-flag t) nil [8928 8954])
+            ("BOOST_COPYABLE_AND_MOVABLE_ALT" variable (:constant-flag t) nil [9024 9054])
+            ("boost" type
+               (:members 
+                  ( ("has_move_emulation_enabled" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("value" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [9436 9468]))                          )
+                        (reparse-symbol namespacesubparts) [9370 9474]))                  
+                :type "namespace")
+                nil [9127 9480])
+            ("BOOST_RV_REF" variable (:constant-flag t) nil [9697 9709])
+            ("BOOST_RV_REF_BEG" variable (:constant-flag t) nil [10121 10137])
+            ("BOOST_RV_REF_END" variable (:constant-flag t) nil [10538 10554])
+            ("BOOST_COPY_ASSIGN_REF" variable (:constant-flag t) nil [10706 10727])
+            ("BOOST_FWD_REF" variable (:constant-flag t) nil [10883 10896])
+            ("BOOST_RV_REF_2_TEMPL_ARGS" variable (:constant-flag t) nil [10983 11008])
+            ("BOOST_RV_REF_3_TEMPL_ARGS" variable (:constant-flag t) nil [11074 11099])
+            ("BOOST_COPY_ASSIGN_REF_BEG" variable (:constant-flag t) nil [11177 11202])
+            ("BOOST_COPY_ASSIGN_REF_END" variable (:constant-flag t) nil [11237 11262])
+            ("BOOST_COPY_ASSIGN_REF_2_TEMPL_ARGS" variable (:constant-flag t) nil [11293 11327])
+            ("BOOST_COPY_ASSIGN_REF_3_TEMPL_ARGS" variable (:constant-flag t) nil [11398 11432])
+            ("BOOST_CATCH_CONST_RLVALUE" variable (:constant-flag t) nil [11514 11539])
+            ("BOOST_MOVE_RET" variable (:constant-flag t) nil [12976 12990])
+            ("boost" type
+               (:members 
+                  ( ("move_detail" type
+                       (:members 
+                          ( ("forward_type" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("T" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [14154 14169]))                                  )
+                                (reparse-symbol namespacesubparts) [14113 14172]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [14085 14178]))                  
+                :type "namespace")
+                nil [14064 14179])
+            ("boost/move/detail/config_end.hpp" include (:system-flag t) nil [14226 14269]))          
+      :file "core.hpp"
+      :pointmax 14308
+      :fsize 14307
+      :lastmodtime '(21790 57545 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_COPY_ASSIGN_REF_3_TEMPL_ARGS" (spp-arg-list ("TYPE" "ARG1" "ARG2" "ARG3") 11432 . 11456) . 
+              ((CONST "const" 11464 . 11469) (symbol "TYPE" 11470 . 11474) (punctuation "<" 11474 . 11475) (symbol "ARG1" 11475 . 11479) (punctuation "," 11479 . 11480) (symbol "ARG2" 11481 . 11485) (punctuation "," 11485 . 11486) (symbol "ARG3" 11487 . 11491) (punctuation ">" 11491 . 11492) (punctuation "&" 11492 . 11493)))
+          ("BOOST_COPYABLE_AND_MOVABLE_ALT" (spp-arg-list ("TYPE") 9054 . 9060))
+          ("BOOST_COPY_ASSIGN_REF" (spp-arg-list ("TYPE") 10727 . 10733) . 
+              ((CONST "const" 10741 . 10746) (symbol "TYPE" 10747 . 10751) (punctuation "&" 10752 . 10753)))
+          ("BOOST_MOVE_IMPL_NO_COPY_CTOR_OR_ASSIGN" (spp-arg-list ("TYPE") 1113 . 1119) . 
+              ((PUBLIC "public" 1128 . 1134) (punctuation ":" 1134 . 1135) (symbol "TYPE" 1143 . 1147) (semantic-list "(TYPE const &)" 1147 . 1161) (punctuation "=" 1162 . 1163) (DELETE "delete" 1164 . 1170) (punctuation ";" 1170 . 1171) (symbol "TYPE" 1179 . 1183) (punctuation "&" 1183 . 1184) (OPERATOR "operator" 1185 . 1193) (punctuation "=" 1193 . 1194) (semantic-list "(TYPE const &)" 1194 . 1208) (punctuation "=" 1209 . 1210) (DELETE "delete" 1211 . 1217) (punctuation ";" 1217 . 1218) (PUBLIC "public" 1226 . 1232) (punctuation ":" 1232 . 1233) (TYPEDEF "typedef" 1241 . 1248) (INT "int" 1249 . 1252) (symbol "boost_move_no_copy_constructor_or_assign" 1253 . 1293) (punctuation ";" 1293 . 1294) (PRIVATE "private" 1303 . 1310) (punctuation ":" 1310 . 1311)))
+          ("BOOST_MOVABLE_BUT_NOT_COPYABLE" (spp-arg-list ("TYPE") 8563 . 8569) . 
+              ((symbol "BOOST_MOVE_IMPL_NO_COPY_CTOR_OR_ASSIGN" 8577 . 8615) (semantic-list "(TYPE)" 8615 . 8621) (PUBLIC "public" 8629 . 8635) (punctuation ":" 8635 . 8636) (TYPEDEF "typedef" 8644 . 8651) (INT "int" 8652 . 8655) (symbol "boost_move_emulation_t" 8656 . 8678) (punctuation ";" 8678 . 8679)))
+          ("BOOST_RV_REF" (spp-arg-list ("TYPE") 9709 . 9715) . 
+              ((symbol "TYPE" 9723 . 9727) (punctuation "&" 9728 . 9729) (punctuation "&" 9729 . 9730)))
+          ("BOOST_RV_REF_END" . ((punctuation "&" 10562 . 10563) (punctuation "&" 10563 . 10564)))
+          ("BOOST_FWD_REF" (spp-arg-list ("TYPE") 10896 . 10902) . 
+              ((symbol "TYPE" 10910 . 10914) (punctuation "&" 10915 . 10916) (punctuation "&" 10916 . 10917)))
+          ("BOOST_MOVE_RET" (spp-arg-list ("RET_TYPE" "REF") 12990 . 13005) . ((symbol "REF" 13016 . 13019)))
+          ("BOOST_MOVE_CORE_HPP")
+          ("BOOST_RV_REF_BEG")
+          ("BOOST_COPYABLE_AND_MOVABLE" (spp-arg-list ("TYPE") 8954 . 8960))
+          ("BOOST_RV_REF_3_TEMPL_ARGS" (spp-arg-list ("TYPE" "ARG1" "ARG2" "ARG3") 11099 . 11123) . 
+              ((symbol "TYPE" 11131 . 11135) (punctuation "<" 11135 . 11136) (symbol "ARG1" 11136 . 11140) (punctuation "," 11140 . 11141) (symbol "ARG2" 11142 . 11146) (punctuation "," 11146 . 11147) (symbol "ARG3" 11148 . 11152) (punctuation ">" 11152 . 11153) (punctuation "&" 11154 . 11155) (punctuation "&" 11155 . 11156)))
+          ("BOOST_COPY_ASSIGN_REF_2_TEMPL_ARGS" (spp-arg-list ("TYPE" "ARG1" "ARG2") 11327 . 11345) . 
+              ((CONST "const" 11353 . 11358) (symbol "TYPE" 11359 . 11363) (punctuation "<" 11363 . 11364) (symbol "ARG1" 11364 . 11368) (punctuation "," 11368 . 11369) (symbol "ARG2" 11370 . 11374) (punctuation ">" 11374 . 11375) (punctuation "&" 11376 . 11377)))
+          ("BOOST_COPY_ASSIGN_REF_END" . ((punctuation "&" 11271 . 11272)))
+          ("BOOST_COPY_ASSIGN_REF_BEG" . ((CONST "const" 11211 . 11216)))
+          ("BOOST_RV_REF_2_TEMPL_ARGS" (spp-arg-list ("TYPE" "ARG1" "ARG2") 11008 . 11026) . 
+              ((symbol "TYPE" 11034 . 11038) (punctuation "<" 11038 . 11039) (symbol "ARG1" 11039 . 11043) (punctuation "," 11043 . 11044) (symbol "ARG2" 11045 . 11049) (punctuation ">" 11049 . 11050) (punctuation "&" 11051 . 11052) (punctuation "&" 11052 . 11053)))
+          ("BOOST_CATCH_CONST_RLVALUE" (spp-arg-list ("TYPE") 11539 . 11545) . 
+              ((CONST "const" 11553 . 11558) (symbol "TYPE" 11559 . 11563) (punctuation "&" 11564 . 11565)))
+          )
+)
+    (semanticdb-table "utility.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MOVE_MOVE_UTILITY_HPP" variable (:constant-flag t) nil [617 644])
+            ("boost/move/detail/config_begin.hpp" include (:system-flag t) nil [646 691])
+            ("boost/move/utility_core.hpp" include (:system-flag t) nil [692 730])
+            ("boost/move/traits.hpp" include (:system-flag t) nil [731 763])
+            ("boost" type (:type "namespace") nil [3333 4877])
+            ("boost/move/detail/config_end.hpp" include (:system-flag t) nil [5010 5053]))          
+      :file "utility.hpp"
+      :pointmax 5100
+      :fsize 5099
+      :lastmodtime '(21790 57544 0 0)
+      :unmatched-syntax '((semantic-list 4810 . 4825) (symbol 4786 . 4800) (semantic-list 4779 . 4785) (symbol 4763 . 4779) (symbol 4743 . 4747) (punctuation 4742 . 4743) (punctuation 4741 . 4742) (punctuation 4740 . 4741) (punctuation 4739 . 4740) (symbol 4738 . 4739) (CONST 4732 . 4737) (punctuation 4730 . 4731) (symbol 4725 . 4730) (punctuation 4724 . 4725) (punctuation 4723 . 4724) (punctuation 4722 . 4723) (symbol 4721 . 4722) (punctuation 4720 . 4721) (symbol 4677 . 4720) (punctuation 4676 . 4677) (punctuation 4675 . 4676) (symbol 4664 . 4675) (punctuation 4663 . 4664) (punctuation 4662 . 4663) (symbol 4657 . 4662) (punctuation 4656 . 4657) (punctuation 4655 . 4656) (punctuation 4654 . 4655) (punctuation 4652 . 4653) (symbol 4628 . 4639) (punctuation 4627 . 4628) (punctuation 4626 . 4627) (symbol 4615 . 4626) (punctuation 4614 . 4615) (punctuation 4613 . 4614) (symbol 4608 . 4613) (punctuation 4607 . 4608) (punctuation 4606 . 4607) (TYPENAME 4597 . 4605) (punctuation 4586 . 4587) (symbol 4585 . 4586) (CLASS 4579 . 4584) (punctuation 4578 . 4579) (TEMPLATE 4569 . 4577) (semantic-list 4527 . 4558) (symbol 4503 . 4517) (semantic-list 4496 . 4502) (symbol 4480 . 4496) (symbol 4460 . 4464) (punctuation 4459 . 4460) (punctuation 4458 . 4459) (punctuation 4457 . 4458) (punctuation 4456 . 4457) (punctuation 4455 . 4456) (symbol 4454 . 4455) (punctuation 4452 . 4453) (symbol 4447 . 4452) (punctuation 4446 . 4447) (punctuation 4445 . 4446) (punctuation 4444 . 4445) (symbol 4443 . 4444) (punctuation 4442 . 4443) (symbol 4399 . 4442) (punctuation 4398 . 4399) (punctuation 4397 . 4398) (symbol 4386 . 4397) (punctuation 4385 . 4386) (punctuation 4384 . 4385) (symbol 4379 . 4384) (punctuation 4378 . 4379) (punctuation 4377 . 4378) (punctuation 4375 . 4376) (symbol 4351 . 4362) (punctuation 4350 . 4351) (punctuation 4349 . 4350) (symbol 4338 . 4349) (punctuation 4337 . 4338) (punctuation 4336 . 4337) (symbol 4331 . 4336) (punctuation 4330 . 4331) (punctuation 4329 . 4330) (TYPENAME 4320 . 4328) (punctuation 4309 . 4310) (symbol 4308 . 4309) (CLASS 4302 . 4307) (punctuation 4301 . 4302) (TEMPLATE 4292 . 4300))
+      :lexical-table 
+        '(("BOOST_MOVE_MOVE_UTILITY_HPP")
+          )
+)
+    (semanticdb-table "iterator.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MOVE_ITERATOR_HPP" variable (:constant-flag t) nil [475 498])
+            ("boost/move/detail/config_begin.hpp" include (:system-flag t) nil [500 545])
+            ("boost/move/utility_core.hpp" include (:system-flag t) nil [546 584])
+            ("iterator" include (:system-flag t) nil [585 604])
+            ("boost" type
+               (:members 
+                  ( ("move_iterator" type
+                       (:template 
+                          ( ("It" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1258 1265])
+                            ("iterator_type" type
+                               (:typedef ("It" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1269 1355])
+                            ("value_type" type
+                               (:typedef ("std::iterator_traits::value_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1359 1442])
+                            ("reference" variable (:type ("value_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1543 1617])
+                            ("pointer" type
+                               (:typedef ("It" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1861 1941])
+                            ("difference_type" type
+                               (:typedef ("std::iterator_traits::difference_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1945 2033])
+                            ("iterator_category" type
+                               (:typedef ("std::iterator_traits::iterator_category" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2037 2127])
+                            ("move_iterator" function
+                               (:constructor-flag t
+                                :type ("move_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2132 2153])
+                            ("move_iterator" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("i" variable (:type ("It" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2181 2186]))                                  
+                                :type ("move_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2167 2209])
+                            ("move_iterator" function
+                               (:template 
+                                  ( ("U" type (:type "class") nil nil))                                  
+                                :type ("move_iterator" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("u" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("move_iterator" type
+                                             (:template-specifier 
+                                                ( ("U" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [2250 2276]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol classsubparts) [2214 2306])
+                            ("base" function (:type ("iterator_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2311 2360])
+                            ("" function
+                               (:operator-flag t
+                                :function-pointer t
+                                :type ("reference" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2365 2586])
+                            ("->" function
+                               (:operator-flag t
+                                :type ("pointer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2591 2642])
+                            ("++" function
+                               (:operator-flag t
+                                :type ("move_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2647 2706])
+                            ("++" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [2752 2756]))                                  
+                                :type ("move_iterator" type
+                                     (:template-specifier 
+                                        ( ("iterator_type" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [2711 2830])
+                            ("--" function
+                               (:operator-flag t
+                                :type ("move_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2835 2894])
+                            ("--" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [2940 2944]))                                  
+                                :type ("move_iterator" type
+                                     (:template-specifier 
+                                        ( ("iterator_type" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [2899 3018])
+                            ("+" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("n" variable (:type ("difference_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3064 3082]))                                  
+                                :type ("move_iterator" type
+                                     (:template-specifier 
+                                        ( ("iterator_type" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [3023 3144])
+                            ("+=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("n" variable (:type ("difference_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3175 3193]))                                  
+                                :type ("move_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3149 3228])
+                            ("-" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("n" variable (:type ("difference_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3274 3292]))                                  
+                                :type ("move_iterator" type
+                                     (:template-specifier 
+                                        ( ("iterator_type" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [3233 3354])
+                            ("-=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("n" variable (:type ("difference_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3385 3403]))                                  
+                                :type ("move_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3359 3438])
+                            ("[]" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("n" variable (:type ("difference_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3464 3482]))                                  
+                                :type ("reference" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3443 3686])
+                            ("==" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("x" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("move_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3714 3737])
+                                    ("y" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("move_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3738 3761]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3691 3799])
+                            ("!=" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("x" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("move_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3827 3850])
+                                    ("y" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("move_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3851 3874]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3804 3912])
+                            ("<" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("x" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("move_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3940 3963])
+                                    ("y" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("move_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3964 3987]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3917 4025])
+                            ("<=" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("x" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("move_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4053 4076])
+                                    ("y" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("move_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4077 4100]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4030 4138])
+                            (">" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("x" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("move_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4166 4189])
+                                    ("y" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("move_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4190 4213]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4143 4250])
+                            (">=" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("x" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("move_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4278 4301])
+                                    ("y" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("move_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4302 4325]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4255 4363])
+                            ("-" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("x" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("move_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4401 4424])
+                                    ("y" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("move_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4425 4448]))                                  
+                                :type ("difference_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4368 4486])
+                            ("+" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("n" variable (:type ("difference_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4522 4540])
+                                    ("x" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("move_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4541 4564]))                                  
+                                :type ("move_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4491 4610])
+                            ("private" label nil (reparse-symbol classsubparts) [4615 4623])
+                            ("m_it" variable (:type ("It" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4627 4635]))                          )
+                        (reparse-symbol namespacesubparts) [1213 4638])
+                    ("move_detail" type
+                       (:members 
+                          ( ("is_move_iterator" type
+                               (:template 
+                                  ( ("I" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("value" variable
+                                       (:typemodifiers ("static")
+                                        :constant-flag t
+                                        :default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [4732 4764]))                                  )
+                                (reparse-symbol namespacesubparts) [4684 4767]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [4659 4883])
+                    ("make_move_iterator" function
+                       (:template 
+                          ( ("It" type (:type "class") nil nil))                          
+                        :type ("move_iterator" type
+                             (:template-specifier 
+                                ( ("It" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("it" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("It" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5230 5243]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [5167 5278])
+                    ("back_move_insert_iterator" type
+                       (:template 
+                          ( ("C" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("container_m" variable
+                               (:pointer 1
+                                :type ("C" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5668 5683])
+                            ("public" label nil (reparse-symbol classsubparts) [5688 5695])
+                            ("container_type" type
+                               (:typedef ("C" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [5699 5750])
+                            ("value_type" type
+                               (:typedef ("C::value_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [5754 5801])
+                            ("reference" type
+                               (:typedef ("C::reference" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [5805 5851])
+                            ("pointer" type
+                               (:typedef ("C::pointer" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [5855 5899])
+                            ("difference_type" type
+                               (:typedef ("C::difference_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [5903 5955])
+                            ("iterator_category" type
+                               (:typedef ("std::output_iterator_tag" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [5959 6013])
+                            ("back_move_insert_iterator" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("x" variable
+                                       (:reference 1
+                                        :type ("C" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6053 6058]))                                  
+                                :type ("back_move_insert_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6027 6080])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("x" variable (:type ("reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6122 6134]))                                  
+                                :type ("back_move_insert_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6085 6195])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("BOOST_RV_REF" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6237 6261])
+                                    ("" variable (:type ("x" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6262 6264]))                                  
+                                :type ("back_move_insert_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6200 6319])
+                            ("" function
+                               (:operator-flag t
+                                :function-pointer t
+                                :type ("back_move_insert_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6324 6384])
+                            ("++" function
+                               (:operator-flag t
+                                :type ("back_move_insert_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6388 6448])
+                            ("++" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [6490 6494]))                                  
+                                :type ("back_move_insert_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6452 6512]))                          )
+                        (reparse-symbol namespacesubparts) [5587 6515])
+                    ("back_move_inserter" function
+                       (:template 
+                          ( ("C" type (:type "class") nil nil))                          
+                        :type ("back_move_insert_iterator" type
+                             (:template-specifier 
+                                ( ("C" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :type ("C" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6673 6678]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [6574 6725])
+                    ("front_move_insert_iterator" type
+                       (:template 
+                          ( ("C" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("container_m" variable
+                               (:pointer 1
+                                :type ("C" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7118 7133])
+                            ("public" label nil (reparse-symbol classsubparts) [7135 7142])
+                            ("container_type" type
+                               (:typedef ("C" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [7146 7197])
+                            ("value_type" type
+                               (:typedef ("C::value_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [7201 7248])
+                            ("reference" type
+                               (:typedef ("C::reference" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [7252 7298])
+                            ("pointer" type
+                               (:typedef ("C::pointer" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [7302 7346])
+                            ("difference_type" type
+                               (:typedef ("C::difference_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [7350 7402])
+                            ("iterator_category" type
+                               (:typedef ("std::output_iterator_tag" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [7406 7460])
+                            ("front_move_insert_iterator" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("x" variable
+                                       (:reference 1
+                                        :type ("C" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7501 7506]))                                  
+                                :type ("front_move_insert_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7474 7528])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("x" variable (:type ("reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7571 7583]))                                  
+                                :type ("front_move_insert_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7533 7645])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("BOOST_RV_REF" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7688 7712])
+                                    ("" variable (:type ("x" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7713 7715]))                                  
+                                :type ("front_move_insert_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7650 7770])
+                            ("" function
+                               (:operator-flag t
+                                :function-pointer t
+                                :type ("front_move_insert_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7775 7836])
+                            ("++" function
+                               (:operator-flag t
+                                :type ("front_move_insert_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7840 7901])
+                            ("++" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [7944 7948]))                                  
+                                :type ("front_move_insert_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7905 7966]))                          )
+                        (reparse-symbol namespacesubparts) [7036 7969])
+                    ("front_move_inserter" function
+                       (:template 
+                          ( ("C" type (:type "class") nil nil))                          
+                        :type ("front_move_insert_iterator" type
+                             (:template-specifier 
+                                ( ("C" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :type ("C" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8130 8135]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [8029 8183])
+                    ("move_insert_iterator" type
+                       (:template 
+                          ( ("C" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("container_m" variable
+                               (:pointer 1
+                                :type ("C" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8473 8488])
+                            ("pos_" variable
+                               (:typemodifiers ("typename")
+                                :type ("C::iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8492 8518])
+                            ("public" label nil (reparse-symbol classsubparts) [8523 8530])
+                            ("container_type" type
+                               (:typedef ("C" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [8534 8585])
+                            ("value_type" type
+                               (:typedef ("C::value_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [8589 8636])
+                            ("reference" type
+                               (:typedef ("C::reference" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [8640 8686])
+                            ("pointer" type
+                               (:typedef ("C::pointer" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [8690 8734])
+                            ("difference_type" type
+                               (:typedef ("C::difference_type" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [8738 8790])
+                            ("iterator_category" type
+                               (:typedef ("std::output_iterator_tag" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [8794 8848])
+                            ("move_insert_iterator" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("x" variable
+                                       (:reference 1
+                                        :type ("C" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8883 8888])
+                                    ("pos" variable
+                                       (:typemodifiers ("typename")
+                                        :type ("C::iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8889 8914]))                                  
+                                :type ("move_insert_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8862 8955])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("x" variable (:type ("reference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8992 9004]))                                  
+                                :type ("move_insert_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8960 9106])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("BOOST_RV_REF" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9143 9167])
+                                    ("" variable (:type ("x" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9168 9170]))                                  
+                                :type ("move_insert_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9111 9225])
+                            ("" function
+                               (:operator-flag t
+                                :function-pointer t
+                                :type ("move_insert_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9230 9285])
+                            ("++" function
+                               (:operator-flag t
+                                :type ("move_insert_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9289 9344])
+                            ("++" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [9381 9385]))                                  
+                                :type ("move_insert_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9348 9403]))                          )
+                        (reparse-symbol namespacesubparts) [8397 9406])
+                    ("move_inserter" function
+                       (:template 
+                          ( ("C" type (:type "class") nil nil))                          
+                        :type ("move_insert_iterator" type
+                             (:template-specifier 
+                                ( ("C" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :type ("C" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9553 9558])
+                            ("it" variable
+                               (:typemodifiers ("typename")
+                                :type ("C::iterator" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9559 9583]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [9464 9629]))                  
+                :type "namespace")
+                nil [623 9632])
+            ("boost/move/detail/config_end.hpp" include (:system-flag t) nil [9655 9698]))          
+      :file "iterator.hpp"
+      :pointmax 9741
+      :fsize 9740
+      :lastmodtime '(21790 57545 0 0)
+      :unmatched-syntax '((semantic-list 9155 . 9167) (EXPLICIT 8853 . 8861) (semantic-list 7700 . 7712) (EXPLICIT 7465 . 7473) (semantic-list 6249 . 6261) (EXPLICIT 6018 . 6026) (punctuation 4879 . 4880) (semantic-list 4841 . 4879) (punctuation 4839 . 4840) (punctuation 4837 . 4838) (symbol 4836 . 4837) (punctuation 4835 . 4836) (symbol 4822 . 4835) (punctuation 4821 . 4822) (punctuation 4820 . 4821) (symbol 4815 . 4820) (punctuation 4814 . 4815) (punctuation 4813 . 4814) (punctuation 4811 . 4812) (symbol 4795 . 4811) (STRUCT 4788 . 4794) (punctuation 4786 . 4787) (symbol 4785 . 4786) (CLASS 4779 . 4784) (punctuation 4778 . 4779) (TEMPLATE 4769 . 4777) (EXPLICIT 2158 . 2166) (TYPEDEF 1535 . 1542))
+      :lexical-table 
+        '(("BOOST_MOVE_ITERATOR_HPP")
+          )
+)
+    (semanticdb-table "traits.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MOVE_MOVE_TRAITS_HPP" variable (:constant-flag t) nil [478 504])
+            ("boost/move/detail/config_begin.hpp" include (:system-flag t) nil [506 551])
+            ("boost/type_traits/has_trivial_destructor.hpp" include (:system-flag t) nil [552 607])
+            ("boost/type_traits/is_nothrow_move_constructible.hpp" include (:system-flag t) nil [608 670])
+            ("boost/type_traits/is_nothrow_move_assignable.hpp" include (:system-flag t) nil [671 730])
+            ("boost/type_traits/is_copy_constructible.hpp" include (:system-flag t) nil [731 785])
+            ("boost/move/detail/meta_utils.hpp" include (:system-flag t) nil [786 829])
+            ("boost/move/core.hpp" include (:system-flag t) nil [872 902])
+            ("boost" type
+               (:members 
+                  ( ("" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :superclasses 
+                          ( ("boost::has_trivial_destructor" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :parent "has_trivial_destructor_after_move")
+                        (reparse-symbol namespacesubparts) [1418 1521])
+                    ("has_nothrow_move" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("boost::is_nothrow_move_assignable::value" variable (:type ("boost::is_nothrow_move_constructible::value" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1876 1999]))                          )
+                        (reparse-symbol namespacesubparts) [1802 2002])
+                    ("move_detail" type
+                       (:members 
+                          ( ("is_nothrow_move_constructible_or_uncopyable" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("boost::is_copy_constructible::value" variable (:type "int") (reparse-symbol classsubparts) [2433 2472]))                                  )
+                                (reparse-symbol namespacesubparts) [2029 2475]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2004 2478]))                  
+                :type "namespace")
+                nil [911 2497])
+            ("boost/move/detail/config_end.hpp" include (:system-flag t) nil [2520 2563]))          
+      :file "traits.hpp"
+      :pointmax 2609
+      :fsize 2608
+      :lastmodtime '(21790 57544 0 0)
+      :unmatched-syntax '((punctuation 2432 . 2433) (punctuation 2402 . 2403) (punctuation 2401 . 2402) (symbol 2395 . 2400) (punctuation 2394 . 2395) (punctuation 2393 . 2394) (punctuation 2392 . 2393) (symbol 2391 . 2392) (punctuation 2390 . 2391) (symbol 2374 . 2390) (punctuation 2343 . 2344) (punctuation 2342 . 2343) (symbol 2336 . 2341) (punctuation 2335 . 2336) (punctuation 2334 . 2335) (punctuation 2333 . 2334) (symbol 2332 . 2333) (punctuation 2331 . 2332) (symbol 2302 . 2331) (punctuation 2301 . 2302) (punctuation 2300 . 2301) (symbol 2295 . 2300) (punctuation 2293 . 2294) (symbol 2287 . 2292) (BOOL 2282 . 2286) (CONST 2276 . 2281) (STATIC 2269 . 2275) (punctuation 1874 . 1875) (symbol 1868 . 1873) (BOOL 1863 . 1867) (CONST 1857 . 1862) (STATIC 1850 . 1856))
+      :lexical-table 
+        '(("BOOST_MOVE_MOVE_TRAITS_HPP")
+          )
+)
+    (semanticdb-table "algorithm.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MOVE_ALGORITHM_HPP" variable (:constant-flag t) nil [476 500])
+            ("boost/move/detail/config_begin.hpp" include (:system-flag t) nil [502 547])
+            ("boost/move/utility_core.hpp" include (:system-flag t) nil [549 587])
+            ("boost/move/iterator.hpp" include (:system-flag t) nil [588 622])
+            ("boost/detail/no_exceptions_support.hpp" include (:system-flag t) nil [623 672])
+            ("algorithm" include (:system-flag t) nil [674 694])
+            ("memory" include (:system-flag t) nil [717 734])
+            ("boost" type
+               (:members 
+                  ( ("move" function
+                       (:template 
+                          ( ("I" type (:type "class") nil nil)
+                            ("O" type (:type "class") nil nil))                          
+                        :type ("O" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("f" variable (:type ("I" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1628 1632])
+                            ("l" variable (:type ("I" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1633 1637])
+                            ("result" variable (:type ("O" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1638 1647]))                          )
+                        (reparse-symbol namespacesubparts) [1519 1771])
+                    ("move_backward" function
+                       (:template 
+                          ( ("I" type (:type "class") nil nil)
+                            ("O" type (:type "class") nil nil))                          
+                        :type ("O" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("f" variable (:type ("I" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2612 2616])
+                            ("l" variable (:type ("I" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2617 2621])
+                            ("result" variable (:type ("O" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2622 2631]))                          )
+                        (reparse-symbol namespacesubparts) [2488 2755])
+                    ("uninitialized_move" function
+                       (:template 
+                          ( ("I" type (:type "class") nil nil)
+                            ("F" type (:type "class") nil nil))                          
+                        :type ("F" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("f" variable (:type ("I" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3445 3449])
+                            ("l" variable (:type ("I" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3450 3454])
+                            ("r" variable (:type ("F" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3455 3625]))                          )
+                        (reparse-symbol namespacesubparts) [3329 4084])
+                    ("move_detail" type
+                       (:members 
+                          ( ("uninitialized_move_move_iterator" function
+                               (:template 
+                                  ( ("I" type (:type "class") nil nil)
+                                    ("F" type (:type "class") nil nil))                                  
+                                :type ("F" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("f" variable (:type ("I" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4799 4803])
+                                    ("l" variable (:type ("I" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4804 4808])
+                                    ("r" variable (:type ("F" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4809 4952]))                                  
+                                :typemodifiers ("inline"))
+                                (reparse-symbol namespacesubparts) [4665 5004]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [4640 5359])
+                    ("uninitialized_copy_or_move" function
+                       (:template 
+                          ( ("I" type (:type "class") nil nil)
+                            ("F" type (:type "class") nil nil))                          
+                        :type ("F" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("f" variable (:type ("I" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5516 5520])
+                            ("l" variable (:type ("I" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5521 5525])
+                            ("r" variable (:type ("F" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5526 5530])
+                            ("" variable
+                               (:pointer 1
+                                :type ("boost::move_detail::enable_if::type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5571 5647]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [5388 5727])
+                    ("move_detail" type
+                       (:members 
+                          ( ("move_move_iterator" function
+                               (:template 
+                                  ( ("I" type (:type "class") nil nil)
+                                    ("F" type (:type "class") nil nil))                                  
+                                :type ("F" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("f" variable (:type ("I" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6082 6086])
+                                    ("l" variable (:type ("I" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6087 6091])
+                                    ("r" variable (:type ("F" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6092 6235]))                                  
+                                :typemodifiers ("inline"))
+                                (reparse-symbol namespacesubparts) [5962 6273]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [5937 6601])
+                    ("copy_or_move" function
+                       (:template 
+                          ( ("I" type (:type "class") nil nil)
+                            ("F" type (:type "class") nil nil))                          
+                        :type ("F" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("f" variable (:type ("I" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6744 6748])
+                            ("l" variable (:type ("I" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6749 6753])
+                            ("r" variable (:type ("F" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6754 6758])
+                            ("" variable
+                               (:pointer 1
+                                :type ("boost::move_detail::enable_if::type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6799 6875]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [6630 6941])
+                    ("uninitialized_copy_or_move" function
+                       (:template 
+                          ( ("I" type (:type "class") nil nil)
+                            ("F" type (:type "class") nil nil))                          
+                        :type ("F" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("f" variable (:type ("I" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7502 7506])
+                            ("l" variable (:type ("I" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7507 7511])
+                            ("r" variable (:type ("F" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7512 7533])
+                            ("" variable
+                               (:pointer 1
+                                :type ("boost::move_detail::disable_if::type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7544 7621]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [7374 7690])
+                    ("copy_or_move" function
+                       (:template 
+                          ( ("I" type (:type "class") nil nil)
+                            ("F" type (:type "class") nil nil))                          
+                        :type ("F" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("f" variable (:type ("I" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8131 8135])
+                            ("l" variable (:type ("I" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8136 8140])
+                            ("r" variable (:type ("F" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8141 8162])
+                            ("" variable
+                               (:pointer 1
+                                :type ("boost::move_detail::disable_if::type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8173 8250]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [8017 8305]))                  
+                :type "namespace")
+                nil [760 8308])
+            ("boost/move/detail/config_end.hpp" include (:system-flag t) nil [8331 8374]))          
+      :file "algorithm.hpp"
+      :pointmax 8418
+      :fsize 8417
+      :lastmodtime '(21790 57544 0 0)
+      :unmatched-syntax '((punctuation 8172 . 8173) (punctuation 8171 . 8172) (TYPENAME 8162 . 8170) (punctuation 7543 . 7544) (punctuation 7542 . 7543) (TYPENAME 7533 . 7541) (punctuation 6798 . 6799) (punctuation 6797 . 6798) (TYPENAME 6788 . 6796) (punctuation 5570 . 5571) (punctuation 5569 . 5570) (TYPENAME 5560 . 5568))
+      :lexical-table 
+        '(("BOOST_MOVE_ALGORITHM_HPP")
+          )
+)
+    (semanticdb-table "utility_core.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_MOVE_MOVE_UTILITY_CORE_HPP" variable (:constant-flag t) nil [637 669])
+            ("boost/move/detail/config_begin.hpp" include (:system-flag t) nil [671 716])
+            ("boost/move/core.hpp" include (:system-flag t) nil [717 747])
+            ("boost/move/detail/meta_utils.hpp" include (:system-flag t) nil [748 791])
+            ("boost/static_assert.hpp" include (:system-flag t) nil [792 826])
+            ("boost" type
+               (:members 
+                  ( ("enable_move_utility_emulation" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("value" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "false"
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5349 5381]))                          )
+                        (reparse-symbol namespacesubparts) [5271 5390]))                  
+                :type "namespace")
+                nil [4799 9943])
+            ("boost" type
+               (:members 
+                  ( ("move_detail" type
+                       (:members 
+                          ( ("swap" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("a" variable
+                                       (:reference 1
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10187 10192])
+                                    ("b" variable
+                                       (:reference 1
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10193 10198]))                                  )
+                                (reparse-symbol namespacesubparts) [10159 10280])
+                            ("declval" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type ("boost::move_detail::add_rvalue_reference::type" type (:type "class") nil nil)
+                                :typemodifiers ("typename")
+                                :prototype-flag t)
+                                (reparse-symbol namespacesubparts) [10282 10373]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [10135 10376]))                  
+                :type "namespace")
+                nil [10118 10404])
+            ("boost/move/detail/config_end.hpp" include (:system-flag t) nil [10480 10523]))          
+      :file "utility_core.hpp"
+      :pointmax 10575
+      :fsize 10574
+      :lastmodtime '(21790 57544 0 0)
+      :unmatched-syntax '((semantic-list 9658 . 9889) (symbol 9634 . 9648) (semantic-list 9571 . 9633) (symbol 9543 . 9571) (punctuation 9629 . 9630) (punctuation 9582 . 9583) (punctuation 9581 . 9582) (TYPENAME 9572 . 9580) (punctuation 9541 . 9542) (punctuation 9540 . 9541) (symbol 9539 . 9540) (INLINE 9532 . 9538) (punctuation 9521 . 9522) (symbol 9520 . 9521) (CLASS 9514 . 9519) (punctuation 9513 . 9514) (TEMPLATE 9504 . 9512) (semantic-list 9459 . 9493) (symbol 9435 . 9449) (semantic-list 9373 . 9434) (symbol 9345 . 9373) (punctuation 9384 . 9385) (punctuation 9383 . 9384) (TYPENAME 9374 . 9382) (punctuation 9343 . 9344) (punctuation 9342 . 9343) (symbol 9341 . 9342) (INLINE 9334 . 9340) (punctuation 9323 . 9324) (symbol 9322 . 9323) (CLASS 9316 . 9321) (punctuation 9315 . 9316) (TEMPLATE 9306 . 9314) (semantic-list 8290 . 8521) (symbol 8266 . 8280) (semantic-list 8203 . 8265) (symbol 8196 . 8203) (punctuation 8261 . 8262) (punctuation 8214 . 8215) (punctuation 8213 . 8214) (TYPENAME 8204 . 8212) (punctuation 8194 . 8195) (punctuation 8193 . 8194) (symbol 8192 . 8193) (INLINE 8185 . 8191) (punctuation 8174 . 8175) (symbol 8173 . 8174) (CLASS 8167 . 8172) (punctuation 8166 . 8167) (TEMPLATE 8157 . 8165) (semantic-list 8112 . 8146) (symbol 8088 . 8102) (semantic-list 8026 . 8087) (symbol 8019 . 8026) (punctuation 8037 . 8038) (punctuation 8036 . 8037) (TYPENAME 8027 . 8035) (punctuation 8017 . 8018) (punctuation 8016 . 8017) (symbol 8015 . 8016) (INLINE 8008 . 8014) (punctuation 7997 . 7998) (symbol 7996 . 7997) (CLASS 7990 . 7995) (punctuation 7989 . 7990) (TEMPLATE 7980 . 7988) (semantic-list 6578 . 6665) (symbol 6554 . 6568) (semantic-list 6546 . 6553) (symbol 6542 . 6546) (punctuation 6549 . 6550) (punctuation 6540 . 6541) (punctuation 6539 . 6540) (symbol 6534 . 6538) (punctuation 6533 . 6534) (punctuation 6532 . 6533) (punctuation 6531 . 6532) (symbol 6530 . 6531) (punctuation 6529 . 6530) (symbol 6513 . 6529) (punctuation 6512 . 6513) (punctuation 6511 . 6512) (symbol 6500 . 6511) (punctuation 6499 . 6500) (punctuation 6498 . 6499) (symbol 6493 . 6498) (punctuation 6492 . 6493) (punctuation 6491 . 6492) (TYPENAME 6482 . 6490) (INLINE 6475 . 6481) (punctuation 6464 . 6465) (symbol 6463 . 6464) (CLASS 6457 . 6462) (punctuation 6456 . 6457) (TEMPLATE 6447 . 6455))
+      :lexical-table 
+        '(("BOOST_MOVE_MOVE_UTILITY_CORE_HPP")
+          )
+))
+  :file "!usr!include!boost!move!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

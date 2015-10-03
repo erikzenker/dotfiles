@@ -1,0 +1,1418 @@
+;; Object detail/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "detail/"
+  :tables
+  (list
+    (semanticdb-table "detail_fwd.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_XPRESSIVE_DETAIL_DETAIL_FWD_HPP_EAN_10_04_2005" variable (:constant-flag t) nil [360 412])
+            ("map" include (:system-flag t) nil [506 520])
+            ("string" include (:system-flag t) nil [521 538])
+            ("vector" include (:system-flag t) nil [539 556])
+            ("climits" include (:system-flag t) nil [557 575])
+            ("typeinfo" include (:system-flag t) nil [591 610])
+            ("boost/mpl/bool.hpp" include (:system-flag t) nil [611 640])
+            ("boost/mpl/size_t.hpp" include (:system-flag t) nil [641 672])
+            ("boost/shared_ptr.hpp" include (:system-flag t) nil [673 704])
+            ("boost/xpressive/xpressive_fwd.hpp" include (:system-flag t) nil [705 749])
+            ("boost" type
+               (:members 
+                  ( ("xpressive" type
+                       (:members 
+                          ( ("detail" type
+                               (:members 
+                                  ( ("uint_t" type
+                                       (:typedef ("unsigned int")
+                                        :type "typedef")
+                                        (reparse-symbol namespacesubparts) [814 842])
+                                    ("generic_quant_tag" type
+                                       (:template 
+                                          ( ("uint_t" type nil nil nil)
+                                            ("uint_t" type nil nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [848 916])
+                                    ("modifier_tag" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [922 942])
+                                    ("check_tag" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [948 965])
+                                    ("unknown_width" variable (:type "int") (reparse-symbol namespacesubparts) [1008 1022])
+                                    ("type_info_less" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [1028 1050])
+                                    ("action_args_type" type
+                                       (:typedef ("std::map" type
+                                             (:template-specifier 
+                                                ( ("std::type_info" type
+                                                     (:pointer 1
+                                                      :constant-flag t)
+                                                      nil nil)
+                                                  ("void" type (:pointer 1) nil nil)
+                                                  ("type_info_less" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol namespacesubparts) [1056 1138])
+                                    ("action_context" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [1144 1166])
+                                    ("ReplaceAlgo" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [1172 1191])
+                                    ("mark_placeholder" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [1308 1332])
+                                    ("posix_charset_placeholder" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [1338 1371])
+                                    ("assert_word_placeholder" type
+                                       (:template 
+                                          ( ("Cond" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [1377 1436])
+                                    ("range_placeholder" type
+                                       (:template 
+                                          ( ("Char" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [1442 1495])
+                                    ("assert_bol_placeholder" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [1501 1531])
+                                    ("assert_eol_placeholder" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [1537 1567])
+                                    ("logical_newline_placeholder" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [1573 1608])
+                                    ("self_placeholder" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [1614 1638])
+                                    ("attribute_placeholder" type
+                                       (:template 
+                                          ( ("Nbr" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [1644 1700])
+                                    ("end_matcher" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [1813 1832])
+                                    ("independent_end_matcher" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [1838 1869])
+                                    ("assert_bos_matcher" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [1875 1901])
+                                    ("assert_eos_matcher" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [1907 1933])
+                                    ("assert_bol_matcher" type
+                                       (:template 
+                                          ( ("Traits" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [1939 1995])
+                                    ("assert_eol_matcher" type
+                                       (:template 
+                                          ( ("Traits" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [2001 2057])
+                                    ("assert_word_matcher" type
+                                       (:template 
+                                          ( ("Cond" type (:type "class") nil nil)
+                                            ("Traits" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [2063 2135])
+                                    ("true_matcher" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [2141 2161])
+                                    ("alternate_matcher" type
+                                       (:template 
+                                          ( ("Alternates" type (:type "class") nil nil)
+                                            ("Traits" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [2167 2243])
+                                    ("alternate_end_matcher" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [2249 2278])
+                                    ("posix_charset_matcher" type
+                                       (:template 
+                                          ( ("Traits" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [2284 2343])
+                                    ("sequence" type
+                                       (:template 
+                                          ( ("BidiIter" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [2349 2397])
+                                    ("mark_matcher" type
+                                       (:template 
+                                          ( ("Traits" type (:type "class") nil nil)
+                                            ("ICase" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [2403 2469])
+                                    ("mark_begin_matcher" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [2475 2501])
+                                    ("mark_end_matcher" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [2507 2531])
+                                    ("regex_matcher" type
+                                       (:template 
+                                          ( ("BidiIter" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [2537 2590])
+                                    ("regex_byref_matcher" type
+                                       (:template 
+                                          ( ("BidiIter" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [2596 2655])
+                                    ("compound_charset" type
+                                       (:template 
+                                          ( ("Traits" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [2661 2715])
+                                    ("charset_matcher" type
+                                       (:template 
+                                          ( ("Traits" type (:type "class") nil nil)
+                                            ("ICase" type (:type "class") nil nil)
+                                            ("CharSet" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [2721 2836])
+                                    ("range_matcher" type
+                                       (:template 
+                                          ( ("Traits" type (:type "class") nil nil)
+                                            ("ICase" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [2842 2909])
+                                    ("set_matcher" type
+                                       (:template 
+                                          ( ("Traits" type (:type "class") nil nil)
+                                            ("Size" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [2915 2979])
+                                    ("simple_repeat_matcher" type
+                                       (:template 
+                                          ( ("Xpr" type (:type "class") nil nil)
+                                            ("Greedy" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [2985 3058])
+                                    ("repeat_begin_matcher" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [3064 3092])
+                                    ("repeat_end_matcher" type
+                                       (:template 
+                                          ( ("Greedy" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [3098 3154])
+                                    ("literal_matcher" type
+                                       (:template 
+                                          ( ("Traits" type (:type "class") nil nil)
+                                            ("ICase" type (:type "class") nil nil)
+                                            ("Not" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [3160 3243])
+                                    ("string_matcher" type
+                                       (:template 
+                                          ( ("Traits" type (:type "class") nil nil)
+                                            ("ICase" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [3249 3317])
+                                    ("action_matcher" type
+                                       (:template 
+                                          ( ("Actor" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [3323 3374])
+                                    ("predicate_matcher" type
+                                       (:template 
+                                          ( ("Predicate" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [3380 3438])
+                                    ("optional_matcher" type
+                                       (:template 
+                                          ( ("Xpr" type (:type "class") nil nil)
+                                            ("Greedy" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [3444 3512])
+                                    ("optional_mark_matcher" type
+                                       (:template 
+                                          ( ("Xpr" type (:type "class") nil nil)
+                                            ("Greedy" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [3518 3591])
+                                    ("attr_matcher" type
+                                       (:template 
+                                          ( ("Matcher" type (:type "class") nil nil)
+                                            ("Traits" type (:type "class") nil nil)
+                                            ("ICase" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [3597 3681])
+                                    ("attr_begin_matcher" type
+                                       (:template 
+                                          ( ("Nbr" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [3687 3740])
+                                    ("attr_end_matcher" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [3746 3770])
+                                    ("is_modifiable" type
+                                       (:template 
+                                          ( ("Xpr" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [3776 3824])
+                                    ("alternates_list" type
+                                       (:template 
+                                          ( ("Head" type (:type "class") nil nil)
+                                            ("Tail" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [3830 3896])
+                                    ("modifier_op" type
+                                       (:template 
+                                          ( ("Modifier" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [3902 3953])
+                                    ("icase_modifier" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [3959 3981])
+                                    ("xpression_visitor" type
+                                       (:template 
+                                          ( ("BidiIter" type (:type "class") nil nil)
+                                            ("ICase" type (:type "class") nil nil)
+                                            ("Traits" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [3987 4077])
+                                    ("regex_impl" type
+                                       (:template 
+                                          ( ("BidiIter" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [4083 4133])
+                                    ("epsilon_matcher" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [4139 4162])
+                                    ("nested_results" type
+                                       (:template 
+                                          ( ("BidiIter" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [4168 4222])
+                                    ("regex_id_filter_predicate" type
+                                       (:template 
+                                          ( ("BidiIter" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [4228 4293])
+                                    ("keeper_matcher" type
+                                       (:template 
+                                          ( ("Xpr" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [4299 4348])
+                                    ("lookahead_matcher" type
+                                       (:template 
+                                          ( ("Xpr" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [4354 4406])
+                                    ("lookbehind_matcher" type
+                                       (:template 
+                                          ( ("Xpr" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [4412 4465])
+                                    ("word_boundary" type
+                                       (:template 
+                                          ( ("IsBoundary" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [4471 4526])
+                                    ("make_dynamic" function
+                                       (:template 
+                                          ( ("BidiIter" type (:type "class") nil nil)
+                                            ("Matcher" type (:type "class") nil nil))                                          
+                                        :type ("sequence" type
+                                             (:template-specifier 
+                                                ( ("BidiIter" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :arguments 
+                                          ( ("matcher" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Matcher" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4614 4637]))                                          
+                                        :prototype-flag t)
+                                        (reparse-symbol namespacesubparts) [4532 4638])
+                                    ("xpression_linker" type
+                                       (:template 
+                                          ( ("Char" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [4644 4696])
+                                    ("xpression_peeker" type
+                                       (:template 
+                                          ( ("Char" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [4702 4754])
+                                    ("any_matcher" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [4760 4779])
+                                    ("logical_newline_matcher" type
+                                       (:template 
+                                          ( ("Traits" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [4785 4846])
+                                    ("logical_newline_xpression" type
+                                       (:typedef ("proto::expr" type
+                                             (:template-specifier 
+                                                ( ("proto::tag::terminal" type nil nil nil)
+                                                  ("proto::term" type nil nil nil)
+                                                  ("0"))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol namespacesubparts) [4852 4965])
+                                    ("set_initializer" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [4971 4994])
+                                    ("set_initializer_type" type
+                                       (:typedef ("proto::expr" type
+                                             (:template-specifier 
+                                                ( ("proto::tag::terminal" type nil nil nil)
+                                                  ("proto::term" type nil nil nil)
+                                                  ("0"))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol namespacesubparts) [5000 5096])
+                                    ("lookahead_tag" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [5102 5123])
+                                    ("lookbehind_tag" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [5129 5151])
+                                    ("keeper_tag" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [5157 5175])
+                                    ("locale_modifier" type
+                                       (:template 
+                                          ( ("Locale" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [5181 5234])
+                                    ("matcher_wrapper" type
+                                       (:template 
+                                          ( ("Matcher" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [5240 5294])
+                                    ("regex_traits_type" type
+                                       (:template 
+                                          ( ("Locale" type (:type "class") nil nil)
+                                            ("BidiIter" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [5300 5374])
+                                    ("let_" type
+                                       (:template 
+                                          ( ("Expr" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [5380 5420])
+                                    ("bind_args" function
+                                       (:template 
+                                          ( ("Args" type (:type "class") nil nil)
+                                            ("BidiIter" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("let_" type
+                                                     (:template-specifier 
+                                                        ( ("Args" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [5488 5507])
+                                            ("" variable
+                                               (:reference 1
+                                                :type ("match_results" type
+                                                     (:template-specifier 
+                                                        ( ("BidiIter" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [5508 5534]))                                          
+                                        :prototype-flag t)
+                                        (reparse-symbol namespacesubparts) [5426 5535])
+                                    ("no_next" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [5638 5653])
+                                    ("core_access" type
+                                       (:template 
+                                          ( ("BidiIter" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [5659 5710])
+                                    ("match_state" type
+                                       (:template 
+                                          ( ("BidiIter" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [5716 5767])
+                                    ("matchable" type
+                                       (:template 
+                                          ( ("BidiIter" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [5773 5822])
+                                    ("matchable_ex" type
+                                       (:template 
+                                          ( ("BidiIter" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [5828 5880])
+                                    ("dynamic_xpression" type
+                                       (:template 
+                                          ( ("Matcher" type (:type "class") nil nil)
+                                            ("BidiIter" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [5886 5961])
+                                    ("shared_matchable" type
+                                       (:template 
+                                          ( ("BidiIter" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [5967 6023])
+                                    ("alternates_vector" type
+                                       (:template 
+                                          ( ("BidiIter" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [6029 6086])
+                                    ("static_xpression" type
+                                       (:template 
+                                          ( ("Matcher" type (:type "class") nil nil)
+                                            ("Next" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [6092 6162])
+                                    ("end_xpression" type
+                                       (:typedef ("static_xpression" type
+                                             (:template-specifier 
+                                                ( ("end_matcher" type nil nil nil)
+                                                  ("no_next" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol namespacesubparts) [6168 6229])
+                                    ("alternate_end_xpression" type
+                                       (:typedef ("static_xpression" type
+                                             (:template-specifier 
+                                                ( ("alternate_end_matcher" type nil nil nil)
+                                                  ("no_next" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol namespacesubparts) [6235 6316])
+                                    ("independent_end_xpression" type
+                                       (:typedef ("static_xpression" type
+                                             (:template-specifier 
+                                                ( ("independent_end_matcher" type nil nil nil)
+                                                  ("no_next" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol namespacesubparts) [6322 6407])
+                                    ("true_xpression" type
+                                       (:typedef ("static_xpression" type
+                                             (:template-specifier 
+                                                ( ("true_matcher" type nil nil nil)
+                                                  ("no_next" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol namespacesubparts) [6413 6476])
+                                    ("static_xpression" type
+                                       (:template 
+                                          ( ("Matcher" type (:type "class") nil nil)
+                                            ("Next" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [6482 6568])
+                                    ("stacked_xpression" type
+                                       (:template 
+                                          ( ("Top" type (:type "class") nil nil)
+                                            ("Next" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [6574 6641])
+                                    ("is_static_xpression" type
+                                       (:template 
+                                          ( ("Xpr" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [6647 6701])
+                                    ("sub_match_impl" type
+                                       (:template 
+                                          ( ("BidiIter" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [6707 6761])
+                                    ("list" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [6767 6804])
+                                    ("results_cache" type
+                                       (:template 
+                                          ( ("BidiIter" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [6810 6863])
+                                    ("sequence_stack" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [6869 6916])
+                                    ("results_extras" type
+                                       (:template 
+                                          ( ("BidiIter" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [6922 6976])
+                                    ("match_context" type
+                                       (:template 
+                                          ( ("BidiIter" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [6982 7035])
+                                    ("sub_match_vector" type
+                                       (:template 
+                                          ( ("BidiIter" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [7041 7097])
+                                    ("action_arg" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil)
+                                            ("U" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [7103 7158])
+                                    ("actionable" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [7164 7182])
+                                    ("traits" type
+                                       (:template 
+                                          ( ("Char" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [7188 7230])
+                                    ("traits_cast" function
+                                       (:template 
+                                          ( ("Traits" type (:type "class") nil nil)
+                                            ("BidiIter" type (:type "class") nil nil))                                          
+                                        :type ("Traits" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("state" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("match_state" type
+                                                     (:template-specifier 
+                                                        ( ("BidiIter" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [7311 7346]))                                          
+                                        :prototype-flag t)
+                                        (reparse-symbol namespacesubparts) [7236 7347])
+                                    ("basic_chset" type
+                                       (:template 
+                                          ( ("Char" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [7353 7400])
+                                    ("named_mark" type
+                                       (:template 
+                                          ( ("Char" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [7406 7452])
+                                    ("memento" type
+                                       (:template 
+                                          ( ("BidiIter" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [7458 7505])
+                                    ("set_char" function
+                                       (:template 
+                                          ( ("Char" type (:type "class") nil nil)
+                                            ("Traits" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("chset" variable
+                                               (:reference 1
+                                                :type ("compound_charset" type
+                                                     (:template-specifier 
+                                                        ( ("Traits" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [7570 7602])
+                                            ("ch" variable (:type ("Char" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7603 7611])
+                                            ("tr" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Traits" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7612 7629])
+                                            ("icase" variable (:type "bool") (reparse-symbol arg-sub-list) [7630 7641]))                                          
+                                        :prototype-flag t)
+                                        (reparse-symbol namespacesubparts) [7511 7642])
+                                    ("set_range" function
+                                       (:template 
+                                          ( ("Char" type (:type "class") nil nil)
+                                            ("Traits" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("chset" variable
+                                               (:reference 1
+                                                :type ("compound_charset" type
+                                                     (:template-specifier 
+                                                        ( ("Traits" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [7708 7740])
+                                            ("from" variable (:type ("Char" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7741 7751])
+                                            ("to" variable (:type ("Char" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7752 7760])
+                                            ("tr" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Traits" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7761 7778])
+                                            ("icase" variable (:type "bool") (reparse-symbol arg-sub-list) [7779 7790]))                                          
+                                        :prototype-flag t)
+                                        (reparse-symbol namespacesubparts) [7648 7791])
+                                    ("set_class" function
+                                       (:template 
+                                          ( ("Traits" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("chset" variable
+                                               (:reference 1
+                                                :type ("compound_charset" type
+                                                     (:template-specifier 
+                                                        ( ("Traits" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [7842 7874])
+                                            ("char_class" variable
+                                               (:typemodifiers ("typename")
+                                                :type ("Traits::char_class_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7875 7919])
+                                            ("no" variable (:type "bool") (reparse-symbol arg-sub-list) [7920 7928])
+                                            ("tr" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Traits" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7929 7946]))                                          
+                                        :prototype-flag t)
+                                        (reparse-symbol namespacesubparts) [7797 7947])
+                                    ("set_char" function
+                                       (:template 
+                                          ( ("Char" type (:type "class") nil nil)
+                                            ("Traits" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("chset" variable
+                                               (:reference 1
+                                                :type ("basic_chset" type
+                                                     (:template-specifier 
+                                                        ( ("Char" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [8012 8037])
+                                            ("ch" variable (:type ("Char" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8038 8046])
+                                            ("tr" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Traits" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8047 8064])
+                                            ("icase" variable (:type "bool") (reparse-symbol arg-sub-list) [8065 8076]))                                          
+                                        :prototype-flag t)
+                                        (reparse-symbol namespacesubparts) [7953 8077])
+                                    ("set_range" function
+                                       (:template 
+                                          ( ("Char" type (:type "class") nil nil)
+                                            ("Traits" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("chset" variable
+                                               (:reference 1
+                                                :type ("basic_chset" type
+                                                     (:template-specifier 
+                                                        ( ("Char" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [8143 8168])
+                                            ("from" variable (:type ("Char" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8169 8179])
+                                            ("to" variable (:type ("Char" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8180 8188])
+                                            ("tr" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Traits" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8189 8206])
+                                            ("icase" variable (:type "bool") (reparse-symbol arg-sub-list) [8207 8218]))                                          
+                                        :prototype-flag t)
+                                        (reparse-symbol namespacesubparts) [8083 8219])
+                                    ("set_class" function
+                                       (:template 
+                                          ( ("Char" type (:type "class") nil nil)
+                                            ("Traits" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("chset" variable
+                                               (:reference 1
+                                                :type ("basic_chset" type
+                                                     (:template-specifier 
+                                                        ( ("Char" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [8285 8310])
+                                            ("char_class" variable
+                                               (:typemodifiers ("typename")
+                                                :type ("Traits::char_class_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8311 8355])
+                                            ("no" variable (:type "bool") (reparse-symbol arg-sub-list) [8356 8364])
+                                            ("tr" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Traits" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8365 8382]))                                          
+                                        :prototype-flag t)
+                                        (reparse-symbol namespacesubparts) [8225 8383])
+                                    ("make_static" function
+                                       (:template 
+                                          ( ("Matcher" type (:type "class") nil nil))                                          
+                                        :type ("static_xpression" type
+                                             (:template-specifier 
+                                                ( ("Matcher" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :arguments 
+                                          ( ("matcher" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Matcher" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8468 8491]))                                          
+                                        :prototype-flag t)
+                                        (reparse-symbol namespacesubparts) [8389 8492])
+                                    ("make_static" function
+                                       (:template 
+                                          ( ("Matcher" type (:type "class") nil nil)
+                                            ("Next" type (:type "class") nil nil))                                          
+                                        :type ("static_xpression" type
+                                             (:template-specifier 
+                                                ( ("Matcher" type nil nil nil)
+                                                  ("Next" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :arguments 
+                                          ( ("matcher" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Matcher" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8598 8621])
+                                            ("next" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Next" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8622 8639]))                                          
+                                        :prototype-flag t)
+                                        (reparse-symbol namespacesubparts) [8498 8640])
+                                    ("get_mark_number" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("basic_mark_tag" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8666 8689]))                                          
+                                        :type "int")
+                                        (reparse-symbol namespacesubparts) [8646 8690])
+                                    ("static_compile" function
+                                       (:template 
+                                          ( ("Xpr" type (:type "class") nil nil)
+                                            ("BidiIter" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("xpr" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Xpr" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8762 8777])
+                                            ("impl" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("shared_ptr" type
+                                                     (:template-specifier 
+                                                        ( ("regex_impl" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [8778 8824]))                                          
+                                        :prototype-flag t)
+                                        (reparse-symbol namespacesubparts) [8696 8825])
+                                    ("quant_spec" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [8831 8849])
+                                    ("make_simple_repeat" function
+                                       (:template 
+                                          ( ("BidiIter" type (:type "class") nil nil)
+                                            ("Xpr" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("spec" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("quant_spec" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8925 8948])
+                                            ("seq" variable
+                                               (:reference 1
+                                                :type ("sequence" type
+                                                     (:template-specifier 
+                                                        ( ("BidiIter" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [8949 8973])
+                                            ("xpr" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Xpr" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8974 8989]))                                          
+                                        :prototype-flag t)
+                                        (reparse-symbol namespacesubparts) [8855 8990])
+                                    ("make_simple_repeat" function
+                                       (:template 
+                                          ( ("BidiIter" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("spec" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("quant_spec" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9052 9075])
+                                            ("seq" variable
+                                               (:reference 1
+                                                :type ("sequence" type
+                                                     (:template-specifier 
+                                                        ( ("BidiIter" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [9076 9100]))                                          
+                                        :prototype-flag t)
+                                        (reparse-symbol namespacesubparts) [8996 9101])
+                                    ("make_repeat" function
+                                       (:template 
+                                          ( ("BidiIter" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("spec" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("quant_spec" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9156 9179])
+                                            ("seq" variable
+                                               (:reference 1
+                                                :type ("sequence" type
+                                                     (:template-specifier 
+                                                        ( ("BidiIter" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [9180 9204])
+                                            ("mark_nbr" variable (:type "int") (reparse-symbol arg-sub-list) [9205 9218]))                                          
+                                        :prototype-flag t)
+                                        (reparse-symbol namespacesubparts) [9107 9219])
+                                    ("make_repeat" function
+                                       (:template 
+                                          ( ("BidiIter" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("spec" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("quant_spec" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9274 9297])
+                                            ("seq" variable
+                                               (:reference 1
+                                                :type ("sequence" type
+                                                     (:template-specifier 
+                                                        ( ("BidiIter" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [9298 9322]))                                          
+                                        :prototype-flag t)
+                                        (reparse-symbol namespacesubparts) [9225 9323])
+                                    ("make_optional" function
+                                       (:template 
+                                          ( ("BidiIter" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("spec" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("quant_spec" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9380 9403])
+                                            ("seq" variable
+                                               (:reference 1
+                                                :type ("sequence" type
+                                                     (:template-specifier 
+                                                        ( ("BidiIter" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [9404 9428]))                                          
+                                        :prototype-flag t)
+                                        (reparse-symbol namespacesubparts) [9329 9429])
+                                    ("make_optional" function
+                                       (:template 
+                                          ( ("BidiIter" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("spec" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("quant_spec" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9486 9509])
+                                            ("seq" variable
+                                               (:reference 1
+                                                :type ("sequence" type
+                                                     (:template-specifier 
+                                                        ( ("BidiIter" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [9510 9534])
+                                            ("mark_nbr" variable (:type "int") (reparse-symbol arg-sub-list) [9535 9548]))                                          
+                                        :prototype-flag t)
+                                        (reparse-symbol namespacesubparts) [9435 9549])
+                                    ("string_type" type
+                                       (:template 
+                                          ( ("Char" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("Char" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [9616 9647]))                                          )
+                                        (reparse-symbol namespacesubparts) [9555 9654])
+                                    ("string_type" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("std::string" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [9714 9739]))                                          
+                                        :template-specifier 
+                                          ( ("char" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [9660 9746])
+                                    ("string_type" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("std::wstring" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [9847 9873]))                                          
+                                        :template-specifier 
+                                          ( ("wchar_t" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [9790 9880]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [791 9894]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [769 9895]))                  
+                :type "namespace")
+                nil [751 9896])
+            ("boost" type
+               (:members 
+                  ( ("xpressive" type
+                       (:members 
+                          ( ("grammar_detail" type
+                               (:members 
+                                  ( ("proto::_" using (:type ("proto::_" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [10007 10022])
+                                    ("proto::or_" using (:type ("proto::or_" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [10027 10044])
+                                    ("proto::if_" using (:type ("proto::if_" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [10049 10066])
+                                    ("proto::call" using (:type ("proto::call" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [10071 10089])
+                                    ("proto::when" using (:type ("proto::when" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [10094 10112])
+                                    ("proto::otherwise" using (:type ("proto::otherwise" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [10117 10140])
+                                    ("proto::switch_" using (:type ("proto::switch_" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [10145 10166])
+                                    ("proto::make" using (:type ("proto::make" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [10171 10189])
+                                    ("proto::_child" using (:type ("proto::_child" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [10194 10214])
+                                    ("proto::_value" using (:type ("proto::_value" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [10219 10239])
+                                    ("proto::_left" using (:type ("proto::_left" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [10244 10263])
+                                    ("proto::_right" using (:type ("proto::_right" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [10268 10288])
+                                    ("proto::not_" using (:type ("proto::not_" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [10293 10311])
+                                    ("proto::_state" using (:type ("proto::_state" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [10316 10336])
+                                    ("proto::_data" using (:type ("proto::_data" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [10341 10360])
+                                    ("proto::callable" using (:type ("proto::callable" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [10365 10387])
+                                    ("proto::transform" using (:type ("proto::transform" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [10392 10415])
+                                    ("proto::fold" using (:type ("proto::fold" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [10420 10438])
+                                    ("proto::reverse_fold" using (:type ("proto::reverse_fold" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [10443 10469])
+                                    ("proto::fold_tree" using (:type ("proto::fold_tree" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [10474 10497])
+                                    ("proto::reverse_fold_tree" using (:type ("proto::reverse_fold_tree" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [10502 10533])
+                                    ("proto::terminal" using (:type ("proto::terminal" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [10538 10560])
+                                    ("proto::shift_right" using (:type ("proto::shift_right" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [10565 10590])
+                                    ("proto::bitwise_or" using (:type ("proto::bitwise_or" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [10595 10619])
+                                    ("proto::logical_not" using (:type ("proto::logical_not" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [10624 10649])
+                                    ("proto::dereference" using (:type ("proto::dereference" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [10654 10679])
+                                    ("proto::unary_plus" using (:type ("proto::unary_plus" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [10684 10708])
+                                    ("proto::negate" using (:type ("proto::negate" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [10713 10733])
+                                    ("proto::complement" using (:type ("proto::complement" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [10738 10762])
+                                    ("proto::comma" using (:type ("proto::comma" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [10767 10786])
+                                    ("proto::assign" using (:type ("proto::assign" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [10791 10811])
+                                    ("proto::subscript" using (:type ("proto::subscript" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [10816 10839])
+                                    ("proto::nary_expr" using (:type ("proto::nary_expr" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [10844 10867])
+                                    ("proto::unary_expr" using (:type ("proto::unary_expr" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [10872 10896])
+                                    ("proto::binary_expr" using (:type ("proto::binary_expr" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [10901 10926])
+                                    ("proto::_deep_copy" using (:type ("proto::_deep_copy" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [10931 10955])
+                                    ("proto::vararg" using (:type ("proto::vararg" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [10960 10980])
+                                    ("tag" type
+                                       (:kind alias
+                                        :members 
+                                          ( ("proto::tag" type (:type "namespace") nil nil))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [10985 11012]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [9976 11014]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [9954 11015]))                  
+                :type "namespace")
+                nil [9936 11016])
+            ("boost" type
+               (:members 
+                  ( ("xpressive" type
+                       (:members 
+                          ( ("op" type
+                               (:members 
+                                  ( ("push" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [11077 11089])
+                                    ("push_back" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [11094 11111])
+                                    ("pop" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [11116 11127])
+                                    ("push_front" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [11132 11150])
+                                    ("pop_back" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [11155 11171])
+                                    ("pop_front" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [11176 11193])
+                                    ("back" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [11198 11210])
+                                    ("front" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [11215 11228])
+                                    ("top" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [11233 11244])
+                                    ("first" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [11249 11262])
+                                    ("second" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [11267 11281])
+                                    ("matched" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [11286 11301])
+                                    ("length" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [11306 11320])
+                                    ("str" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [11325 11336])
+                                    ("insert" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [11341 11355])
+                                    ("make_pair" type
+                                       (:prototype t
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [11360 11377])
+                                    ("as" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [11383 11418])
+                                    ("static_cast_" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [11423 11468])
+                                    ("dynamic_cast_" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [11473 11519])
+                                    ("const_cast_" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [11524 11568])
+                                    ("construct" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [11573 11615])
+                                    ("throw_" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [11620 11659]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [11058 11661]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [11036 11662]))                  
+                :type "namespace")
+                nil [11018 11663])
+            ("boost" type
+               (:members 
+                  ( ("xpressive" type
+                       (:members 
+                          ( ("lookup_classname" function
+                               (:template 
+                                  ( ("Traits" type (:type "class") nil nil)
+                                    ("std::size_t" type nil nil nil))                                  
+                                :type ("Traits::char_class_type" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("traits" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Traits" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11883 11904])
+                                    ("" variable
+                                       (:constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [11905 11924])
+                                    ("icase" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [11929 11947]))                                  
+                                :typemodifiers ("typename")
+                                :prototype-flag t)
+                                (reparse-symbol namespacesubparts) [11784 11949]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [11735 11952]))                  
+                :type "namespace")
+                nil [11717 11953]))          
+      :file "detail_fwd.hpp"
+      :pointmax 11992
+      :fsize 11991
+      :lastmodtime '(21790 57546 0 0)
+      :unmatched-syntax '((semantic-list 11924 . 11927) (semantic-list 11916 . 11924) (punctuation 1006 . 1007) (number 1005 . 1006) (punctuation 1003 . 1004) (number 1001 . 1002) (punctuation 999 . 1000) (symbol 991 . 998) (punctuation 990 . 991) (symbol 984 . 990) (punctuation 983 . 984) (punctuation 982 . 983) (symbol 979 . 982) (TYPEDEF 971 . 978))
+      :lexical-table 
+        '(("BOOST_XPRESSIVE_DETAIL_DETAIL_FWD_HPP_EAN_10_04_2005")
+          )
+))
+  :file "!usr!include!boost!xpressive!detail!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

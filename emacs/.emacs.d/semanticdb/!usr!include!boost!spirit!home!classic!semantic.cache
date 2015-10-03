@@ -1,0 +1,29 @@
+;; Object classic/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "classic/"
+  :tables
+  (list
+    (semanticdb-table "namespace.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("SPIRIT_CLASSIC_NAMESPACE_HPP" variable (:constant-flag t) nil [479 507])
+            ("BOOST_SPIRIT_CLASSIC_NAMESPACE_BEGIN" variable (:constant-flag t) nil [1230 1266])
+            ("BOOST_SPIRIT_CLASSIC_NS" variable (:constant-flag t) nil [1295 1318])
+            ("BOOST_SPIRIT_CLASSIC_NAMESPACE_END" variable (:constant-flag t) nil [1363 1397]))          
+      :file "namespace.hpp"
+      :pointmax 1419
+      :fsize 1418
+      :lastmodtime '(21790 57546 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_SPIRIT_CLASSIC_NS" . 
+              ((symbol "boost" 1332 . 1337) (punctuation ":" 1337 . 1338) (punctuation ":" 1338 . 1339) (symbol "spirit" 1339 . 1345) (punctuation ":" 1345 . 1346) (punctuation ":" 1346 . 1347) (symbol "classic" 1347 . 1354)))
+          ("BOOST_SPIRIT_CLASSIC_NAMESPACE_BEGIN" . 
+              ((NAMESPACE "namespace" 1267 . 1276) (symbol "classic" 1277 . 1284) (open-paren "{" 1285 . 1286)))
+          ("SPIRIT_CLASSIC_NAMESPACE_HPP")
+          ("BOOST_SPIRIT_CLASSIC_NAMESPACE_END" . ((close-paren "}" 1400 . 1401)))
+          )
+))
+  :file "!usr!include!boost!spirit!home!classic!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

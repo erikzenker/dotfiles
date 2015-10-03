@@ -1,0 +1,44 @@
+;; Object tmp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tmp/"
+  :tables
+  (list
+    (semanticdb-table "test.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("vector" include (:system-flag t) nil [1 18])
+            ("iostream" include (:system-flag t) nil [19 38])
+            ("algorithm" include (:system-flag t) nil [39 59])
+            ("iterator" include (:system-flag t) nil [60 79])
+            ("Scan" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("value" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [121 129])
+                    ("Scan" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("init" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [144 151]))                          
+                        :type ("Scan" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [139 174])
+                    ("()" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("element" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [196 207]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [180 285]))                  )
+                nil [81 293])
+            ("main" function (:type "int") nil [296 777]))          
+      :file "test.cpp"
+      :pointmax 778
+      :fsize 777
+      :lastmodtime '(21825 61679 809181 148000)
+      :unmatched-syntax nil)
+)
+  :file "!tmp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

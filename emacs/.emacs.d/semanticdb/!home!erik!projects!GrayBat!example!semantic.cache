@@ -1,0 +1,139 @@
+;; Object example/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "example/"
+  :tables
+  (list
+    (semanticdb-table "gol.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("graybat.hpp" include (:system-flag t) nil [12 34])
+            ("mapping/Consecutive.hpp" include (:system-flag t) nil [48 82])
+            ("mapping/Random.hpp" include (:system-flag t) nil [83 112])
+            ("mapping/Roundrobin.hpp" include (:system-flag t) nil [113 146])
+            ("pattern/GridDiagonal.hpp" include (:system-flag t) nil [199 234])
+            ("iostream" include (:system-flag t) nil [283 302])
+            ("vector" include (:system-flag t) nil [321 338])
+            ("array" include (:system-flag t) nil [361 377])
+            ("cmath" include (:system-flag t) nil [400 416])
+            ("cstdlib" include (:system-flag t) nil [433 451])
+            ("testValue" variable (:type ("std::array" type
+                 (:template-specifier 
+                    ( ("unsigned int" type nil nil nil)
+                      ("1"))                    
+                  :type "class")
+                  nil nil)) nil [467 506])
+            ("Cell" type
+               (:members 
+                  ( ("Cell" function
+                       (:constructor-flag t
+                        :type ("Cell" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [526 676])
+                    ("isAlive" variable (:type ("std::array" type
+                         (:template-specifier 
+                            ( ("unsigned int" type nil nil nil)
+                              ("1"))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [683 715])
+                    ("aliveNeighbors" variable (:type "unsigned int") (reparse-symbol classsubparts) [720 744]))                  
+                :type "struct")
+                nil [508 748])
+            ("printGolDomain" function
+               (:arguments 
+                  ( ("domain" variable
+                       (:constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("unsigned int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [771 806])
+                    ("width" variable
+                       (:constant-flag t
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [807 828])
+                    ("height" variable
+                       (:constant-flag t
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [829 851])
+                    ("generation" variable
+                       (:constant-flag t
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [852 878]))                  
+                :type "void")
+                nil [751 1208])
+            ("updateState" function
+               (:template 
+                  ( ("T_Cell" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("cells" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("T_Cell" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1252 1279]))                  )
+                nil [1211 1341])
+            ("updateState" function
+               (:template 
+                  ( ("T_Cell" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("cell" variable
+                       (:reference 1
+                        :type ("T_Cell" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1385 1398]))                  )
+                nil [1344 1661])
+            ("gol" function
+               (:arguments 
+                  ( ("nCells" variable
+                       (:constant-flag t
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [1672 1694])
+                    ("nTimeSteps" variable
+                       (:constant-flag t
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [1695 1722]))                  
+                :type "int")
+                nil [1664 4484])
+            ("i" variable
+               (:default-value "0"
+                :type "unsigned int")
+                nil [4043 4058])
+            ("size" function
+               (:prototype-flag t
+                :type "int")
+                nil [4070 4077])
+            ("wait" function
+               (:prototype-flag t
+                :type "int")
+                nil [4107 4114])
+            ("pop_back" function
+               (:prototype-flag t
+                :type "int")
+                nil [4131 4142])
+            ("aliveNeighbors" variable
+               (:default-value "0"
+                :type "int")
+                nil [4374 4393])
+            ("gather" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("root" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4411 4416])
+                    ("" variable (:type ("v" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4417 4419])
+                    ("" variable (:type ("v" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4420 4423])
+                    ("" variable (:type ("isAlive" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4424 4432])
+                    ("" variable (:type ("golDomain" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4433 4443])
+                    ("" variable (:type ("true" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4444 4449]))                  
+                :type "int")
+                nil [4404 4450])
+            ("std::endl" variable (:type "int") nil [4590 4600]))          
+      :file "gol.cc"
+      :pointmax 4761
+      :fsize 4760
+      :lastmodtime '(21843 17968 424405 256000)
+      :unmatched-syntax '((thing 3636 . 3637) (thing 3636 . 3637) (thing 3686 . 3689) (thing 3686 . 3689) (thing 3689 . 3690) (thing 3689 . 3690) (thing 3690 . 3696) (thing 3690 . 3696) (thing 3697 . 3698) (thing 3697 . 3698) (thing 3698 . 3699) (thing 3698 . 3699) (thing 3700 . 3701) (thing 3700 . 3701) (thing 3702 . 3706) (thing 3702 . 3706) (thing 3706 . 3707) (thing 3706 . 3707) (thing 3707 . 3721) (thing 3707 . 3721) (thing 3721 . 3722) (thing 3721 . 3722) (thing 3722 . 3723) (thing 3722 . 3723) (thing 3734 . 3737) (thing 3734 . 3737) (thing 3737 . 3770) (thing 3737 . 3770) (thing 3770 . 3996) (thing 3770 . 3996) (thing 3999 . 4000) (thing 3999 . 4000) (thing 4039 . 4042) (thing 4039 . 4042) (thing 4042 . 4043) (thing 4042 . 4043) (thing 4059 . 4060) (thing 4059 . 4060) (thing 4061 . 4062) (thing 4061 . 4062) (thing 4063 . 4069) (thing 4063 . 4069) (thing 4069 . 4070) (thing 4069 . 4070) (thing 4078 . 4079) (thing 4078 . 4079) (thing 4079 . 4080) (thing 4079 . 4080) (thing 4080 . 4081) (thing 4080 . 4081) (thing 4081 . 4082) (thing 4081 . 4082) (thing 4082 . 4083) (thing 4082 . 4083) (thing 4093 . 4099) (thing 4093 . 4099) (thing 4099 . 4100) (thing 4099 . 4100) (thing 4100 . 4104) (thing 4100 . 4104) (thing 4104 . 4106) (thing 4104 . 4106) (thing 4106 . 4107) (thing 4106 . 4107) (thing 4124 . 4130) (thing 4124 . 4130) (thing 4130 . 4131) (thing 4130 . 4131) (thing 4148 . 4149) (thing 4148 . 4149) (thing 4201 . 4212) (thing 4201 . 4212) (thing 4212 . 4213) (thing 4212 . 4213) (thing 4213 . 4217) (thing 4213 . 4217) (thing 4217 . 4218) (thing 4217 . 4218) (thing 4218 . 4232) (thing 4218 . 4232) (thing 4232 . 4233) (thing 4232 . 4233) (thing 4233 . 4234) (thing 4233 . 4234) (thing 4275 . 4278) (thing 4275 . 4278) (thing 4278 . 4279) (thing 4278 . 4279) (thing 4279 . 4285) (thing 4279 . 4285) (thing 4286 . 4287) (thing 4286 . 4287) (thing 4287 . 4288) (thing 4287 . 4288) (thing 4288 . 4289) (thing 4288 . 4289) (thing 4290 . 4294) (thing 4290 . 4294) (thing 4294 . 4295) (thing 4294 . 4295) (thing 4295 . 4309) (thing 4295 . 4309) (thing 4309 . 4310) (thing 4309 . 4310) (thing 4310 . 4311) (thing 4310 . 4311) (thing 4370 . 4371) (thing 4370 . 4371) (thing 4371 . 4373) (thing 4371 . 4373) (thing 4373 . 4374) (thing 4373 . 4374) (thing 4399 . 4403) (thing 4399 . 4403) (thing 4403 . 4404) (thing 4403 . 4404) (thing 4421 . 4423) (thing 4421 . 4423) (thing 4423 . 4424) (thing 4423 . 4424) (thing 4452 . 4453) (thing 4452 . 4453) (thing 4461 . 4462) (thing 4461 . 4462) (thing 4472 . 4478) (thing 4472 . 4478) (thing 4479 . 4480) (thing 4479 . 4480) (thing 4480 . 4481) (thing 4480 . 4481) (thing 4483 . 4484) (thing 4483 . 4484) (thing 4486 . 4489) (thing 4490 . 4494) (thing 4494 . 4495) (thing 4495 . 4498) (thing 4499 . 4503) (thing 4503 . 4504) (thing 4505 . 4509) (thing 4509 . 4510) (thing 4510 . 4511) (thing 4512 . 4516) (thing 4516 . 4517) (thing 4517 . 4518) (thing 4524 . 4526) (thing 4526 . 4527) (thing 4527 . 4531) (thing 4532 . 4533) (thing 4534 . 4535) (thing 4535 . 4536) (thing 4536 . 4537) (thing 4539 . 4542) (thing 4542 . 4543) (thing 4543 . 4544) (thing 4544 . 4548) (thing 4549 . 4550) (thing 4550 . 4551) (thing 4552 . 4586) (thing 4587 . 4588) (thing 4588 . 4589) (thing 4602 . 4608) (thing 4609 . 4610) (thing 4610 . 4611) (thing 4616 . 4617) (thing 4623 . 4628) (thing 4629 . 4637) (thing 4638 . 4644) (thing 4648 . 4649) (thing 4650 . 4654) (thing 4654 . 4655) (thing 4655 . 4659) (thing 4659 . 4660) (thing 4660 . 4661) (thing 4661 . 4662) (thing 4662 . 4663) (thing 4663 . 4664) (thing 4669 . 4674) (thing 4675 . 4683) (thing 4684 . 4694) (thing 4695 . 4696) (thing 4697 . 4701) (thing 4701 . 4702) (thing 4702 . 4706) (thing 4706 . 4707) (thing 4707 . 4708) (thing 4708 . 4709) (thing 4709 . 4710) (thing 4710 . 4711) (thing 4718 . 4721) (thing 4721 . 4722) (thing 4722 . 4728) (thing 4728 . 4729) (thing 4730 . 4740) (thing 4740 . 4741) (thing 4741 . 4742) (thing 4749 . 4755) (thing 4756 . 4757) (thing 4757 . 4758) (thing 4759 . 4760))))
+  :file "!home!erik!projects!GrayBat!example!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

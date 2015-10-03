@@ -1,0 +1,32 @@
+;; Object adapted/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "adapted/"
+  :tables
+  (list
+    (semanticdb-table "mpl.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_FUSION_MPL_31122005_1152" variable (:constant-flag t) nil [454 484])
+            ("boost/fusion/support/config.hpp" include (:system-flag t) nil [486 528])
+            ("boost/fusion/adapted/mpl/detail/begin_impl.hpp" include (:system-flag t) nil [529 586])
+            ("boost/fusion/adapted/mpl/detail/end_impl.hpp" include (:system-flag t) nil [587 642])
+            ("boost/fusion/adapted/mpl/detail/is_sequence_impl.hpp" include (:system-flag t) nil [643 706])
+            ("boost/fusion/adapted/mpl/detail/size_impl.hpp" include (:system-flag t) nil [707 763])
+            ("boost/fusion/adapted/mpl/detail/value_at_impl.hpp" include (:system-flag t) nil [764 824])
+            ("boost/fusion/adapted/mpl/detail/at_impl.hpp" include (:system-flag t) nil [825 879])
+            ("boost/fusion/adapted/mpl/detail/has_key_impl.hpp" include (:system-flag t) nil [880 939])
+            ("boost/fusion/adapted/mpl/detail/category_of_impl.hpp" include (:system-flag t) nil [940 1003])
+            ("boost/fusion/adapted/mpl/detail/is_view_impl.hpp" include (:system-flag t) nil [1004 1063])
+            ("boost/fusion/adapted/mpl/detail/empty_impl.hpp" include (:system-flag t) nil [1064 1121]))          
+      :file "mpl.hpp"
+      :pointmax 1130
+      :fsize 1129
+      :lastmodtime '(21790 57545 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_FUSION_MPL_31122005_1152")
+          )
+))
+  :file "!usr!include!boost!fusion!adapted!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

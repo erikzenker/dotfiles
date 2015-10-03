@@ -1,0 +1,256 @@
+;; Object graphPolicy/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "graphPolicy/"
+  :tables
+  (list
+    (semanticdb-table "BGL.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("vector" include (:system-flag t) nil [14 31])
+            ("iostream" include (:system-flag t) nil [32 51])
+            ("tuple" include (:system-flag t) nil [52 68])
+            ("boost/graph/graph_traits.hpp" include (:system-flag t) nil [70 109])
+            ("boost/graph/adjacency_list.hpp" include (:system-flag t) nil [110 151])
+            ("boost/graph/subgraph.hpp" include (:system-flag t) nil [152 187])
+            ("boost/graph/graphviz.hpp" include (:system-flag t) nil [188 223])
+            ("tuple" include (:system-flag t) nil [224 240])
+            ("string" include (:system-flag t) nil [241 258])
+            ("fstream" include (:system-flag t) nil [259 277])
+            ("graybat" type
+               (:members 
+                  ( ("graphPolicy" type
+                       (:members 
+                          ( ("SimpleProperty" type
+                               (:members 
+                                  ( ("ID" type
+                                       (:typedef ("unsigned int")
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [383 403])
+                                    ("SimpleProperty" function
+                                       (:constructor-flag t
+                                        :type ("SimpleProperty" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [409 435])
+                                    ("SimpleProperty" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("id" variable (:type ("ID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [456 462]))                                          
+                                        :type ("SimpleProperty" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [441 473])
+                                    ("id" variable (:type ("ID" type (:type "class") nil nil)) (reparse-symbol classsubparts) [480 486]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [355 490])
+                            ("BGL" type
+                               (:template 
+                                  ( ("T_VertexProperty" type (:type "class") nil nil)
+                                    ("T_EdgeProperty" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [903 910])
+                                    ("VertexProperty" type
+                                       (:typedef ("T_VertexProperty" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [940 1027])
+                                    ("Edge" type
+                                       (:typedef ("T_EdgeProperty" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1033 1110])
+                                    ("EdgeProperty" type
+                                       (:typedef ("T_EdgeProperty" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1116 1201])
+                                    ("EdgeDescription" type
+                                       (:typedef ("std::pair" type
+                                             (:template-specifier 
+                                                ( ("unsigned int" type nil nil nil)
+                                                  ("unsigned int" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1212 1300])
+                                    ("GraphDescription" type
+                                       (:typedef ("std::pair" type
+                                             (:template-specifier 
+                                                ( ("std::vector" type nil nil nil)
+                                                  ("std::vector" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1306 1395])
+                                    ("GraphID" type
+                                       (:typedef ("unsigned int")
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1402 1482])
+                                    ("GraphType" type
+                                       (:typedef ("boost::adjacency_list" type
+                                             (:template-specifier 
+                                                ( ("boost::vecS" type nil nil nil)
+                                                  ("boost::vecS" type nil nil nil)
+                                                  ("boost::bidirectionalS" type nil nil nil)
+                                                  ("boost::property" type nil nil nil)
+                                                  ("boost::property" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1510 1747])
+                                    ("BGLGraph" type
+                                       (:typedef ("boost::subgraph" type
+                                             (:template-specifier 
+                                                ( ("GraphType" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1754 1798])
+                                    ("VertexID" type
+                                       (:typedef ("BGLGraph::vertex_descriptor" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1804 1858])
+                                    ("EdgeID" type
+                                       (:typedef ("BGLGraph::edge_descriptor" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1864 1916])
+                                    ("InEdgeIter" type
+                                       (:typedef ("boost::graph_traits::in_edge_iterator" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1923 2001])
+                                    ("OutEdgeIter" type
+                                       (:typedef ("boost::graph_traits::out_edge_iterator" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2007 2086])
+                                    ("AdjacentVertexIter" type
+                                       (:typedef ("boost::graph_traits::adjacency_iterator" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2092 2178])
+                                    ("AllVertexIter" type
+                                       (:typedef ("boost::graph_traits::vertex_iterator" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2184 2265])
+                                    ("graph" variable
+                                       (:pointer 1
+                                        :type ("BGLGraph" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2294 2310])
+                                    ("subGraphs" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("BGL" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [2316 2365])
+                                    ("public" label nil (reparse-symbol classsubparts) [2368 2375])
+                                    ("id" variable (:type ("GraphID" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2382 2393])
+                                    ("id" function (:type "int") (reparse-symbol classsubparts) [2642 3286])
+                                    ("BGL" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3298 3313])
+                                    ("getVertices" function (:type ("std::pair" type
+                                         (:template-specifier 
+                                            ( ("AllVertexIter" type nil nil nil)
+                                              ("AllVertexIter" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [3399 3497])
+                                    ("getAdjacentVertices" function
+                                       (:arguments 
+                                          ( ("id" variable
+                                               (:constant-flag t
+                                                :type ("VertexID" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3680 3698]))                                          
+                                        :type ("std::pair" type
+                                             (:template-specifier 
+                                                ( ("AdjacentVertexIter" type nil nil nil)
+                                                  ("AdjacentVertexIter" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [3609 3753])
+                                    ("getOutEdges" function
+                                       (:arguments 
+                                          ( ("id" variable
+                                               (:constant-flag t
+                                                :type ("VertexID" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3922 3940]))                                          
+                                        :type ("std::pair" type
+                                             (:template-specifier 
+                                                ( ("OutEdgeIter" type nil nil nil)
+                                                  ("OutEdgeIter" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [3874 4015])
+                                    ("getInEdges" function
+                                       (:arguments 
+                                          ( ("id" variable
+                                               (:constant-flag t
+                                                :type ("VertexID" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4184 4202]))                                          
+                                        :type ("std::pair" type
+                                             (:template-specifier 
+                                                ( ("InEdgeIter" type nil nil nil)
+                                                  ("InEdgeIter" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [4139 4276])
+                                    ("getLocalID" function
+                                       (:arguments 
+                                          ( ("vertex" variable (:type ("VertexProperty" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6449 6471]))                                          
+                                        :type ("VertexID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6429 6525])
+                                    ("getVerticesProperties" function
+                                       (:arguments 
+                                          ( ("bglVertices" variable (:type ("std::vector" type
+                                                 (:template-specifier 
+                                                    ( ("VertexID" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol arg-sub-list) [6744 6778]))                                          
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("VertexProperty" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [6694 6930])
+                                    ("setVertexProperty" function
+                                       (:arguments 
+                                          ( ("vertex" variable (:type ("VertexID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6960 6976])
+                                            ("value" variable (:type ("VertexProperty" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6977 6998]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [6937 7034])
+                                    ("setEdgeProperty" function
+                                       (:arguments 
+                                          ( ("edge" variable (:type ("EdgeID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7062 7074])
+                                            ("value" variable (:type ("Edge" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7075 7086]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [7041 7120])
+                                    ("getVertexProperty" function
+                                       (:arguments 
+                                          ( ("vertex" variable
+                                               (:constant-flag t
+                                                :type ("VertexID" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7333 7355]))                                          
+                                        :type ("VertexProperty" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7299 7390])
+                                    ("getEdgeProperty" function
+                                       (:arguments 
+                                          ( ("edge" variable
+                                               (:constant-flag t
+                                                :type ("EdgeID" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7503 7521]))                                          
+                                        :type ("Edge" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7481 7554])
+                                    ("getEdgeTarget" function
+                                       (:arguments 
+                                          ( ("edge" variable (:type ("EdgeID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7670 7682]))                                          
+                                        :type ("VertexID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7647 7730])
+                                    ("getEdgeSource" function
+                                       (:arguments 
+                                          ( ("edge" variable (:type ("EdgeID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7848 7860]))                                          
+                                        :type ("VertexID" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7825 7908]))                                  )
+                                (reparse-symbol namespacesubparts) [798 7920]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [328 7927]))                  
+                :type "namespace")
+                nil [299 7955]))          
+      :file "BGL.hpp"
+      :pointmax 7977
+      :fsize 7976
+      :lastmodtime '(21843 15542 843712 917000)
+      :unmatched-syntax '((thing 9 . 13) (thing 2 . 8) (thing 1 . 2))))
+  :file "!home!erik!projects!GrayBat!include!graphPolicy!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,497 @@
+;; Object traits/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "traits/"
+  :tables
+  (list
+    (semanticdb-table "cpp_regex_traits.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_XPRESSIVE_TRAITS_CPP_REGEX_TRAITS_HPP_EAN_10_04_2005" variable (:constant-flag t) nil [562 620])
+            ("ios" include (:system-flag t) nil [714 728])
+            ("string" include (:system-flag t) nil [729 746])
+            ("locale" include (:system-flag t) nil [747 764])
+            ("sstream" include (:system-flag t) nil [765 783])
+            ("climits" include (:system-flag t) nil [784 802])
+            ("boost/config.hpp" include (:system-flag t) nil [803 830])
+            ("boost/assert.hpp" include (:system-flag t) nil [831 858])
+            ("boost/integer.hpp" include (:system-flag t) nil [859 887])
+            ("boost/mpl/assert.hpp" include (:system-flag t) nil [888 919])
+            ("boost/static_assert.hpp" include (:system-flag t) nil [920 954])
+            ("boost/detail/workaround.hpp" include (:system-flag t) nil [955 993])
+            ("boost/type_traits/is_same.hpp" include (:system-flag t) nil [994 1034])
+            ("boost/xpressive/detail/detail_fwd.hpp" include (:system-flag t) nil [1035 1083])
+            ("boost/xpressive/detail/utility/literals.hpp" include (:system-flag t) nil [1084 1138])
+            ("boost" type
+               (:members 
+                  ( ("xpressive" type
+                       (:members 
+                          ( ("detail" type
+                               (:members 
+                                  ( ("umask_t" variable (:type ("least" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [1772 1786])
+                                    ("BOOST_MPL_ASSERT_RELATION" function
+                                       (:prototype-flag t
+                                        :type "int")
+                                        (reparse-symbol namespacesubparts) [1791 1869])
+                                    ("CHAR_BIT" variable
+                                       (:pointer 1
+                                        :type "int")
+                                        (reparse-symbol namespacesubparts) [2165 2176])
+                                    ("umaskex_t" type
+                                       (:typedef ("boost::uint_t::fast" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol namespacesubparts) [2249 2301])
+                                    ("BOOST_MPL_ASSERT_RELATION" function
+                                       (:prototype-flag t
+                                        :type "int")
+                                        (reparse-symbol namespacesubparts) [2306 2372])
+                                    ("mask_cast" type
+                                       (:template 
+                                          ( ("std::ctype_base::mask" type nil nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("BOOST_STATIC_CONSTANT" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("" variable (:type ("umaskex_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2512 2522])
+                                                    ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2523 2557]))                                                  
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [2490 2559]))                                          )
+                                        (reparse-symbol namespacesubparts) [2418 2566])
+                                    ("mask_cast::value" variable (:type ("umaskex_t" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [2900 2980])
+                                    ("unused_mask" type
+                                       (:members 
+                                          ( ("BOOST_STATIC_ASSERT" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("" variable (:type ("Out" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3488 3492]))                                                  
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [3463 3493])
+                                            ("BOOST_STATIC_CONSTANT" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("" variable (:type ("umaskex_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3524 3534])
+                                                    ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3535 3579]))                                                  
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [3502 3581]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [3430 3588])
+                                    ("unused_mask" type
+                                       (:template 
+                                          ( ("umaskex_t" type nil nil nil)
+                                            ("umaskex_t" type nil nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("BOOST_STATIC_CONSTANT" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("" variable (:type ("umaskex_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3706 3716])
+                                                    ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3717 3728]))                                                  
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [3684 3730]))                                          
+                                        :template-specifier 
+                                          ( ("In" type nil nil nil)
+                                            ("Out" type nil nil nil)
+                                            ("true" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [3594 3737])
+                                    ("unused_mask::value" variable (:type ("umaskex_t" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [3794 3897])
+                                    ("mask_cast::value" variable (:type "int") (reparse-symbol namespacesubparts) [3948 3989])
+                                    ("mask_cast::value" variable (:type "int") (reparse-symbol namespacesubparts) [4028 4069])
+                                    ("mask_cast::value" variable (:type "int") (reparse-symbol namespacesubparts) [4108 4149])
+                                    ("mask_cast::value" variable (:type "int") (reparse-symbol namespacesubparts) [4188 4229])
+                                    ("mask_cast::value" variable (:type "int") (reparse-symbol namespacesubparts) [4268 4309])
+                                    ("mask_cast::value" variable (:type "int") (reparse-symbol namespacesubparts) [4348 4389])
+                                    ("mask_cast::value" variable (:type "int") (reparse-symbol namespacesubparts) [4428 4469])
+                                    ("mask_cast::value" variable (:type "int") (reparse-symbol namespacesubparts) [4508 4549])
+                                    ("mask_cast::value" variable (:type "int") (reparse-symbol namespacesubparts) [4588 4629])
+                                    ("mask_cast::value" variable (:type "int") (reparse-symbol namespacesubparts) [4668 4709])
+                                    ("mask_cast::value" variable (:type "int") (reparse-symbol namespacesubparts) [4749 4791])
+                                    ("std_ctype_reserved" variable
+                                       (:default-value "0x8000"
+                                        :type ("umaskex_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [4874 4918])
+                                    ("std_ctype_reserved" variable
+                                       (:default-value "0"
+                                        :type ("umaskex_t" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [5123 5162])
+                                    ("std_ctype_xdigit" variable (:type "int") (reparse-symbol namespacesubparts) [5479 5496])
+                                    ("unused_mask::value" variable (:type "int") (reparse-symbol namespacesubparts) [5618 5654])
+                                    ("value" variable (:type "int") (reparse-symbol namespacesubparts) [5792 5798])
+                                    ("value" variable (:type "int") (reparse-symbol namespacesubparts) [5962 5968])
+                                    ("non_std_ctype_newline" variable (:type "int") (reparse-symbol namespacesubparts) [7733 7755])
+                                    ("cpp_regex_traits_base" type
+                                       (:members 
+                                          ( ("protected" label nil (reparse-symbol classsubparts) [8149 8159])
+                                            ("imbue" function
+                                               (:arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::locale" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [8179 8199]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [8168 8219])
+                                            ("is" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("ct" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::ctype" type
+                                                             (:template-specifier 
+                                                                ( ("Char" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [8244 8271])
+                                                    ("ch" variable (:type ("Char" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8272 8280])
+                                                    ("mask" variable (:type ("umaskex_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8281 8296]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [8229 9676])
+                                            ("private" label nil (reparse-symbol classsubparts) [9682 9690])
+                                            ("is_blank" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("ch" variable (:type ("Char" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9720 9728]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [9699 9904])
+                                            ("is_underscore" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("ch" variable (:type ("Char" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9940 9948]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [9914 10053])
+                                            ("is_newline" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("ch" variable (:type ("Char" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10086 10094]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [10063 10431]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [8110 10438])
+                                    ("cpp_regex_traits_base" type
+                                       (:template 
+                                          ( ("Char" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("protected" label nil (reparse-symbol classsubparts) [10567 10577])
+                                            ("imbue" function
+                                               (:arguments 
+                                                  ( ("loc" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::locale" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [10597 10620]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [10586 11781])
+                                            ("is" function
+                                               (:arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::ctype" type
+                                                             (:template-specifier 
+                                                                ( ("Char" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [11799 11824])
+                                                    ("ch" variable (:type ("Char" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11825 11833])
+                                                    ("mask" variable (:type ("umaskex_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11834 11849]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [11791 11954])
+                                            ("private" label nil (reparse-symbol classsubparts) [11960 11968])
+                                            ("masks_" variable
+                                               (:dereference 1
+                                                :type ("umaskex_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [11977 12009]))                                          
+                                        :template-specifier 
+                                          ( ("Char" type nil nil nil)
+                                            ("1"))                                          )
+                                        (reparse-symbol namespacesubparts) [10491 12016]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1599 12031])
+                            ("cpp_regex_traits" type
+                               (:template 
+                                  ( ("Char" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("char_type" type
+                                       (:typedef ("Char" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [12347 12370])
+                                    ("string_type" type
+                                       (:typedef ("std::basic_string" type
+                                             (:template-specifier 
+                                                ( ("char_type" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [12375 12424])
+                                    ("locale_type" type
+                                       (:typedef ("std::locale" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [12429 12461])
+                                    ("char_class_type" type
+                                       (:typedef ("detail::umaskex_t" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [12466 12508])
+                                    ("version_tag" type
+                                       (:typedef ("regex_traits_version_2_tag" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [12513 12560])
+                                    ("base_type" type
+                                       (:typedef ("detail::cpp_regex_traits_base" type
+                                             (:template-specifier 
+                                                ( ("Char" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [12565 12619])
+                                    ("cpp_regex_traits" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("loc" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :default-value "locale_type()"
+                                                :type ("locale_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [12785 12823]))                                          
+                                        :type ("cpp_regex_traits" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [12768 12897])
+                                    ("==" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("that" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("cpp_regex_traits" type
+                                                     (:template-specifier 
+                                                        ( ("char_type" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [13034 13074]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [13017 13132])
+                                    ("!=" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("that" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("cpp_regex_traits" type
+                                                     (:template-specifier 
+                                                        ( ("char_type" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [13271 13311]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [13254 13369])
+                                    ("widen" function
+                                       (:arguments 
+                                          ( ("ch" variable (:type "char") (reparse-symbol arg-sub-list) [13558 13566]))                                          
+                                        :type ("char_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [13542 13624])
+                                    ("hash" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("ch" variable (:type ("char_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13832 13845]))                                          
+                                        :type "unsigned char")
+                                        (reparse-symbol classsubparts) [13806 13941])
+                                    ("translate" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("ch" variable (:type ("char_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14055 14068]))                                          
+                                        :type ("char_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [14028 14099])
+                                    ("translate_nocase" function
+                                       (:arguments 
+                                          ( ("ch" variable (:type ("char_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14314 14327]))                                          
+                                        :type ("char_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [14287 14387])
+                                    ("tolower" function
+                                       (:arguments 
+                                          ( ("ch" variable (:type ("char_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14593 14606]))                                          
+                                        :type ("char_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [14575 14666])
+                                    ("toupper" function
+                                       (:arguments 
+                                          ( ("ch" variable (:type ("char_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14872 14885]))                                          
+                                        :type ("char_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [14854 14945])
+                                    ("fold_case" function
+                                       (:arguments 
+                                          ( ("ch" variable (:type ("char_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15379 15392]))                                          
+                                        :type ("string_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [15357 15684])
+                                    ("in_range" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("first" variable (:type ("char_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15978 15994])
+                                            ("last" variable (:type ("char_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15995 16010])
+                                            ("ch" variable (:type ("char_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16011 16024]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [15957 16078])
+                                    ("in_range_nocase" function
+                                       (:arguments 
+                                          ( ("first" variable (:type ("char_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16685 16701])
+                                            ("last" variable (:type ("char_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16702 16717])
+                                            ("ch" variable (:type ("char_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16718 16731]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [16664 17111])
+                                    ("transform" function
+                                       (:template 
+                                          ( ("FwdIter" type (:type "class") nil nil))                                          
+                                        :type ("string_type" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("" variable (:type ("FwdIter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17642 17650])
+                                            ("" variable (:type ("FwdIter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17651 17659]))                                          )
+                                        (reparse-symbol classsubparts) [17589 17847])
+                                    ("transform_primary" function
+                                       (:template 
+                                          ( ("FwdIter" type (:type "class") nil nil))                                          
+                                        :type ("string_type" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("" variable (:type ("FwdIter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18273 18281])
+                                            ("" variable (:type ("FwdIter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18282 18291]))                                          )
+                                        (reparse-symbol classsubparts) [18212 18389])
+                                    ("lookup_collatename" function
+                                       (:template 
+                                          ( ("FwdIter" type (:type "class") nil nil))                                          
+                                        :type ("string_type" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("" variable (:type ("FwdIter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18762 18770])
+                                            ("" variable (:type ("FwdIter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18771 18779]))                                          )
+                                        (reparse-symbol classsubparts) [18700 18877])
+                                    ("lookup_classname" function
+                                       (:template 
+                                          ( ("FwdIter" type (:type "class") nil nil))                                          
+                                        :type ("char_class_type" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("begin" variable (:type ("FwdIter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19491 19505])
+                                            ("end" variable (:type ("FwdIter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19506 19518])
+                                            ("icase" variable (:type "bool") (reparse-symbol arg-sub-list) [19519 19530]))                                          )
+                                        (reparse-symbol classsubparts) [19427 20391])
+                                    ("isctype" function
+                                       (:arguments 
+                                          ( ("ch" variable (:type ("char_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20831 20844])
+                                            ("mask" variable (:type ("char_class_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20845 20866]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [20818 20945])
+                                    ("value" function
+                                       (:arguments 
+                                          ( ("ch" variable (:type ("char_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21488 21501])
+                                            ("radix" variable (:type "int") (reparse-symbol arg-sub-list) [21502 21512]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [21478 21856])
+                                    ("imbue" function
+                                       (:arguments 
+                                          ( ("loc" variable (:type ("locale_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22008 22024]))                                          
+                                        :type ("locale_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [21990 22330])
+                                    ("getloc" function (:type ("locale_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22399 22464])
+                                    ("private" label nil (reparse-symbol classsubparts) [22466 22474])
+                                    ("char_class_pair" type
+                                       (:members 
+                                          ( ("class_name_" variable
+                                               (:pointer 1
+                                                :type ("char_type" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [22646 22675])
+                                            ("class_type_" variable (:type ("char_class_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22684 22712]))                                          
+                                        :type "struct")
+                                        (reparse-symbol classsubparts) [22609 22719])
+                                    ("char_class" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("j" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22890 22904]))                                          
+                                        :type ("char_class_pair" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [22849 24365])
+                                    ("lookup_classname_impl_" function
+                                       (:template 
+                                          ( ("FwdIter" type (:type "class") nil nil))                                          
+                                        :type ("char_class_type" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("begin" variable (:type ("FwdIter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24583 24597])
+                                            ("end" variable (:type ("FwdIter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24598 24610]))                                          
+                                        :typemodifiers ("static"))
+                                        (reparse-symbol classsubparts) [24506 24979])
+                                    ("compare_" function
+                                       (:template 
+                                          ( ("FwdIter" type (:type "class") nil nil))                                          
+                                        :type "bool"
+                                        :arguments 
+                                          ( ("name" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("char_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [25059 25081])
+                                            ("begin" variable (:type ("FwdIter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25082 25096])
+                                            ("end" variable (:type ("FwdIter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25097 25109]))                                          
+                                        :typemodifiers ("static"))
+                                        (reparse-symbol classsubparts) [25007 25324])
+                                    ("loc_" variable (:type ("locale_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [25330 25347])
+                                    ("ctype_" variable
+                                       (:pointer 1
+                                        :type ("std::ctype" type
+                                             (:template-specifier 
+                                                ( ("char_type" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [25352 25388]))                                  
+                                :superclasses 
+                                  ( ("detail::cpp_regex_traits_base" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [12253 25438])
+                            ("hash" function
+                               (:type "unsigned char"
+                                :arguments 
+                                  ( ("ch" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [25634 25651]))                                  
+                                :typemodifiers ("inline")
+                                :parent "cpp_regex_traits")
+                                (reparse-symbol namespacesubparts) [25564 25670])
+                            ("hash" function
+                               (:type "unsigned char"
+                                :arguments 
+                                  ( ("ch" variable (:type "char") (reparse-symbol arg-sub-list) [25733 25741]))                                  
+                                :typemodifiers ("inline")
+                                :parent "cpp_regex_traits")
+                                (reparse-symbol namespacesubparts) [25672 25788])
+                            ("hash" function
+                               (:type "unsigned char"
+                                :arguments 
+                                  ( ("ch" variable (:type "signed char") (reparse-symbol arg-sub-list) [25858 25873]))                                  
+                                :typemodifiers ("inline")
+                                :parent "cpp_regex_traits")
+                                (reparse-symbol namespacesubparts) [25790 25920])
+                            ("hash" function
+                               (:type "unsigned char"
+                                :arguments 
+                                  ( ("ch" variable (:type "wchar_t") (reparse-symbol arg-sub-list) [26020 26031]))                                  
+                                :typemodifiers ("inline")
+                                :parent "cpp_regex_traits")
+                                (reparse-symbol namespacesubparts) [25956 26078])
+                            ("has_fold_case" type
+                               (:type "struct"
+                                :superclasses 
+                                  ( ("mpl::true_" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  
+                                :template-specifier 
+                                  ( ("cpp_regex_traits" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [26141 26217]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1576 26221]))                  
+                :type "namespace")
+                nil [1558 26222]))          
+      :file "cpp_regex_traits.hpp"
+      :pointmax 26231
+      :fsize 26230
+      :lastmodtime '(21790 57546 0 0)
+      :unmatched-syntax '((punctuation 8104 . 8105) (semantic-list 8098 . 8104) (SIZEOF 8092 . 8098) (punctuation 8090 . 8091) (symbol 8079 . 8089) (symbol 8072 . 8078) (punctuation 8071 . 8072) (punctuation 8070 . 8071) (symbol 8067 . 8070) (punctuation 8065 . 8066) (symbol 8061 . 8065) (TYPENAME 8052 . 8060) (punctuation 8051 . 8052) (TEMPLATE 8043 . 8051) (punctuation 7731 . 7732) (symbol 7711 . 7730) (punctuation 7709 . 7710) (symbol 7684 . 7708) (punctuation 7682 . 7683) (symbol 7662 . 7681) (CONST 7656 . 7661) (symbol 7646 . 7655) (punctuation 5961 . 5962) (punctuation 5960 . 5961) (punctuation 5959 . 5960) (symbol 5940 . 5959) (punctuation 5938 . 5939) (symbol 5913 . 5937) (punctuation 5911 . 5912) (symbol 5895 . 5910) (punctuation 5894 . 5895) (symbol 5883 . 5894) (punctuation 5881 . 5882) (symbol 5859 . 5880) (CONST 5853 . 5858) (symbol 5843 . 5852) (punctuation 5791 . 5792) (punctuation 5790 . 5791) (punctuation 5789 . 5790) (symbol 5765 . 5789) (punctuation 5763 . 5764) (symbol 5747 . 5762) (punctuation 5746 . 5747) (symbol 5735 . 5746) (punctuation 5733 . 5734) (symbol 5713 . 5732) (CONST 5707 . 5712) (symbol 5697 . 5706) (punctuation 5616 . 5617) (symbol 5591 . 5615) (CONST 5585 . 5590) (symbol 5575 . 5584) (punctuation 5477 . 5478) (symbol 5461 . 5476) (punctuation 5459 . 5460) (symbol 5443 . 5458) (punctuation 5441 . 5442) (symbol 5419 . 5434) (punctuation 5417 . 5418) (symbol 5401 . 5416) (punctuation 5399 . 5400) (symbol 5383 . 5398) (punctuation 5381 . 5382) (symbol 5365 . 5380) (punctuation 5363 . 5364) (symbol 5341 . 5356) (punctuation 5339 . 5340) (symbol 5323 . 5338) (punctuation 5321 . 5322) (symbol 5305 . 5320) (punctuation 5303 . 5304) (symbol 5287 . 5302) (punctuation 5285 . 5286) (symbol 5260 . 5278) (punctuation 5258 . 5259) (symbol 5242 . 5257) (CONST 5236 . 5241) (symbol 5226 . 5235) (punctuation 4747 . 4748) (symbol 4730 . 4746) (CONST 4724 . 4729) (symbol 4714 . 4723) (punctuation 4666 . 4667) (symbol 4650 . 4665) (CONST 4644 . 4649) (symbol 4634 . 4643) (punctuation 4586 . 4587) (symbol 4570 . 4585) (CONST 4564 . 4569) (symbol 4554 . 4563) (punctuation 4506 . 4507) (symbol 4490 . 4505) (CONST 4484 . 4489) (symbol 4474 . 4483) (punctuation 4426 . 4427) (symbol 4410 . 4425) (CONST 4404 . 4409) (symbol 4394 . 4403) (punctuation 4346 . 4347) (symbol 4330 . 4345) (CONST 4324 . 4329) (symbol 4314 . 4323) (punctuation 4266 . 4267) (symbol 4250 . 4265) (CONST 4244 . 4249) (symbol 4234 . 4243) (punctuation 4186 . 4187) (symbol 4170 . 4185) (CONST 4164 . 4169) (symbol 4154 . 4163) (punctuation 4106 . 4107) (symbol 4090 . 4105) (CONST 4084 . 4089) (symbol 4074 . 4083) (punctuation 4026 . 4027) (symbol 4010 . 4025) (CONST 4004 . 4009) (symbol 3994 . 4003) (punctuation 3946 . 3947) (symbol 3930 . 3945) (CONST 3924 . 3929) (symbol 3914 . 3923) (punctuation 3486 . 3487) (punctuation 3485 . 3486) (number 3483 . 3484) (punctuation 3424 . 3425) (semantic-list 3407 . 3424) (punctuation 3405 . 3406) (symbol 3400 . 3404) (BOOL 3395 . 3399) (punctuation 3393 . 3394) (symbol 3382 . 3393) (punctuation 3380 . 3381) (symbol 3376 . 3379) (symbol 3366 . 3375) (punctuation 3364 . 3365) (symbol 3362 . 3364) (symbol 3352 . 3361) (punctuation 3351 . 3352) (TEMPLATE 3343 . 3351) (punctuation 3188 . 3189) (semantic-list 3154 . 3188) (punctuation 3152 . 3153) (punctuation 3151 . 3152) (semantic-list 3147 . 3150) (punctuation 3146 . 3147) (symbol 3137 . 3146) (punctuation 3136 . 3137) (symbol 3125 . 3136) (number 3148 . 3149) (punctuation 3123 . 3124) (symbol 3111 . 3122) (CONST 3105 . 3110) (symbol 3095 . 3104) (semantic-list 2359 . 2370) (SIZEOF 2353 . 2359) (punctuation 2350 . 2351) (punctuation 2349 . 2350) (semantic-list 2338 . 2347) (SIZEOF 2332 . 2338) (semantic-list 2155 . 2164) (SIZEOF 2149 . 2155) (punctuation 2147 . 2148) (number 2144 . 2146) (punctuation 2142 . 2143) (semantic-list 2106 . 2141) (punctuation 2104 . 2105) (symbol 2091 . 2103) (CONST 2085 . 2090) (INT 2081 . 2084) (semantic-list 1858 . 1867) (SIZEOF 1852 . 1858) (punctuation 1849 . 1850) (punctuation 1848 . 1849) (semantic-list 1823 . 1846) (SIZEOF 1817 . 1823) (punctuation 1771 . 1772) (punctuation 1770 . 1771) (punctuation 1769 . 1770) (symbol 1761 . 1769) (punctuation 1759 . 1760) (semantic-list 1735 . 1758) (SIZEOF 1729 . 1735) (punctuation 1728 . 1729) (symbol 1722 . 1728) (punctuation 1721 . 1722) (punctuation 1720 . 1721) (symbol 1715 . 1720) (TYPEDEF 1707 . 1714))
+      :lexical-table 
+        '(("BOOST_XPRESSIVE_TRAITS_CPP_REGEX_TRAITS_HPP_EAN_10_04_2005")
+          )
+))
+  :file "!usr!include!boost!xpressive!traits!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

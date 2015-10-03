@@ -1,0 +1,1575 @@
+;; Object detail/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "detail/"
+  :tables
+  (list
+    (semanticdb-table "find_format.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_STRING_FIND_FORMAT_DETAIL_HPP" variable (:constant-flag t) nil [434 469])
+            ("boost/algorithm/string/config.hpp" include (:system-flag t) nil [471 515])
+            ("boost/range/iterator_range_core.hpp" include (:system-flag t) nil [516 562])
+            ("boost/range/const_iterator.hpp" include (:system-flag t) nil [563 604])
+            ("boost/range/iterator.hpp" include (:system-flag t) nil [605 640])
+            ("boost/algorithm/string/detail/find_format_store.hpp" include (:system-flag t) nil [641 703])
+            ("boost/algorithm/string/detail/replace_storage.hpp" include (:system-flag t) nil [704 764])
+            ("boost" type
+               (:members 
+                  ( ("algorithm" type
+                       (:members 
+                          ( ("detail" type
+                               (:members 
+                                  ( ("find_format_copy_impl2" function
+                                       (:template 
+                                          ( ("OutputIteratorT" type (:type "class") nil nil)
+                                            ("InputT" type (:type "class") nil nil)
+                                            ("FormatterT" type (:type "class") nil nil)
+                                            ("FindResultT" type (:type "class") nil nil)
+                                            ("FormatResultT" type (:type "class") nil nil))                                          
+                                        :type ("OutputIteratorT" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("Output" variable (:type ("OutputIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1215 1238])
+                                            ("Input" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("InputT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1255 1275])
+                                            ("Formatter" variable (:type ("FormatterT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1292 1313])
+                                            ("FindResult" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("FindResultT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1330 1360])
+                                            ("FormatResult" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("FormatResultT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1377 1412]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [938 2555])
+                                    ("find_format_copy_impl" function
+                                       (:template 
+                                          ( ("OutputIteratorT" type (:type "class") nil nil)
+                                            ("InputT" type (:type "class") nil nil)
+                                            ("FormatterT" type (:type "class") nil nil)
+                                            ("FindResultT" type (:type "class") nil nil))                                          
+                                        :type ("OutputIteratorT" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("Output" variable (:type ("OutputIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2805 2828])
+                                            ("Input" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("InputT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2845 2865])
+                                            ("Formatter" variable (:type ("FormatterT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2882 2903])
+                                            ("FindResult" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("FindResultT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2920 2951]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [2569 3469])
+                                    ("find_format_copy_impl2" function
+                                       (:template 
+                                          ( ("InputT" type (:type "class") nil nil)
+                                            ("FormatterT" type (:type "class") nil nil)
+                                            ("FindResultT" type (:type "class") nil nil)
+                                            ("FormatResultT" type (:type "class") nil nil))                                          
+                                        :type ("InputT" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("Input" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("InputT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3800 3820])
+                                            ("Formatter" variable (:type ("FormatterT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3837 3858])
+                                            ("FindResult" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("FindResultT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3875 3905])
+                                            ("FormatResult" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("FormatResultT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3922 3956]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [3573 5051])
+                                    ("find_format_copy_impl" function
+                                       (:template 
+                                          ( ("InputT" type (:type "class") nil nil)
+                                            ("FormatterT" type (:type "class") nil nil)
+                                            ("FindResultT" type (:type "class") nil nil))                                          
+                                        :type ("InputT" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("Input" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("InputT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5251 5271])
+                                            ("Formatter" variable (:type ("FormatterT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5288 5309])
+                                            ("FindResult" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("FindResultT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5326 5356]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [5065 5780])
+                                    ("find_format_impl2" function
+                                       (:template 
+                                          ( ("InputT" type (:type "class") nil nil)
+                                            ("FormatterT" type (:type "class") nil nil)
+                                            ("FindResultT" type (:type "class") nil nil)
+                                            ("FormatResultT" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("Input" variable
+                                               (:reference 1
+                                                :type ("InputT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6104 6118])
+                                            ("Formatter" variable (:type ("FormatterT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6135 6156])
+                                            ("FindResult" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("FindResultT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6173 6203])
+                                            ("FormatResult" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("FormatResultT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6220 6254]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [5885 6926])
+                                    ("find_format_impl" function
+                                       (:template 
+                                          ( ("InputT" type (:type "class") nil nil)
+                                            ("FormatterT" type (:type "class") nil nil)
+                                            ("FindResultT" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("Input" variable
+                                               (:reference 1
+                                                :type ("InputT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7118 7132])
+                                            ("Formatter" variable (:type ("FormatterT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7149 7170])
+                                            ("FindResult" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("FindResultT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7187 7217]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [6940 7570]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [818 7581]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [788 7607]))                  
+                :type "namespace")
+                nil [766 7632]))          
+      :file "find_format.hpp"
+      :pointmax 7700
+      :fsize 7699
+      :lastmodtime '(21790 57546 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_STRING_FIND_FORMAT_DETAIL_HPP")
+          )
+)
+    (semanticdb-table "find_format_all.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_STRING_FIND_FORMAT_ALL_DETAIL_HPP" variable (:constant-flag t) nil [441 480])
+            ("boost/algorithm/string/config.hpp" include (:system-flag t) nil [482 526])
+            ("boost/range/iterator_range_core.hpp" include (:system-flag t) nil [527 573])
+            ("boost/range/const_iterator.hpp" include (:system-flag t) nil [574 615])
+            ("boost/range/value_type.hpp" include (:system-flag t) nil [616 653])
+            ("boost/algorithm/string/detail/find_format_store.hpp" include (:system-flag t) nil [654 716])
+            ("boost/algorithm/string/detail/replace_storage.hpp" include (:system-flag t) nil [717 777])
+            ("boost" type
+               (:members 
+                  ( ("algorithm" type
+                       (:members 
+                          ( ("detail" type
+                               (:members 
+                                  ( ("find_format_all_copy_impl2" function
+                                       (:template 
+                                          ( ("OutputIteratorT" type (:type "class") nil nil)
+                                            ("InputT" type (:type "class") nil nil)
+                                            ("FinderT" type (:type "class") nil nil)
+                                            ("FormatterT" type (:type "class") nil nil)
+                                            ("FindResultT" type (:type "class") nil nil)
+                                            ("FormatResultT" type (:type "class") nil nil))                                          
+                                        :type ("OutputIteratorT" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("Output" variable (:type ("OutputIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1266 1289])
+                                            ("Input" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("InputT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1306 1326])
+                                            ("Finder" variable (:type ("FinderT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1343 1358])
+                                            ("Formatter" variable (:type ("FormatterT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1375 1396])
+                                            ("FindResult" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("FindResultT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1413 1443])
+                                            ("FormatResult" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("FormatResultT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1460 1495]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [951 2782])
+                                    ("find_format_all_copy_impl" function
+                                       (:template 
+                                          ( ("OutputIteratorT" type (:type "class") nil nil)
+                                            ("InputT" type (:type "class") nil nil)
+                                            ("FinderT" type (:type "class") nil nil)
+                                            ("FormatterT" type (:type "class") nil nil)
+                                            ("FindResultT" type (:type "class") nil nil))                                          
+                                        :type ("OutputIteratorT" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("Output" variable (:type ("OutputIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3070 3093])
+                                            ("Input" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("InputT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3110 3130])
+                                            ("Finder" variable (:type ("FinderT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3147 3162])
+                                            ("Formatter" variable (:type ("FormatterT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3179 3200])
+                                            ("FindResult" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("FindResultT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3217 3248]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [2796 3802])
+                                    ("find_format_all_copy_impl2" function
+                                       (:template 
+                                          ( ("InputT" type (:type "class") nil nil)
+                                            ("FinderT" type (:type "class") nil nil)
+                                            ("FormatterT" type (:type "class") nil nil)
+                                            ("FindResultT" type (:type "class") nil nil)
+                                            ("FormatResultT" type (:type "class") nil nil))                                          
+                                        :type ("InputT" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("Input" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("InputT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4170 4190])
+                                            ("Finder" variable (:type ("FinderT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4207 4222])
+                                            ("Formatter" variable (:type ("FormatterT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4239 4260])
+                                            ("FindResult" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("FindResultT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4277 4307])
+                                            ("FormatResult" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("FormatResultT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4324 4358]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [3905 5767])
+                                    ("find_format_all_copy_impl" function
+                                       (:template 
+                                          ( ("InputT" type (:type "class") nil nil)
+                                            ("FinderT" type (:type "class") nil nil)
+                                            ("FormatterT" type (:type "class") nil nil)
+                                            ("FindResultT" type (:type "class") nil nil))                                          
+                                        :type ("InputT" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("Input" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("InputT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6005 6025])
+                                            ("Finder" variable (:type ("FinderT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6042 6057])
+                                            ("Formatter" variable (:type ("FormatterT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6074 6095])
+                                            ("FindResult" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("FindResultT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6112 6142]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [5781 6602])
+                                    ("find_format_all_impl2" function
+                                       (:template 
+                                          ( ("InputT" type (:type "class") nil nil)
+                                            ("FinderT" type (:type "class") nil nil)
+                                            ("FormatterT" type (:type "class") nil nil)
+                                            ("FindResultT" type (:type "class") nil nil)
+                                            ("FormatResultT" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("Input" variable
+                                               (:reference 1
+                                                :type ("InputT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6968 6982])
+                                            ("Finder" variable (:type ("FinderT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6999 7014])
+                                            ("Formatter" variable (:type ("FormatterT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7031 7052])
+                                            ("FindResult" variable (:type ("FindResultT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7069 7092])
+                                            ("FormatResult" variable (:type ("FormatResultT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7109 7136]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [6711 9392])
+                                    ("find_format_all_impl" function
+                                       (:template 
+                                          ( ("InputT" type (:type "class") nil nil)
+                                            ("FinderT" type (:type "class") nil nil)
+                                            ("FormatterT" type (:type "class") nil nil)
+                                            ("FindResultT" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("Input" variable
+                                               (:reference 1
+                                                :type ("InputT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9622 9636])
+                                            ("Finder" variable (:type ("FinderT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9653 9668])
+                                            ("Formatter" variable (:type ("FormatterT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9685 9706])
+                                            ("FindResult" variable (:type ("FindResultT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9723 9746]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [9406 10135]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [831 10146]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [801 10172]))                  
+                :type "namespace")
+                nil [779 10197]))          
+      :file "find_format_all.hpp"
+      :pointmax 10269
+      :fsize 10268
+      :lastmodtime '(21790 57546 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_STRING_FIND_FORMAT_ALL_DETAIL_HPP")
+          )
+)
+    (semanticdb-table "finder.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_STRING_FINDER_DETAIL_HPP" variable (:constant-flag t) nil [423 453])
+            ("boost/algorithm/string/config.hpp" include (:system-flag t) nil [455 499])
+            ("boost/algorithm/string/constants.hpp" include (:system-flag t) nil [500 547])
+            ("boost/detail/iterator.hpp" include (:system-flag t) nil [548 584])
+            ("boost/range/iterator_range_core.hpp" include (:system-flag t) nil [586 632])
+            ("boost/range/begin.hpp" include (:system-flag t) nil [633 665])
+            ("boost/range/end.hpp" include (:system-flag t) nil [666 696])
+            ("boost/range/empty.hpp" include (:system-flag t) nil [697 729])
+            ("boost/range/as_literal.hpp" include (:system-flag t) nil [730 767])
+            ("boost" type
+               (:members 
+                  ( ("algorithm" type
+                       (:members 
+                          ( ("detail" type
+                               (:members 
+                                  ( ("first_finderF" type
+                                       (:template 
+                                          ( ("SearchIteratorT" type (:type "class") nil nil)
+                                            ("PredicateT" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("search_iterator_type" type
+                                               (:typedef ("SearchIteratorT" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1283 1328])
+                                            ("first_finderF" function
+                                               (:template 
+                                                  ( ("SearchT" type (:type "class") nil nil))                                                  
+                                                :type ("first_finderF" type (:type "struct") nil nil)
+                                                :arguments 
+                                                  ( ("Search" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("SearchT" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1438 1460])
+                                                    ("Comp" variable (:type ("PredicateT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1461 1478]))                                                  
+                                                :constructor-flag t)
+                                                (reparse-symbol classsubparts) [1378 1572])
+                                            ("first_finderF" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("SearchBegin" variable (:type ("search_iterator_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1628 1661])
+                                                    ("SearchEnd" variable (:type ("search_iterator_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1686 1717])
+                                                    ("Comp" variable (:type ("PredicateT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1742 1759]))                                                  
+                                                :type ("first_finderF" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [1589 1831])
+                                            ("()" function
+                                               (:template 
+                                                  ( ("ForwardIteratorT" type (:type "class") nil nil))                                                  
+                                                :type ("iterator_range" type
+                                                     (:template-specifier 
+                                                        ( ("ForwardIteratorT" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :arguments 
+                                                  ( ("Begin" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2013 2036])
+                                                    ("End" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2057 2079]))                                                  
+                                                :operator-flag t)
+                                                (reparse-symbol classsubparts) [1878 3300])
+                                            ("private" label nil (reparse-symbol classsubparts) [3314 3322])
+                                            ("m_Search" variable (:type ("iterator_range" type
+                                                 (:template-specifier 
+                                                    ( ("search_iterator_type" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [3339 3385])
+                                            ("m_Comp" variable (:type ("PredicateT" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3402 3420]))                                          )
+                                        (reparse-symbol namespacesubparts) [1165 3435])
+                                    ("last_finderF" type
+                                       (:template 
+                                          ( ("SearchIteratorT" type (:type "class") nil nil)
+                                            ("PredicateT" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("search_iterator_type" type
+                                               (:typedef ("SearchIteratorT" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3884 3929])
+                                            ("first_finder_type" type
+                                               (:typedef ("first_finderF" type
+                                                     (:template-specifier 
+                                                        ( ("search_iterator_type" type nil nil nil)
+                                                          ("PredicateT" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3946 4061])
+                                            ("last_finderF" function
+                                               (:template 
+                                                  ( ("SearchT" type (:type "class") nil nil))                                                  
+                                                :type ("last_finderF" type (:type "struct") nil nil)
+                                                :arguments 
+                                                  ( ("Search" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("SearchT" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4170 4192])
+                                                    ("Comp" variable (:type ("PredicateT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4193 4210]))                                                  
+                                                :constructor-flag t)
+                                                (reparse-symbol classsubparts) [4111 4304])
+                                            ("last_finderF" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("SearchBegin" variable (:type ("search_iterator_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4359 4392])
+                                                    ("SearchEnd" variable (:type ("search_iterator_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4417 4448])
+                                                    ("Comp" variable (:type ("PredicateT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4473 4490]))                                                  
+                                                :type ("last_finderF" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [4321 4562])
+                                            ("()" function
+                                               (:template 
+                                                  ( ("ForwardIteratorT" type (:type "class") nil nil))                                                  
+                                                :type ("iterator_range" type
+                                                     (:template-specifier 
+                                                        ( ("ForwardIteratorT" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :arguments 
+                                                  ( ("Begin" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4744 4767])
+                                                    ("End" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4788 4810]))                                                  
+                                                :operator-flag t)
+                                                (reparse-symbol classsubparts) [4609 5248])
+                                            ("private" label nil (reparse-symbol classsubparts) [5262 5270])
+                                            ("findit" function
+                                               (:template 
+                                                  ( ("ForwardIteratorT" type (:type "class") nil nil))                                                  
+                                                :type ("iterator_range" type
+                                                     (:template-specifier 
+                                                        ( ("ForwardIteratorT" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :arguments 
+                                                  ( ("Begin" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5454 5477])
+                                                    ("End" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5498 5519])
+                                                    ("" variable (:type ("std::forward_iterator_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5540 5567]))                                                  )
+                                                (reparse-symbol classsubparts) [5323 6113])
+                                            ("findit" function
+                                               (:template 
+                                                  ( ("ForwardIteratorT" type (:type "class") nil nil))                                                  
+                                                :type ("iterator_range" type
+                                                     (:template-specifier 
+                                                        ( ("ForwardIteratorT" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :arguments 
+                                                  ( ("Begin" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6304 6327])
+                                                    ("End" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6348 6369])
+                                                    ("" variable (:type ("std::bidirectional_iterator_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6390 6423]))                                                  )
+                                                (reparse-symbol classsubparts) [6173 7523])
+                                            ("private" label nil (reparse-symbol classsubparts) [7537 7545])
+                                            ("m_Search" variable (:type ("iterator_range" type
+                                                 (:template-specifier 
+                                                    ( ("search_iterator_type" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [7562 7608])
+                                            ("m_Comp" variable (:type ("PredicateT" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7625 7643]))                                          )
+                                        (reparse-symbol namespacesubparts) [3766 7658])
+                                    ("nth_finderF" type
+                                       (:template 
+                                          ( ("SearchIteratorT" type (:type "class") nil nil)
+                                            ("PredicateT" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("search_iterator_type" type
+                                               (:typedef ("SearchIteratorT" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [8109 8154])
+                                            ("first_finder_type" type
+                                               (:typedef ("first_finderF" type
+                                                     (:template-specifier 
+                                                        ( ("search_iterator_type" type nil nil nil)
+                                                          ("PredicateT" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [8171 8286])
+                                            ("last_finder_type" type
+                                               (:typedef ("last_finderF" type
+                                                     (:template-specifier 
+                                                        ( ("search_iterator_type" type nil nil nil)
+                                                          ("PredicateT" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [8303 8416])
+                                            ("nth_finderF" function
+                                               (:template 
+                                                  ( ("SearchT" type (:type "class") nil nil))                                                  
+                                                :type ("nth_finderF" type (:type "struct") nil nil)
+                                                :arguments 
+                                                  ( ("Search" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("SearchT" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [8548 8570])
+                                                    ("Nth" variable (:type "int") (reparse-symbol arg-sub-list) [8595 8603])
+                                                    ("Comp" variable (:type ("PredicateT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8628 8644]))                                                  
+                                                :constructor-flag t)
+                                                (reparse-symbol classsubparts) [8466 8790])
+                                            ("nth_finderF" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("SearchBegin" variable (:type ("search_iterator_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8844 8877])
+                                                    ("SearchEnd" variable (:type ("search_iterator_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8902 8933])
+                                                    ("Nth" variable (:type "int") (reparse-symbol arg-sub-list) [8958 8966])
+                                                    ("Comp" variable (:type ("PredicateT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8991 9007]))                                                  
+                                                :type ("nth_finderF" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [8807 9131])
+                                            ("()" function
+                                               (:template 
+                                                  ( ("ForwardIteratorT" type (:type "class") nil nil))                                                  
+                                                :type ("iterator_range" type
+                                                     (:template-specifier 
+                                                        ( ("ForwardIteratorT" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :arguments 
+                                                  ( ("Begin" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9313 9336])
+                                                    ("End" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9357 9379]))                                                  
+                                                :operator-flag t)
+                                                (reparse-symbol classsubparts) [9178 9698])
+                                            ("private" label nil (reparse-symbol classsubparts) [9712 9720])
+                                            ("find_forward" function
+                                               (:template 
+                                                  ( ("ForwardIteratorT" type (:type "class") nil nil))                                                  
+                                                :type ("iterator_range" type
+                                                     (:template-specifier 
+                                                        ( ("ForwardIteratorT" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :arguments 
+                                                  ( ("Begin" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9916 9939])
+                                                    ("End" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9960 9981])
+                                                    ("N" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10002 10017]))                                                  )
+                                                (reparse-symbol classsubparts) [9779 10920])
+                                            ("find_backward" function
+                                               (:template 
+                                                  ( ("ForwardIteratorT" type (:type "class") nil nil))                                                  
+                                                :type ("iterator_range" type
+                                                     (:template-specifier 
+                                                        ( ("ForwardIteratorT" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :arguments 
+                                                  ( ("Begin" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11076 11099])
+                                                    ("End" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11120 11141])
+                                                    ("N" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [11162 11177]))                                                  )
+                                                (reparse-symbol classsubparts) [10938 12077])
+                                            ("private" label nil (reparse-symbol classsubparts) [12092 12100])
+                                            ("m_Search" variable (:type ("iterator_range" type
+                                                 (:template-specifier 
+                                                    ( ("search_iterator_type" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [12117 12163])
+                                            ("m_Nth" variable (:type "int") (reparse-symbol classsubparts) [12180 12190])
+                                            ("m_Comp" variable (:type ("PredicateT" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12207 12225]))                                          )
+                                        (reparse-symbol namespacesubparts) [7992 12240])
+                                    ("find_head_impl" function
+                                       (:template 
+                                          ( ("ForwardIteratorT" type (:type "class") nil nil))                                          
+                                        :type ("iterator_range" type
+                                             (:template-specifier 
+                                                ( ("ForwardIteratorT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :arguments 
+                                          ( ("Begin" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12456 12479])
+                                            ("End" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12496 12517])
+                                            ("N" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [12534 12549])
+                                            ("" variable (:type ("std::forward_iterator_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12566 12593]))                                          )
+                                        (reparse-symbol namespacesubparts) [12327 12972])
+                                    ("find_head_impl" function
+                                       (:template 
+                                          ( ("ForwardIteratorT" type (:type "class") nil nil))                                          
+                                        :type ("iterator_range" type
+                                             (:template-specifier 
+                                                ( ("ForwardIteratorT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :arguments 
+                                          ( ("Begin" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13117 13140])
+                                            ("End" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13157 13178])
+                                            ("N" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [13195 13210])
+                                            ("" variable (:type ("std::random_access_iterator_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13227 13260]))                                          )
+                                        (reparse-symbol namespacesubparts) [12986 13549])
+                                    ("find_head_impl" function
+                                       (:template 
+                                          ( ("ForwardIteratorT" type (:type "class") nil nil))                                          
+                                        :type ("iterator_range" type
+                                             (:template-specifier 
+                                                ( ("ForwardIteratorT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :arguments 
+                                          ( ("Begin" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13732 13755])
+                                            ("End" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13772 13793])
+                                            ("N" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [13810 13826]))                                          )
+                                        (reparse-symbol namespacesubparts) [13603 14096])
+                                    ("find_tail_impl" function
+                                       (:template 
+                                          ( ("ForwardIteratorT" type (:type "class") nil nil))                                          
+                                        :type ("iterator_range" type
+                                             (:template-specifier 
+                                                ( ("ForwardIteratorT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :arguments 
+                                          ( ("Begin" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14241 14264])
+                                            ("End" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14281 14302])
+                                            ("N" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [14319 14334])
+                                            ("" variable (:type ("std::forward_iterator_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14351 14378]))                                          )
+                                        (reparse-symbol namespacesubparts) [14110 14933])
+                                    ("find_tail_impl" function
+                                       (:template 
+                                          ( ("ForwardIteratorT" type (:type "class") nil nil))                                          
+                                        :type ("iterator_range" type
+                                             (:template-specifier 
+                                                ( ("ForwardIteratorT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :arguments 
+                                          ( ("Begin" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15078 15101])
+                                            ("End" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15118 15139])
+                                            ("N" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [15156 15171])
+                                            ("" variable (:type ("std::bidirectional_iterator_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15188 15221]))                                          )
+                                        (reparse-symbol namespacesubparts) [14947 15598])
+                                    ("find_tail_impl" function
+                                       (:template 
+                                          ( ("ForwardIteratorT" type (:type "class") nil nil))                                          
+                                        :type ("iterator_range" type
+                                             (:template-specifier 
+                                                ( ("ForwardIteratorT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :arguments 
+                                          ( ("Begin" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15743 15766])
+                                            ("End" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15783 15804])
+                                            ("N" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [15821 15836])
+                                            ("" variable (:type ("std::random_access_iterator_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15853 15886]))                                          )
+                                        (reparse-symbol namespacesubparts) [15612 16174])
+                                    ("find_tail_impl" function
+                                       (:template 
+                                          ( ("ForwardIteratorT" type (:type "class") nil nil))                                          
+                                        :type ("iterator_range" type
+                                             (:template-specifier 
+                                                ( ("ForwardIteratorT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :arguments 
+                                          ( ("Begin" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16352 16375])
+                                            ("End" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16392 16413])
+                                            ("N" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [16430 16446]))                                          )
+                                        (reparse-symbol namespacesubparts) [16225 16716])
+                                    ("head_finderF" type
+                                       (:members 
+                                          ( ("head_finderF" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("N" variable (:type "int") (reparse-symbol arg-sub-list) [17166 17173]))                                                  
+                                                :type ("head_finderF" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [17152 17185])
+                                            ("()" function
+                                               (:template 
+                                                  ( ("ForwardIteratorT" type (:type "class") nil nil))                                                  
+                                                :type ("iterator_range" type
+                                                     (:template-specifier 
+                                                        ( ("ForwardIteratorT" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :arguments 
+                                                  ( ("Begin" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17367 17390])
+                                                    ("End" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17411 17433]))                                                  
+                                                :operator-flag t)
+                                                (reparse-symbol classsubparts) [17232 17949])
+                                            ("private" label nil (reparse-symbol classsubparts) [17963 17971])
+                                            ("m_N" variable (:type "int") (reparse-symbol classsubparts) [17988 17996]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [17070 18011])
+                                    ("tail_finderF" type
+                                       (:members 
+                                          ( ("tail_finderF" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("N" variable (:type "int") (reparse-symbol arg-sub-list) [18459 18466]))                                                  
+                                                :type ("tail_finderF" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [18445 18478])
+                                            ("()" function
+                                               (:template 
+                                                  ( ("ForwardIteratorT" type (:type "class") nil nil))                                                  
+                                                :type ("iterator_range" type
+                                                     (:template-specifier 
+                                                        ( ("ForwardIteratorT" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :arguments 
+                                                  ( ("Begin" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18660 18683])
+                                                    ("End" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18704 18726]))                                                  
+                                                :operator-flag t)
+                                                (reparse-symbol classsubparts) [18525 19238])
+                                            ("private" label nil (reparse-symbol classsubparts) [19252 19260])
+                                            ("m_N" variable (:type "int") (reparse-symbol classsubparts) [19277 19285]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [18363 19300])
+                                    ("token_finderF" type
+                                       (:template 
+                                          ( ("PredicateT" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("token_finderF" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("Pred" variable (:type ("PredicateT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20000 20016])
+                                                    ("eCompress" variable
+                                                       (:default-value "token_compress_off"
+                                                        :type ("token_compress_mode_type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [20037 20090]))                                                  
+                                                :type ("token_finderF" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [19965 20158])
+                                            ("()" function
+                                               (:template 
+                                                  ( ("ForwardIteratorT" type (:type "class") nil nil))                                                  
+                                                :type ("iterator_range" type
+                                                     (:template-specifier 
+                                                        ( ("ForwardIteratorT" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :arguments 
+                                                  ( ("Begin" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20340 20363])
+                                                    ("End" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20384 20406]))                                                  
+                                                :operator-flag t)
+                                                (reparse-symbol classsubparts) [20205 21327])
+                                            ("private" label nil (reparse-symbol classsubparts) [21341 21349])
+                                            ("m_Pred" variable (:type ("PredicateT" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21366 21384])
+                                            ("m_eCompress" variable (:type ("token_compress_mode_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21401 21438]))                                          )
+                                        (reparse-symbol namespacesubparts) [19838 21453])
+                                    ("range_finderF" type
+                                       (:template 
+                                          ( ("ForwardIterator1T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("input_iterator_type" type
+                                               (:typedef ("ForwardIterator1T" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [21870 21916])
+                                            ("result_type" type
+                                               (:typedef ("iterator_range" type
+                                                     (:template-specifier 
+                                                        ( ("input_iterator_type" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [21933 21989])
+                                            ("range_finderF" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("Begin" variable (:type ("input_iterator_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22074 22100])
+                                                    ("End" variable (:type ("input_iterator_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22121 22146]))                                                  
+                                                :type ("range_finderF" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [22039 22171])
+                                            ("range_finderF" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("Range" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("iterator_range" type
+                                                             (:template-specifier 
+                                                                ( ("input_iterator_type" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [22203 22252]))                                                  
+                                                :type ("range_finderF" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [22189 22292])
+                                            ("()" function
+                                               (:template 
+                                                  ( ("ForwardIterator2T" type (:type "class") nil nil))                                                  
+                                                :type ("iterator_range" type
+                                                     (:template-specifier 
+                                                        ( ("ForwardIterator2T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :arguments 
+                                                  ( ("" variable (:type ("ForwardIterator2T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22476 22494])
+                                                    ("" variable (:type ("ForwardIterator2T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22515 22534]))                                                  
+                                                :operator-flag t)
+                                                (reparse-symbol classsubparts) [22339 22755])
+                                            ("private" label nil (reparse-symbol classsubparts) [22769 22777])
+                                            ("m_Range" variable (:type ("iterator_range" type
+                                                 (:template-specifier 
+                                                    ( ("input_iterator_type" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [22794 22838]))                                          )
+                                        (reparse-symbol namespacesubparts) [21770 22853]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [821 22865]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [791 22891]))                  
+                :type "namespace")
+                nil [769 22916]))          
+      :file "finder.hpp"
+      :pointmax 22979
+      :fsize 22978
+      :lastmodtime '(21790 57546 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_STRING_FINDER_DETAIL_HPP")
+          )
+)
+    (semanticdb-table "formatter.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_STRING_FORMATTER_DETAIL_HPP" variable (:constant-flag t) nil [428 461])
+            ("boost/range/iterator_range_core.hpp" include (:system-flag t) nil [464 510])
+            ("boost/range/begin.hpp" include (:system-flag t) nil [511 543])
+            ("boost/range/end.hpp" include (:system-flag t) nil [544 574])
+            ("boost/range/const_iterator.hpp" include (:system-flag t) nil [575 616])
+            ("boost/algorithm/string/detail/util.hpp" include (:system-flag t) nil [618 667])
+            ("boost" type
+               (:members 
+                  ( ("algorithm" type
+                       (:members 
+                          ( ("detail" type
+                               (:members 
+                                  ( ("const_formatF" type
+                                       (:template 
+                                          ( ("RangeT" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("private" label nil (reparse-symbol classsubparts) [1038 1046])
+                                            ("format_iterator" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1143 1164])
+                                            ("result_type" type
+                                               (:typedef ("iterator_range" type
+                                                     (:template-specifier 
+                                                        ( ("format_iterator" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1181 1233])
+                                            ("public" label nil (reparse-symbol classsubparts) [1259 1266])
+                                            ("const_formatF" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("Format" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("RangeT" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1329 1350]))                                                  
+                                                :type ("const_formatF" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [1315 1430])
+                                            ("()" function
+                                               (:template 
+                                                  ( ("Range2T" type (:type "class") nil nil))                                                  
+                                                :type ("result_type" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Range2T" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1789 1804]))                                                  
+                                                :constant-flag t
+                                                :operator-flag t)
+                                                (reparse-symbol classsubparts) [1716 1883])
+                                            ("private" label nil (reparse-symbol classsubparts) [1897 1905])
+                                            ("m_Format" variable (:type ("result_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1922 1943]))                                          )
+                                        (reparse-symbol namespacesubparts) [953 1958])
+                                    ("identity_formatF" type
+                                       (:template 
+                                          ( ("RangeT" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("()" function
+                                               (:template 
+                                                  ( ("Range2T" type (:type "class") nil nil))                                                  
+                                                :type ("RangeT" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("Replace" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Range2T" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2286 2309]))                                                  
+                                                :constant-flag t
+                                                :operator-flag t)
+                                                (reparse-symbol classsubparts) [2216 2434]))                                          )
+                                        (reparse-symbol namespacesubparts) [2095 2449])
+                                    ("empty_formatF" type
+                                       (:template 
+                                          ( ("CharT" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("()" function
+                                               (:template 
+                                                  ( ("ReplaceT" type (:type "class") nil nil))                                                  
+                                                :type ("empty_container" type
+                                                     (:template-specifier 
+                                                        ( ("CharT" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("ReplaceT" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2760 2776]))                                                  
+                                                :operator-flag t)
+                                                (reparse-symbol classsubparts) [2680 2871]))                                          )
+                                        (reparse-symbol namespacesubparts) [2590 2886])
+                                    ("dissect_formatF" type
+                                       (:template 
+                                          ( ("FinderT" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [3109 3116])
+                                            ("dissect_formatF" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("Finder" variable (:type ("FinderT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3181 3196]))                                                  
+                                                :type ("dissect_formatF" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [3165 3236])
+                                            ("()" function
+                                               (:template 
+                                                  ( ("RangeT" type (:type "class") nil nil))                                                  
+                                                :type ("iterator_range" type
+                                                     (:template-specifier 
+                                                        ( ("BOOST_STRING_TYPENAME" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :arguments 
+                                                  ( ("Replace" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("RangeT" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3464 3486]))                                                  
+                                                :typemodifiers ("inline")
+                                                :operator-flag t)
+                                                (reparse-symbol classsubparts) [3287 3619])
+                                            ("private" label nil (reparse-symbol classsubparts) [3633 3641])
+                                            ("m_Finder" variable (:type ("FinderT" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3658 3675]))                                          )
+                                        (reparse-symbol namespacesubparts) [3021 3690]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [801 3702]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [771 3728]))                  
+                :type "namespace")
+                nil [749 3753]))          
+      :file "formatter.hpp"
+      :pointmax 3819
+      :fsize 3818
+      :lastmodtime '(21790 57546 0 0)
+      :unmatched-syntax '((punctuation 1142 . 1143) (punctuation 1141 . 1142) (punctuation 1140 . 1141) (symbol 1134 . 1140) (punctuation 1133 . 1134) (symbol 1113 . 1133) (symbol 1071 . 1092) (TYPEDEF 1063 . 1070))
+      :lexical-table 
+        '(("BOOST_STRING_FORMATTER_DETAIL_HPP")
+          )
+)
+    (semanticdb-table "find_format_store.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_STRING_FIND_FORMAT_STORE_DETAIL_HPP" variable (:constant-flag t) nil [445 486])
+            ("boost/algorithm/string/config.hpp" include (:system-flag t) nil [488 532])
+            ("boost/range/iterator_range_core.hpp" include (:system-flag t) nil [533 579])
+            ("boost" type
+               (:members 
+                  ( ("algorithm" type
+                       (:members 
+                          ( ("detail" type
+                               (:members 
+                                  ( ("find_format_store" type
+                                       (:template 
+                                          ( ("ForwardIteratorT" type (:type "class") nil nil)
+                                            ("FormatterT" type (:type "class") nil nil)
+                                            ("FormatResultT" type (:type "class") nil nil))                                          
+                                        :type "class"
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [1145 1152])
+                                            ("base_type" type
+                                               (:typedef ("iterator_range" type
+                                                     (:template-specifier 
+                                                        ( ("ForwardIteratorT" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1197 1248])
+                                            ("formatter_type" type
+                                               (:typedef ("FormatterT" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1265 1300])
+                                            ("format_result_type" type
+                                               (:typedef ("FormatResultT" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1317 1358])
+                                            ("public" label nil (reparse-symbol classsubparts) [1388 1395])
+                                            ("find_format_store" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("FindResult" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("base_type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1488 1516])
+                                                    ("FormatResult" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("format_result_type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1541 1580])
+                                                    ("Formatter" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("formatter_type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1605 1638]))                                                  
+                                                :type ("find_format_store" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1444 1779])
+                                            ("=" function
+                                               (:template 
+                                                  ( ("FindResultT" type (:type "class") nil nil))                                                  
+                                                :type ("find_format_store" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("FindResult" variable (:type ("FindResultT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1906 1930]))                                                  
+                                                :operator-flag t)
+                                                (reparse-symbol classsubparts) [1827 2227])
+                                            ("format_result" function
+                                               (:constant-flag t
+                                                :type ("format_result_type" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2287 2410])
+                                            ("private" label nil (reparse-symbol classsubparts) [2424 2432])
+                                            ("m_FormatResult" variable (:type ("format_result_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2449 2483])
+                                            ("m_Formatter" variable
+                                               (:constant-flag t
+                                                :type ("formatter_type" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2500 2534]))                                          
+                                        :superclasses 
+                                          ( ("iterator_range" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [892 2549])
+                                    ("check_find_result" function
+                                       (:template 
+                                          ( ("InputT" type (:type "class") nil nil)
+                                            ("FindResultT" type (:type "class") nil nil))                                          
+                                        :type "bool"
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :type ("InputT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2646 2654])
+                                            ("FindResult" variable
+                                               (:reference 1
+                                                :type ("FindResultT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2655 2679]))                                          )
+                                        (reparse-symbol namespacesubparts) [2563 2953]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [633 3034]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [603 3060]))                  
+                :type "namespace")
+                nil [581 3085]))          
+      :file "find_format_store.hpp"
+      :pointmax 3159
+      :fsize 3158
+      :lastmodtime '(21790 57546 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_STRING_FIND_FORMAT_STORE_DETAIL_HPP")
+          )
+)
+    (semanticdb-table "replace_storage.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_STRING_REPLACE_STORAGE_DETAIL_HPP" variable (:constant-flag t) nil [441 480])
+            ("boost/algorithm/string/config.hpp" include (:system-flag t) nil [482 526])
+            ("algorithm" include (:system-flag t) nil [527 547])
+            ("boost/mpl/bool.hpp" include (:system-flag t) nil [548 577])
+            ("boost/algorithm/string/sequence_traits.hpp" include (:system-flag t) nil [578 631])
+            ("boost/algorithm/string/detail/sequence.hpp" include (:system-flag t) nil [632 685])
+            ("boost" type
+               (:members 
+                  ( ("algorithm" type
+                       (:members 
+                          ( ("detail" type
+                               (:members 
+                                  ( ("move_from_storage" function
+                                       (:template 
+                                          ( ("StorageT" type (:type "class") nil nil)
+                                            ("OutputIteratorT" type (:type "class") nil nil))                                          
+                                        :type ("OutputIteratorT" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("Storage" variable
+                                               (:reference 1
+                                                :type ("StorageT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [990 1008])
+                                            ("DestBegin" variable (:type ("OutputIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1025 1051])
+                                            ("DestEnd" variable (:type ("OutputIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1068 1093]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [864 1443])
+                                    ("copy_to_storage" function
+                                       (:template 
+                                          ( ("StorageT" type (:type "class") nil nil)
+                                            ("WhatT" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("Storage" variable
+                                               (:reference 1
+                                                :type ("StorageT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1560 1578])
+                                            ("What" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("WhatT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1595 1614]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [1457 1733])
+                                    ("process_segment_helper" type
+                                       (:template 
+                                          ( ("bool" type nil nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("()" function
+                                               (:template 
+                                                  ( ("StorageT" type (:type "class") nil nil)
+                                                    ("InputT" type (:type "class") nil nil)
+                                                    ("ForwardIteratorT" type (:type "class") nil nil))                                                  
+                                                :type ("ForwardIteratorT" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("Storage" variable
+                                                       (:reference 1
+                                                        :type ("StorageT" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2212 2230])
+                                                    ("" variable
+                                                       (:reference 1
+                                                        :type ("InputT" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2251 2269])
+                                                    ("InsertIt" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2290 2316])
+                                                    ("SegmentBegin" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2337 2367])
+                                                    ("SegmentEnd" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2388 2417]))                                                  
+                                                :operator-flag t)
+                                                (reparse-symbol classsubparts) [2012 4094]))                                          )
+                                        (reparse-symbol namespacesubparts) [1827 4109])
+                                    ("process_segment_helper" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("()" function
+                                               (:template 
+                                                  ( ("StorageT" type (:type "class") nil nil)
+                                                    ("InputT" type (:type "class") nil nil)
+                                                    ("ForwardIteratorT" type (:type "class") nil nil))                                                  
+                                                :type ("ForwardIteratorT" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("Storage" variable
+                                                       (:reference 1
+                                                        :type ("StorageT" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4493 4511])
+                                                    ("Input" variable
+                                                       (:reference 1
+                                                        :type ("InputT" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [4532 4546])
+                                                    ("InsertIt" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4567 4593])
+                                                    ("SegmentBegin" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4614 4644])
+                                                    ("SegmentEnd" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4665 4694]))                                                  
+                                                :operator-flag t)
+                                                (reparse-symbol classsubparts) [4293 5081]))                                          
+                                        :template-specifier 
+                                          ( ("true" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [4123 5096])
+                                    ("process_segment" function
+                                       (:template 
+                                          ( ("StorageT" type (:type "class") nil nil)
+                                            ("InputT" type (:type "class") nil nil)
+                                            ("ForwardIteratorT" type (:type "class") nil nil))                                          
+                                        :type ("ForwardIteratorT" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("Storage" variable
+                                               (:reference 1
+                                                :type ("StorageT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5366 5384])
+                                            ("Input" variable
+                                               (:reference 1
+                                                :type ("InputT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5401 5415])
+                                            ("InsertIt" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5432 5458])
+                                            ("SegmentBegin" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5475 5505])
+                                            ("SegmentEnd" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5522 5551]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [5174 5798]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [739 5822]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [709 5848]))                  
+                :type "namespace")
+                nil [687 5873]))          
+      :file "replace_storage.hpp"
+      :pointmax 5945
+      :fsize 5944
+      :lastmodtime '(21790 57546 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_STRING_REPLACE_STORAGE_DETAIL_HPP")
+          )
+)
+    (semanticdb-table "util.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_STRING_UTIL_DETAIL_HPP" variable (:constant-flag t) nil [419 447])
+            ("boost/algorithm/string/config.hpp" include (:system-flag t) nil [449 493])
+            ("functional" include (:system-flag t) nil [494 515])
+            ("boost/range/iterator_range_core.hpp" include (:system-flag t) nil [516 562])
+            ("boost" type
+               (:members 
+                  ( ("algorithm" type
+                       (:members 
+                          ( ("detail" type
+                               (:members 
+                                  ( ("empty_container" type
+                                       (:template 
+                                          ( ("CharT" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("empty_container" type
+                                                     (:template-specifier 
+                                                        ( ("CharT" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1056 1092])
+                                            ("value_type" type
+                                               (:typedef ("CharT" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1117 1142])
+                                            ("size_type" type
+                                               (:typedef ("std::size_t" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1159 1189])
+                                            ("difference_type" type
+                                               (:typedef ("std::ptrdiff_t" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1206 1245])
+                                            ("reference" variable
+                                               (:constant-flag t
+                                                :type ("value_type" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1270 1298])
+                                            ("const_reference" variable
+                                               (:constant-flag t
+                                                :type ("value_type" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1323 1357])
+                                            ("iterator" type
+                                               (:typedef ("value_type" type (:type "class") nil nil)
+                                                :pointer 1
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1374 1409])
+                                            ("const_iterator" type
+                                               (:typedef ("value_type" type (:type "class") nil nil)
+                                                :pointer 1
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1426 1467])
+                                            ("begin" function (:type ("const_iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1532 1660])
+                                            ("end" function (:type ("const_iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1678 1804])
+                                            ("empty" function (:type "bool") (reparse-symbol classsubparts) [1822 1910])
+                                            ("size" function (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1928 2016]))                                          )
+                                        (reparse-symbol namespacesubparts) [963 2031])
+                                    ("bounded_copy" function
+                                       (:template 
+                                          ( ("InputIteratorT" type (:type "class") nil nil)
+                                            ("OutputIteratorT" type (:type "class") nil nil))                                          
+                                        :type ("OutputIteratorT" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("First" variable (:type ("InputIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2311 2332])
+                                            ("Last" variable (:type ("InputIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2350 2370])
+                                            ("DestFirst" variable (:type ("OutputIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2388 2414])
+                                            ("DestLast" variable (:type ("OutputIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2431 2457]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [2186 2776])
+                                    ("copy_iterator_rangeF" type
+                                       (:superclasses 
+                                          ( ("std::unary_function" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("()" function
+                                               (:operator-flag t
+                                                :arguments 
+                                                  ( ("Range" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("iterator_range" type
+                                                             (:template-specifier 
+                                                                ( ("IteratorT" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [3189 3229]))                                                  
+                                                :type ("SeqT" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [3172 3323]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [3033 3338]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [616 3349]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [586 3375]))                  
+                :type "namespace")
+                nil [564 3400]))          
+      :file "util.hpp"
+      :pointmax 3462
+      :fsize 3461
+      :lastmodtime '(21790 57546 0 0)
+      :unmatched-syntax '((punctuation 3019 . 3020) (symbol 3004 . 3018) (punctuation 3003 . 3004) (punctuation 3002 . 3003) (symbol 2998 . 3002) (symbol 2976 . 2997) (punctuation 2975 . 2976) (symbol 2966 . 2975) (TYPENAME 2957 . 2965) (punctuation 2938 . 2939) (symbol 2934 . 2938) (TYPENAME 2925 . 2933) (punctuation 2906 . 2907) (TEMPLATE 2898 . 2906) (TYPEDEF 1315 . 1322) (TYPEDEF 1262 . 1269))
+      :lexical-table 
+        '(("BOOST_STRING_UTIL_DETAIL_HPP")
+          )
+)
+    (semanticdb-table "sequence.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_STRING_DETAIL_SEQUENCE_HPP" variable (:constant-flag t) nil [427 459])
+            ("boost/algorithm/string/config.hpp" include (:system-flag t) nil [461 505])
+            ("boost/mpl/bool.hpp" include (:system-flag t) nil [506 535])
+            ("boost/mpl/logical.hpp" include (:system-flag t) nil [536 568])
+            ("boost/range/begin.hpp" include (:system-flag t) nil [569 601])
+            ("boost/range/end.hpp" include (:system-flag t) nil [602 632])
+            ("boost/algorithm/string/sequence_traits.hpp" include (:system-flag t) nil [634 687])
+            ("boost" type
+               (:members 
+                  ( ("algorithm" type
+                       (:members 
+                          ( ("detail" type
+                               (:members 
+                                  ( ("insert" function
+                                       (:template 
+                                          ( ("InputT" type (:type "class") nil nil)
+                                            ("ForwardIteratorT" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("Input" variable
+                                               (:reference 1
+                                                :type ("InputT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [957 971])
+                                            ("InputT::iterator" variable (:type ("BOOST_STRING_TYPENAME" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [988 1029])
+                                            ("" variable (:type ("At" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1027 1030])
+                                            ("Begin" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1047 1070])
+                                            ("End" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1087 1109]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [854 1185])
+                                    ("insert" function
+                                       (:template 
+                                          ( ("InputT" type (:type "class") nil nil)
+                                            ("InsertT" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("Input" variable
+                                               (:reference 1
+                                                :type ("InputT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1293 1307])
+                                            ("InputT::iterator" variable (:type ("BOOST_STRING_TYPENAME" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1324 1365])
+                                            ("" variable (:type ("At" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1363 1366])
+                                            ("Insert" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("InsertT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1383 1406]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [1199 1545])
+                                    ("erase" function
+                                       (:template 
+                                          ( ("InputT" type (:type "class") nil nil))                                          
+                                        :type ("InputT::iterator" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("Input" variable
+                                               (:reference 1
+                                                :type ("InputT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1890 1904])
+                                            ("InputT::iterator" variable (:type ("BOOST_STRING_TYPENAME" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1921 1964])
+                                            ("" variable (:type ("From" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1960 1965])
+                                            ("InputT::iterator" variable (:type ("BOOST_STRING_TYPENAME" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1982 2023])
+                                            ("" variable (:type ("To" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2021 2025]))                                          
+                                        :typemodifiers ("inline" "typename"))
+                                        (reparse-symbol namespacesubparts) [1794 2101])
+                                    ("replace_const_time_helper" type
+                                       (:template 
+                                          ( ("bool" type nil nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("()" function
+                                               (:template 
+                                                  ( ("InputT" type (:type "class") nil nil)
+                                                    ("ForwardIteratorT" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("Input" variable
+                                                       (:reference 1
+                                                        :type ("InputT" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2545 2559])
+                                                    ("InputT::iterator" variable (:type ("BOOST_STRING_TYPENAME" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2580 2623])
+                                                    ("" variable (:type ("From" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2619 2624])
+                                                    ("InputT::iterator" variable (:type ("BOOST_STRING_TYPENAME" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2645 2686])
+                                                    ("" variable (:type ("To" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2684 2687])
+                                                    ("Begin" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2708 2731])
+                                                    ("End" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2752 2774]))                                                  
+                                                :operator-flag t)
+                                                (reparse-symbol classsubparts) [2437 3688]))                                          )
+                                        (reparse-symbol namespacesubparts) [2322 3703])
+                                    ("replace_const_time_helper" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("()" function
+                                               (:template 
+                                                  ( ("InputT" type (:type "class") nil nil)
+                                                    ("ForwardIteratorT" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("Input" variable
+                                                       (:reference 1
+                                                        :type ("InputT" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [3986 4000])
+                                                    ("InputT::iterator" variable (:type ("BOOST_STRING_TYPENAME" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4021 4064])
+                                                    ("" variable (:type ("From" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4060 4065])
+                                                    ("InputT::iterator" variable (:type ("BOOST_STRING_TYPENAME" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4086 4127])
+                                                    ("" variable (:type ("To" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4125 4128])
+                                                    ("Begin" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4149 4172])
+                                                    ("End" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4193 4215]))                                                  
+                                                :operator-flag t)
+                                                (reparse-symbol classsubparts) [3878 4728]))                                          
+                                        :template-specifier 
+                                          ( ("true" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [3717 4743])
+                                    ("replace_native_helper" type
+                                       (:template 
+                                          ( ("bool" type nil nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("()" function
+                                               (:template 
+                                                  ( ("InputT" type (:type "class") nil nil)
+                                                    ("ForwardIteratorT" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("Input" variable
+                                                       (:reference 1
+                                                        :type ("InputT" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5003 5017])
+                                                    ("InputT::iterator" variable (:type ("BOOST_STRING_TYPENAME" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5038 5081])
+                                                    ("" variable (:type ("From" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5077 5082])
+                                                    ("InputT::iterator" variable (:type ("BOOST_STRING_TYPENAME" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5103 5144])
+                                                    ("" variable (:type ("To" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5142 5145])
+                                                    ("Begin" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5166 5189])
+                                                    ("End" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5210 5232]))                                                  
+                                                :operator-flag t)
+                                                (reparse-symbol classsubparts) [4895 5544]))                                          )
+                                        (reparse-symbol namespacesubparts) [4797 5559])
+                                    ("replace_native_helper" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("()" function
+                                               (:template 
+                                                  ( ("InputT" type (:type "class") nil nil)
+                                                    ("ForwardIteratorT" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("Input" variable
+                                                       (:reference 1
+                                                        :type ("InputT" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [5822 5836])
+                                                    ("InputT::iterator" variable (:type ("BOOST_STRING_TYPENAME" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5857 5900])
+                                                    ("" variable (:type ("From" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5896 5901])
+                                                    ("InputT::iterator" variable (:type ("BOOST_STRING_TYPENAME" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5922 5963])
+                                                    ("" variable (:type ("To" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5961 5964])
+                                                    ("Begin" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5985 6008])
+                                                    ("End" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6029 6051]))                                                  
+                                                :operator-flag t)
+                                                (reparse-symbol classsubparts) [5714 6146]))                                          
+                                        :template-specifier 
+                                          ( ("true" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [5624 6161])
+                                    ("replace" function
+                                       (:template 
+                                          ( ("InputT" type (:type "class") nil nil)
+                                            ("ForwardIteratorT" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("Input" variable
+                                               (:reference 1
+                                                :type ("InputT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6360 6374])
+                                            ("InputT::iterator" variable (:type ("BOOST_STRING_TYPENAME" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6391 6434])
+                                            ("" variable (:type ("From" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6430 6435])
+                                            ("InputT::iterator" variable (:type ("BOOST_STRING_TYPENAME" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6452 6493])
+                                            ("" variable (:type ("To" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6491 6494])
+                                            ("Begin" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6511 6534])
+                                            ("End" variable (:type ("ForwardIteratorT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6551 6573]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [6256 6730])
+                                    ("replace" function
+                                       (:template 
+                                          ( ("InputT" type (:type "class") nil nil)
+                                            ("InsertT" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("Input" variable
+                                               (:reference 1
+                                                :type ("InputT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6839 6853])
+                                            ("InputT::iterator" variable (:type ("BOOST_STRING_TYPENAME" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6870 6913])
+                                            ("" variable (:type ("From" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6909 6914])
+                                            ("InputT::iterator" variable (:type ("BOOST_STRING_TYPENAME" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6931 6972])
+                                            ("" variable (:type ("To" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6970 6973])
+                                            ("Insert" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("InsertT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6990 7013]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [6744 7402]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [741 7413]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [711 7439]))                  
+                :type "namespace")
+                nil [689 7464]))          
+      :file "sequence.hpp"
+      :pointmax 7530
+      :fsize 7529
+      :lastmodtime '(21790 57546 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_STRING_DETAIL_SEQUENCE_HPP")
+          )
+))
+  :file "!usr!include!boost!algorithm!string!detail!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

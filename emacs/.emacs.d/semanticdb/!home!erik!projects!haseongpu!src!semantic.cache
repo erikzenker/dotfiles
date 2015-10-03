@@ -1,0 +1,115 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "calc_phi_ase.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("cmath" include (:system-flag t) nil [763 779])
+            ("cassert" include (:system-flag t) nil [780 798])
+            ("cstdlib" include (:system-flag t) nil [799 817])
+            ("vector" include (:system-flag t) nil [826 843])
+            ("utility" include (:system-flag t) nil [844 862])
+            ("type_traits" include (:system-flag t) nil [882 904])
+            ("types.hpp" include (:system-flag t) nil [1414 1434])
+            ("alpaka/alpaka.hpp" include (:system-flag t) nil [1498 1526])
+            ("SEED" variable (:constant-flag t) nil [1578 1582])
+            ("EmptyKernel" type
+               (:members 
+                  ( ("()" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("acc" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T_Acc" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2470 2488]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2454 2509]))                  
+                :type "struct")
+                nil [2385 2513])
+            ("has_destructor" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("test" function
+                       (:template 
+                          ( ("A" type (:type "class") nil nil))                          
+                        :type ("std::true_type" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("" variable (:type ("decltype" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2651 2683]))                          
+                        :typemodifiers ("static"))
+                        (reparse-symbol classsubparts) [2597 2727])
+                    ("test" function
+                       (:template 
+                          ( ("A" type (:type "class") nil nil))                          
+                        :type ("std::false_type" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [2817 2821]))                          
+                        :typemodifiers ("static"))
+                        (reparse-symbol classsubparts) [2764 2864])
+                    ("type" variable (:type "int") (reparse-symbol classsubparts) [2967 2972])
+                    ("type::value" variable (:type "int") (reparse-symbol classsubparts) [3004 3016]))                  )
+                nil [2516 3038])
+            ("alpaka" type
+               (:members 
+                  ( ("acc" type
+                       (:members 
+                          ( ("AccGpuCudaRt" type
+                               (:template 
+                                  ( ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :prototype t)
+                                (reparse-symbol namespacesubparts) [3087 3150])
+                            ("AccCpuSerial" type
+                               (:template 
+                                  ( ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :prototype t)
+                                (reparse-symbol namespacesubparts) [3160 3223]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [3063 3229]))                  
+                :type "namespace")
+                nil [3040 3231])
+            ("calcPhiAse" function
+               (:arguments 
+                  ( ("experiment" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ExperimentParameters" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3252 3291])
+                    ("compute" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ComputeParameters" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3297 3330])
+                    ("result" variable
+                       (:reference 1
+                        :type ("Result" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3336 3351])
+                    ("minSample_i" variable
+                       (:constant-flag t
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [3357 3384])
+                    ("maxSample_i" variable
+                       (:constant-flag t
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [3390 3417])
+                    ("runtime" variable
+                       (:reference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [3423 3439]))                  
+                :type "float")
+                nil [3233 12544]))          
+      :file "calc_phi_ase.cc"
+      :pointmax 12545
+      :fsize 12544
+      :lastmodtime '(21997 36767 910665 491000)
+      :unmatched-syntax '((thing 2410 . 2418) (thing 2419 . 2420) (thing 2420 . 2428) (thing 2429 . 2434) (thing 2434 . 2435) (thing 2440 . 2453) (thing 2659 . 2683) (thing 2684 . 2685) (thing 2938 . 2945) (thing 2946 . 2954) (thing 2954 . 2966) (thing 2962 . 2965) (thing 2978 . 2984) (thing 2985 . 2990) (thing 2991 . 2995) (thing 2996 . 3001) (thing 3002 . 3003))))
+  :file "!home!erik!projects!haseongpu!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

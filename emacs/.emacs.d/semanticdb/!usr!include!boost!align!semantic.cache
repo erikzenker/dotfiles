@@ -1,0 +1,23 @@
+;; Object align/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "align/"
+  :tables
+  (list
+    (semanticdb-table "align.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ALIGN_ALIGN_HPP" variable (:constant-flag t) nil [200 221])
+            ("boost/config.hpp" include (:system-flag t) nil [223 250])
+            ("boost/align/detail/align_cxx11.hpp" include (:system-flag t) nil [291 336]))          
+      :file "align.hpp"
+      :pointmax 398
+      :fsize 397
+      :lastmodtime '(21790 57544 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_ALIGN_ALIGN_HPP")
+          )
+))
+  :file "!usr!include!boost!align!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

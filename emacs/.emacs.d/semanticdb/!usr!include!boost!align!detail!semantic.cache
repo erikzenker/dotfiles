@@ -1,0 +1,34 @@
+;; Object detail/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "detail/"
+  :tables
+  (list
+    (semanticdb-table "align_cxx11.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_ALIGN_DETAIL_ALIGN_CXX11_HPP" variable (:constant-flag t) nil [213 247])
+            ("memory" include (:system-flag t) nil [249 266])
+            ("boost" type
+               (:members 
+                  ( ("alignment" type
+                       (:members 
+                          ( ("std::align" using (:type ("std::align" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [320 337]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [290 343]))                  
+                :type "namespace")
+                nil [268 345]))          
+      :file "align_cxx11.hpp"
+      :pointmax 354
+      :fsize 353
+      :lastmodtime '(21790 57546 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_ALIGN_DETAIL_ALIGN_CXX11_HPP")
+          )
+))
+  :file "!usr!include!boost!align!detail!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

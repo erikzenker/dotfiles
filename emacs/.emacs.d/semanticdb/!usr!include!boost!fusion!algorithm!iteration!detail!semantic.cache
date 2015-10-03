@@ -1,0 +1,133 @@
+;; Object detail/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "detail/"
+  :tables
+  (list
+    (semanticdb-table "segmented_fold.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_FUSION_FOLD_S_HPP_INCLUDED" variable (:constant-flag t) nil [410 442])
+            ("boost/fusion/support/config.hpp" include (:system-flag t) nil [444 486])
+            ("boost/fusion/algorithm/iteration/fold_fwd.hpp" include (:system-flag t) nil [487 543])
+            ("boost/fusion/support/segmented_fold_until.hpp" include (:system-flag t) nil [544 600])
+            ("boost" type
+               (:members 
+                  ( ("fusion" type
+                       (:members 
+                          ( ("detail" type
+                               (:members 
+                                  ( ("segmented_fold_fun" type
+                                       (:template 
+                                          ( ("Fun" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("segmented_fold_fun" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("f" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Fun" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [791 804]))                                                  
+                                                :type ("segmented_fold_fun" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [772 834])
+                                            ("fun" variable (:type ("Fun" type (:type "class") nil nil)) (reparse-symbol classsubparts) [844 859])
+                                            ("apply" type
+                                               (:template 
+                                                  ( ("Sequence" type (:type "class") nil nil)
+                                                    ("State" type (:type "class") nil nil)
+                                                    ("Context" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("type" type
+                                                       (:typedef ("result_of::fold::type" type (:type "class") nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [975 1041])
+                                                    ("continue_type" type
+                                                       (:typedef ("mpl::true_" type (:type "class") nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [1054 1087])
+                                                    ("call" function
+                                                       (:typemodifiers ("static")
+                                                        :arguments 
+                                                          ( ("seq" variable
+                                                               (:reference 1
+                                                                :type ("Sequence" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1155 1169])
+                                                            ("state" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("State" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1170 1189])
+                                                            ("" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("Context" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1190 1205])
+                                                            ("fun" variable
+                                                               (:reference 1
+                                                                :constant-flag t
+                                                                :type ("segmented_fold_fun" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [1206 1236]))                                                          
+                                                        :type ("type" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1138 1322]))                                                  )
+                                                (reparse-symbol classsubparts) [869 1333]))                                          )
+                                        (reparse-symbol namespacesubparts) [662 1340])
+                                    ("result_of_fold" type
+                                       (:template 
+                                          ( ("Sequence" type (:type "class") nil nil)
+                                            ("State" type (:type "class") nil nil)
+                                            ("Fun" type (:type "class") nil nil)
+                                            ("bool" type nil nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [1413 1516])
+                                    ("result_of_fold" type
+                                       (:template 
+                                          ( ("Sequence" type (:type "class") nil nil)
+                                            ("State" type (:type "class") nil nil)
+                                            ("Fun" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("result_of::segmented_fold_until::type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1649 1833])
+                                            ("call" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("state" variable
+                                                       (:reference 1
+                                                        :type ("State" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1893 1906])
+                                                    ("seq" variable
+                                                       (:reference 1
+                                                        :type ("Sequence" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1907 1921])
+                                                    ("fun" variable (:type ("Fun" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1922 1930]))                                                  
+                                                :type ("type" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1876 2041]))                                          
+                                        :template-specifier 
+                                          ( ("Sequence" type nil nil nil)
+                                            ("State" type nil nil nil)
+                                            ("Fun" type nil nil nil)
+                                            ("true" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [1522 2048]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [639 2050]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [620 2051]))                  
+                :type "namespace")
+                nil [602 2052]))          
+      :file "segmented_fold.hpp"
+      :pointmax 2061
+      :fsize 2060
+      :lastmodtime '(21790 57546 0 0)
+      :unmatched-syntax '((symbol 1843 . 1867) (symbol 1101 . 1125) (EXPLICIT 763 . 771) (symbol 730 . 754))
+      :lexical-table 
+        '(("BOOST_FUSION_FOLD_S_HPP_INCLUDED")
+          )
+))
+  :file "!usr!include!boost!fusion!algorithm!iteration!detail!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

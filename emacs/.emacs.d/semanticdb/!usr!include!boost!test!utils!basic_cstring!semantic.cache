@@ -1,0 +1,1394 @@
+;; Object basic_cstring/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "basic_cstring/"
+  :tables
+  (list
+    (semanticdb-table "io.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_TEST_BASIC_CSTRING_IO_HPP_071894GER" variable (:constant-flag t) nil [532 573])
+            ("boost/test/utils/basic_cstring/basic_cstring.hpp" include (:system-flag t) nil [589 648])
+            ("iosfwd" include (:system-flag t) nil [657 674])
+            ("string" include (:system-flag t) nil [675 692])
+            ("boost/test/detail/suppress_warnings.hpp" include (:system-flag t) nil [694 744])
+            ("boost" type
+               (:members 
+                  ( ("unit_test" type
+                       (:members 
+                          ( ("<<" function
+                               (:template 
+                                  ( ("CharT1" type (:type "class") nil nil)
+                                    ("Tr" type (:type "class") nil nil)
+                                    ("CharT2" type (:type "class") nil nil))                                  
+                                :type ("std::basic_ostream" type
+                                     (:template-specifier 
+                                        ( ("CharT1" type nil nil nil)
+                                          ("Tr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("os" variable
+                                       (:reference 1
+                                        :type ("std::basic_ostream" type
+                                             (:template-specifier 
+                                                ( ("CharT1" type nil nil nil)
+                                                  ("Tr" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1451 1485])
+                                    ("str" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("basic_cstring" type
+                                             (:template-specifier 
+                                                ( ("CharT2" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1486 1520]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [1346 1758]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [847 1852]))                  
+                :type "namespace")
+                nil [828 1878])
+            ("boost/test/detail/enable_warnings.hpp" include (:system-flag t) nil [1981 2029]))          
+      :file "io.hpp"
+      :pointmax 2083
+      :fsize 2082
+      :lastmodtime '(21705 5908 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_TEST_BASIC_CSTRING_IO_HPP_071894GER")
+          )
+)
+    (semanticdb-table "basic_cstring.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_TEST_BASIC_CSTRING_HPP_071894GER" variable (:constant-flag t) nil [586 624])
+            ("boost/test/utils/basic_cstring/basic_cstring_fwd.hpp" include (:system-flag t) nil [640 703])
+            ("boost/test/utils/basic_cstring/bcs_char_traits.hpp" include (:system-flag t) nil [704 765])
+            ("string" include (:system-flag t) nil [774 791])
+            ("boost/test/detail/suppress_warnings.hpp" include (:system-flag t) nil [793 843])
+            ("boost" type
+               (:members 
+                  ( ("unit_test" type
+                       (:members 
+                          ( ("basic_cstring" type
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("self_type" type
+                                       (:typedef ("basic_cstring" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1264 1326])
+                                    ("public" label nil (reparse-symbol classsubparts) [1327 1334])
+                                    ("traits_type" type
+                                       (:typedef ("ut_detail::bcs_char_traits" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1355 1419])
+                                    ("std_string" type
+                                       (:typedef ("ut_detail::bcs_char_traits::std_string" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1424 1499])
+                                    ("value_type" type
+                                       (:typedef ("CharT" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1505 1568])
+                                    ("pointer" type
+                                       (:typedef ("value_type" type (:type "class") nil nil)
+                                        :pointer 1
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1573 1633])
+                                    ("const_pointer" type
+                                       (:typedef ("value_type" type (:type "class") nil nil)
+                                        :pointer 1
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1638 1704])
+                                    ("reference" variable (:type ("value_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1717 1771])
+                                    ("const_reference" variable
+                                       (:constant-flag t
+                                        :type ("value_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1784 1844])
+                                    ("size_type" type
+                                       (:typedef ("std::size_t" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1849 1911])
+                                    ("difference_type" type
+                                       (:typedef ("std::ptrdiff_t" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1916 1984])
+                                    ("const_iterator" type
+                                       (:typedef ("value_type" type (:type "class") nil nil)
+                                        :pointer 1
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1990 2057])
+                                    ("iterator" type
+                                       (:typedef ("value_type" type (:type "class") nil nil)
+                                        :pointer 1
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2062 2123])
+                                    ("npos" variable
+                                       (:typemodifiers ("static")
+                                        :constant-flag t
+                                        :default-value "-1"
+                                        :type ("size_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2448 2482])
+                                    ("null_str" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :type ("pointer" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2495 2522])
+                                    ("basic_cstring" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :type ("basic_cstring" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2599 2615])
+                                    ("basic_cstring" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std_string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2635 2656]))                                          
+                                        :type ("basic_cstring" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2620 2657])
+                                    ("basic_cstring" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("s" variable (:type ("pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2677 2688]))                                          
+                                        :type ("basic_cstring" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2662 2689])
+                                    ("basic_cstring" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("s" variable (:type ("pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2709 2719])
+                                            ("arg_size" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2720 2740]))                                          
+                                        :type ("basic_cstring" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2694 2741])
+                                    ("basic_cstring" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("first" variable (:type ("pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2761 2775])
+                                            ("last" variable (:type ("pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2776 2790]))                                          
+                                        :type ("basic_cstring" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2746 2791])
+                                    ("[]" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("index" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2852 2869]))                                          
+                                        :type ("value_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2824 2876])
+                                    ("at" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("index" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2901 2918]))                                          
+                                        :type ("value_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2881 2925])
+                                    ("size" function
+                                       (:prototype-flag t
+                                        :type ("size_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2953 2982])
+                                    ("is_empty" function
+                                       (:prototype-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [2987 3020])
+                                    ("clear" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3025 3049])
+                                    ("resize" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("new_len" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3078 3097]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3054 3098])
+                                    ("empty" function
+                                       (:prototype-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [3170 3200])
+                                    ("trim_right" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("trim_size" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3251 3272]))                                          
+                                        :type ("self_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3223 3273])
+                                    ("trim_left" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("trim_size" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3305 3326]))                                          
+                                        :type ("self_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3278 3327])
+                                    ("trim_right" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("it" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3360 3373]))                                          
+                                        :type ("self_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3332 3374])
+                                    ("trim_left" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("it" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3406 3419]))                                          
+                                        :type ("self_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3379 3420])
+                                    ("trim_left" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("exclusions" variable
+                                               (:default-value "self_type()"
+                                                :type ("self_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3471 3505]))                                          
+                                        :type ("self_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3444 3509])
+                                    ("trim_right" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("exclusions" variable
+                                               (:default-value "self_type()"
+                                                :type ("self_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3542 3576]))                                          
+                                        :type ("self_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3514 3580])
+                                    ("trim" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("exclusions" variable
+                                               (:default-value "self_type()"
+                                                :type ("self_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3607 3641]))                                          
+                                        :type ("self_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3585 3645])
+                                    ("=" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("self_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4146 4166]))                                          
+                                        :type ("basic_cstring" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4119 4167])
+                                    ("=" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std_string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4199 4220]))                                          
+                                        :type ("basic_cstring" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4172 4221])
+                                    ("=" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("s" variable (:type ("pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4253 4264]))                                          
+                                        :type ("basic_cstring" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4226 4265])
+                                    ("assign" function
+                                       (:template 
+                                          ( ("CharT2" type (:type "class") nil nil))                                          
+                                        :type ("basic_cstring" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("basic_cstring" type
+                                                     (:template-specifier 
+                                                        ( ("CharT2" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [4325 4357]))                                          )
+                                        (reparse-symbol classsubparts) [4271 4427])
+                                    ("assign" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("self_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4456 4475])
+                                            ("pos" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4476 4490])
+                                            ("len" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4491 4506]))                                          
+                                        :type ("basic_cstring" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4432 4507])
+                                    ("assign" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std_string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4536 4557]))                                          
+                                        :type ("basic_cstring" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4512 4558])
+                                    ("assign" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std_string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4587 4607])
+                                            ("pos" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4608 4622])
+                                            ("len" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4623 4638]))                                          
+                                        :type ("basic_cstring" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4563 4639])
+                                    ("assign" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("s" variable (:type ("pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4668 4679]))                                          
+                                        :type ("basic_cstring" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4644 4680])
+                                    ("assign" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("s" variable (:type ("pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4709 4719])
+                                            ("len" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4720 4735]))                                          
+                                        :type ("basic_cstring" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4685 4736])
+                                    ("assign" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("f" variable (:type ("pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4765 4775])
+                                            ("l" variable (:type ("pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4776 4787]))                                          
+                                        :type ("basic_cstring" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4741 4788])
+                                    ("swap" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :type ("self_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4832 4846]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4810 4847])
+                                    ("begin" function
+                                       (:prototype-flag t
+                                        :type ("iterator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4870 4894])
+                                    ("begin" function
+                                       (:prototype-flag t
+                                        :type ("const_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4899 4929])
+                                    ("end" function
+                                       (:prototype-flag t
+                                        :type ("iterator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4934 4956])
+                                    ("end" function
+                                       (:prototype-flag t
+                                        :type ("const_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4961 4989])
+                                    ("find" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("basic_cstring" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5087 5102]))                                          
+                                        :type ("size_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5065 5109])
+                                    ("rfind" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("basic_cstring" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5137 5152]))                                          
+                                        :type ("size_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5114 5159])
+                                    ("substr" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("beg_index" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5188 5208])
+                                            ("end_index" variable
+                                               (:default-value "npos"
+                                                :type ("size_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5209 5235]))                                          
+                                        :type ("self_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5164 5244])
+                                    ("private" label nil (reparse-symbol classsubparts) [5246 5254])
+                                    ("default_trim_ex" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :type ("self_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5259 5294])
+                                    ("m_begin" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5320 5344])
+                                    ("m_end" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5349 5371]))                                  )
+                                (reparse-symbol namespacesubparts) [1213 5374])
+                            ("null_str" function
+                               (:parent "basic_cstring"
+                                :type ("pointer" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [5521 5610])
+                            ("basic_cstring" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil))                                  
+                                :type ("basic_cstring" type (:type "class") nil nil)
+                                :typemodifiers ("inline")
+                                :parent "basic_cstring"
+                                :constructor-flag t)
+                                (reparse-symbol namespacesubparts) [5694 5810])
+                            ("basic_cstring" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil))                                  
+                                :type ("basic_cstring" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std_string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5963 5984]))                                  
+                                :typemodifiers ("inline")
+                                :parent "basic_cstring"
+                                :constructor-flag t)
+                                (reparse-symbol namespacesubparts) [5894 6041])
+                            ("basic_cstring" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil))                                  
+                                :type ("basic_cstring" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("s" variable (:type ("pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6194 6205]))                                  
+                                :typemodifiers ("inline")
+                                :parent "basic_cstring"
+                                :constructor-flag t)
+                                (reparse-symbol namespacesubparts) [6125 6300])
+                            ("basic_cstring" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil))                                  
+                                :type ("basic_cstring" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("s" variable (:type ("pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6453 6463])
+                                    ("arg_size" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6464 6484]))                                  
+                                :typemodifiers ("inline")
+                                :parent "basic_cstring"
+                                :constructor-flag t)
+                                (reparse-symbol namespacesubparts) [6384 6532])
+                            ("basic_cstring" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil))                                  
+                                :type ("basic_cstring" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("first" variable (:type ("pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6685 6699])
+                                    ("last" variable (:type ("pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6700 6714]))                                  
+                                :typemodifiers ("inline")
+                                :parent "basic_cstring"
+                                :constructor-flag t)
+                                (reparse-symbol namespacesubparts) [6616 6753])
+                            ("[]" function
+                               (:operator-flag t
+                                :parent "basic_cstring"
+                                :arguments 
+                                  ( ("index" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6945 6962]))                                  
+                                :type ("value_type" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [6900 6999])
+                            ("at" function
+                               (:parent "basic_cstring"
+                                :arguments 
+                                  ( ("index" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7183 7200]))                                  
+                                :type ("value_type" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [7146 7316])
+                            ("size" function
+                               (:parent "basic_cstring"
+                                :type ("size_type" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [7463 7539])
+                            ("is_empty" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :typemodifiers ("inline")
+                                :parent "basic_cstring")
+                                (reparse-symbol namespacesubparts) [7623 7731])
+                            ("empty" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :typemodifiers ("inline")
+                                :parent "basic_cstring")
+                                (reparse-symbol namespacesubparts) [7815 7914])
+                            ("clear" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :typemodifiers ("inline")
+                                :parent "basic_cstring")
+                                (reparse-symbol namespacesubparts) [7998 8089])
+                            ("resize" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("new_len" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8240 8259]))                                  
+                                :typemodifiers ("inline")
+                                :parent "basic_cstring")
+                                (reparse-symbol namespacesubparts) [8173 8334])
+                            ("trim_left" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil))                                  
+                                :type ("basic_cstring" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("trim_size" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8505 8526]))                                  
+                                :typemodifiers ("inline")
+                                :parent "basic_cstring")
+                                (reparse-symbol namespacesubparts) [8418 8619])
+                            ("trim_left" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil))                                  
+                                :type ("basic_cstring" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("it" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8790 8803]))                                  
+                                :typemodifiers ("inline")
+                                :parent "basic_cstring")
+                                (reparse-symbol namespacesubparts) [8703 8888])
+                            ("trim_left" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil))                                  
+                                :type ("basic_cstring" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("exclusions" variable (:type ("basic_cstring" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9059 9085]))                                  
+                                :typemodifiers ("inline")
+                                :parent "basic_cstring")
+                                (reparse-symbol namespacesubparts) [8972 9392])
+                            ("trim_right" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil))                                  
+                                :type ("basic_cstring" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("trim_size" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9564 9585]))                                  
+                                :typemodifiers ("inline")
+                                :parent "basic_cstring")
+                                (reparse-symbol namespacesubparts) [9476 9677])
+                            ("trim_right" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil))                                  
+                                :type ("basic_cstring" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("it" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9849 9862]))                                  
+                                :typemodifiers ("inline")
+                                :parent "basic_cstring")
+                                (reparse-symbol namespacesubparts) [9761 9945])
+                            ("trim_right" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil))                                  
+                                :type ("basic_cstring" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("exclusions" variable (:type ("basic_cstring" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10117 10143]))                                  
+                                :typemodifiers ("inline")
+                                :parent "basic_cstring")
+                                (reparse-symbol namespacesubparts) [10029 10470])
+                            ("trim" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil))                                  
+                                :type ("basic_cstring" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("exclusions" variable (:type ("basic_cstring" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10636 10662]))                                  
+                                :typemodifiers ("inline")
+                                :parent "basic_cstring")
+                                (reparse-symbol namespacesubparts) [10554 10744])
+                            ("=" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil))                                  
+                                :type ("basic_cstring" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("basic_cstring" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [10915 10946]))                                  
+                                :typemodifiers ("inline")
+                                :parent "basic_cstring"
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [10828 11017])
+                            ("=" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil))                                  
+                                :type ("basic_cstring" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std_string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11188 11209]))                                  
+                                :typemodifiers ("inline")
+                                :parent "basic_cstring"
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [11101 11248])
+                            ("=" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil))                                  
+                                :type ("basic_cstring" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("s" variable (:type ("pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11419 11430]))                                  
+                                :typemodifiers ("inline")
+                                :parent "basic_cstring"
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [11332 11469])
+                            ("assign" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil))                                  
+                                :type ("basic_cstring" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("basic_cstring" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [11637 11667])
+                                    ("pos" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11668 11682])
+                                    ("len" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11683 11698]))                                  
+                                :typemodifiers ("inline")
+                                :parent "basic_cstring")
+                                (reparse-symbol namespacesubparts) [11553 11756])
+                            ("assign" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil))                                  
+                                :type ("basic_cstring" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std_string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11924 11945]))                                  
+                                :typemodifiers ("inline")
+                                :parent "basic_cstring")
+                                (reparse-symbol namespacesubparts) [11840 11984])
+                            ("assign" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil))                                  
+                                :type ("basic_cstring" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std_string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12152 12172])
+                                    ("pos" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12173 12187])
+                                    ("len" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12188 12203]))                                  
+                                :typemodifiers ("inline")
+                                :parent "basic_cstring")
+                                (reparse-symbol namespacesubparts) [12068 12261])
+                            ("assign" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil))                                  
+                                :type ("basic_cstring" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("s" variable (:type ("pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12429 12440]))                                  
+                                :typemodifiers ("inline")
+                                :parent "basic_cstring")
+                                (reparse-symbol namespacesubparts) [12345 12479])
+                            ("assign" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil))                                  
+                                :type ("basic_cstring" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("s" variable (:type ("pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12647 12657])
+                                    ("len" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12658 12673]))                                  
+                                :typemodifiers ("inline")
+                                :parent "basic_cstring")
+                                (reparse-symbol namespacesubparts) [12563 12717])
+                            ("assign" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil))                                  
+                                :type ("basic_cstring" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("f" variable (:type ("pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12885 12895])
+                                    ("l" variable (:type ("pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12896 12907]))                                  
+                                :typemodifiers ("inline")
+                                :parent "basic_cstring")
+                                (reparse-symbol namespacesubparts) [12801 12949])
+                            ("swap" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :type ("basic_cstring" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [13098 13123]))                                  
+                                :typemodifiers ("inline")
+                                :parent "basic_cstring")
+                                (reparse-symbol namespacesubparts) [13033 13349])
+                            ("begin" function
+                               (:parent "basic_cstring"
+                                :type ("iterator" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [13496 13558])
+                            ("begin" function
+                               (:parent "basic_cstring"
+                                :type ("const_iterator" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [13705 13779])
+                            ("end" function
+                               (:parent "basic_cstring"
+                                :type ("iterator" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [13926 13984])
+                            ("end" function
+                               (:parent "basic_cstring"
+                                :type ("const_iterator" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [14131 14201])
+                            ("find" function
+                               (:parent "basic_cstring"
+                                :arguments 
+                                  ( ("str" variable (:type ("basic_cstring" type
+                                         (:template-specifier 
+                                            ( ("CharT" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [14386 14412]))                                  
+                                :type ("size_type" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [14348 14809])
+                            ("rfind" function
+                               (:parent "basic_cstring"
+                                :arguments 
+                                  ( ("str" variable (:type ("basic_cstring" type
+                                         (:template-specifier 
+                                            ( ("CharT" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [14995 15021]))                                  
+                                :type ("size_type" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [14956 15440])
+                            ("substr" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil))                                  
+                                :type ("basic_cstring" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("beg_index" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15607 15627])
+                                    ("end_index" variable (:type ("size_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15628 15649]))                                  
+                                :typemodifiers ("inline")
+                                :parent "basic_cstring")
+                                (reparse-symbol namespacesubparts) [15524 15889])
+                            ("default_trim_ex" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil))                                  
+                                :type ("basic_cstring" type
+                                     (:template-specifier 
+                                        ( ("CharT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :typemodifiers ("inline")
+                                :parent "basic_cstring")
+                                (reparse-symbol namespacesubparts) [15973 16184])
+                            ("==" function
+                               (:template 
+                                  ( ("CharT1" type (:type "class") nil nil)
+                                    ("CharT2" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("s1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("basic_cstring" type
+                                             (:template-specifier 
+                                                ( ("CharT1" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [16578 16610])
+                                    ("s2" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("basic_cstring" type
+                                             (:template-specifier 
+                                                ( ("CharT2" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [16611 16644]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [16512 16834])
+                            ("==" function
+                               (:template 
+                                  ( ("CharT1" type (:type "class") nil nil)
+                                    ("CharT2" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("s1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("basic_cstring" type
+                                             (:template-specifier 
+                                                ( ("CharT1" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [16984 17016])
+                                    ("s2" variable
+                                       (:pointer 1
+                                        :type ("CharT2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17017 17029]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [16918 17166])
+                            ("==" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("s1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("basic_cstring" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [17299 17330])
+                                    ("" variable
+                                       (:typemodifiers ("typename")
+                                        :type ("basic_cstring" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [17331 17361])
+                                    ("s2" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std_string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17362 17384]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [17250 17433])
+                            ("==" function
+                               (:template 
+                                  ( ("CharT1" type (:type "class") nil nil)
+                                    ("CharT2" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("s2" variable
+                                       (:pointer 1
+                                        :type ("CharT1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17583 17594])
+                                    ("s1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("basic_cstring" type
+                                             (:template-specifier 
+                                                ( ("CharT2" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [17595 17628]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [17517 17653])
+                            ("==" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("" variable
+                                       (:typemodifiers ("typename")
+                                        :type ("basic_cstring" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [17786 17816])
+                                    ("s2" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std_string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17817 17838])
+                                    ("s1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("basic_cstring" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [17839 17871]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [17737 17896])
+                            ("!=" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("s1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("basic_cstring" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [18029 18060])
+                                    ("s2" variable
+                                       (:pointer 1
+                                        :type ("CharT" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18061 18072]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [17980 18100])
+                            ("!=" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("s2" variable
+                                       (:pointer 1
+                                        :type ("CharT" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18233 18243])
+                                    ("s1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("basic_cstring" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [18244 18276]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [18184 18304])
+                            ("!=" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("s1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("basic_cstring" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [18437 18468])
+                                    ("s2" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("basic_cstring" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [18469 18501]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [18388 18529])
+                            ("!=" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("s1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("basic_cstring" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [18662 18693])
+                                    ("" variable
+                                       (:typemodifiers ("typename")
+                                        :type ("basic_cstring" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [18694 18724])
+                                    ("s2" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std_string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18725 18747]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [18613 18775])
+                            ("!=" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("" variable
+                                       (:typemodifiers ("typename")
+                                        :type ("basic_cstring" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [18908 18938])
+                                    ("s2" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std_string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18939 18960])
+                                    ("s1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("basic_cstring" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [18961 18993]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [18859 19021])
+                            ("first_char" function
+                               (:arguments 
+                                  ( ("source" variable (:type ("basic_cstring" type
+                                         (:template-specifier 
+                                            ( ("CharT" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [19435 19464]))                                  
+                                :type ("value_type" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [19412 19626])
+                            ("last_char" function
+                               (:arguments 
+                                  ( ("source" variable (:type ("basic_cstring" type
+                                         (:template-specifier 
+                                            ( ("CharT" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [20039 20068]))                                  
+                                :type ("value_type" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [20017 20232])
+                            ("assign_op" function
+                               (:template 
+                                  ( ("CharT1" type (:type "class") nil nil)
+                                    ("CharT2" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("target" variable
+                                       (:reference 1
+                                        :type ("std::basic_string" type
+                                             (:template-specifier 
+                                                ( ("CharT1" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [20626 20660])
+                                    ("src" variable (:type ("basic_cstring" type
+                                         (:template-specifier 
+                                            ( ("CharT2" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [20661 20687])
+                                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [20688 20693]))                                  
+                                :typemodifiers ("inline"))
+                                (reparse-symbol namespacesubparts) [20560 20743]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [946 20828]))                  
+                :type "namespace")
+                nil [927 20854])
+            ("boost/test/detail/enable_warnings.hpp" include (:system-flag t) nil [20957 21005]))          
+      :file "basic_cstring.hpp"
+      :pointmax 21056
+      :fsize 21055
+      :lastmodtime '(21705 5908 0 0)
+      :unmatched-syntax '((punctuation 20016 . 20017) (punctuation 20015 . 20016) (punctuation 20014 . 20015) (symbol 20009 . 20014) (punctuation 20008 . 20009) (symbol 19995 . 20008) (TYPENAME 19986 . 19994) (INLINE 19979 . 19985) (punctuation 19977 . 19978) (symbol 19972 . 19977) (TYPENAME 19963 . 19971) (punctuation 19962 . 19963) (TEMPLATE 19954 . 19962) (punctuation 19411 . 19412) (punctuation 19410 . 19411) (punctuation 19409 . 19410) (symbol 19404 . 19409) (punctuation 19403 . 19404) (symbol 19390 . 19403) (TYPENAME 19381 . 19389) (INLINE 19374 . 19380) (punctuation 19372 . 19373) (symbol 19367 . 19372) (TYPENAME 19358 . 19366) (punctuation 19357 . 19358) (TEMPLATE 19349 . 19357) (punctuation 18938 . 18939) (punctuation 18937 . 18938) (punctuation 18724 . 18725) (punctuation 18723 . 18724) (punctuation 17816 . 17817) (punctuation 17815 . 17816) (punctuation 17361 . 17362) (punctuation 17360 . 17361) (punctuation 14955 . 14956) (punctuation 14954 . 14955) (punctuation 14953 . 14954) (symbol 14948 . 14953) (punctuation 14947 . 14948) (symbol 14934 . 14947) (TYPENAME 14925 . 14933) (INLINE 14918 . 14924) (punctuation 14916 . 14917) (symbol 14911 . 14916) (TYPENAME 14902 . 14910) (punctuation 14901 . 14902) (TEMPLATE 14893 . 14901) (punctuation 14347 . 14348) (punctuation 14346 . 14347) (punctuation 14345 . 14346) (symbol 14340 . 14345) (punctuation 14339 . 14340) (symbol 14326 . 14339) (TYPENAME 14317 . 14325) (INLINE 14310 . 14316) (punctuation 14308 . 14309) (symbol 14303 . 14308) (TYPENAME 14294 . 14302) (punctuation 14293 . 14294) (TEMPLATE 14285 . 14293) (punctuation 14130 . 14131) (punctuation 14129 . 14130) (punctuation 14128 . 14129) (symbol 14123 . 14128) (punctuation 14122 . 14123) (symbol 14109 . 14122) (TYPENAME 14100 . 14108) (INLINE 14093 . 14099) (punctuation 14091 . 14092) (symbol 14086 . 14091) (TYPENAME 14077 . 14085) (punctuation 14076 . 14077) (TEMPLATE 14068 . 14076) (punctuation 13925 . 13926) (punctuation 13924 . 13925) (punctuation 13923 . 13924) (symbol 13918 . 13923) (punctuation 13917 . 13918) (symbol 13904 . 13917) (TYPENAME 13895 . 13903) (INLINE 13888 . 13894) (punctuation 13886 . 13887) (symbol 13881 . 13886) (TYPENAME 13872 . 13880) (punctuation 13871 . 13872) (TEMPLATE 13863 . 13871) (punctuation 13704 . 13705) (punctuation 13703 . 13704) (punctuation 13702 . 13703) (symbol 13697 . 13702) (punctuation 13696 . 13697) (symbol 13683 . 13696) (TYPENAME 13674 . 13682) (INLINE 13667 . 13673) (punctuation 13665 . 13666) (symbol 13660 . 13665) (TYPENAME 13651 . 13659) (punctuation 13650 . 13651) (TEMPLATE 13642 . 13650) (punctuation 13495 . 13496) (punctuation 13494 . 13495) (punctuation 13493 . 13494) (symbol 13488 . 13493) (punctuation 13487 . 13488) (symbol 13474 . 13487) (TYPENAME 13465 . 13473) (INLINE 13458 . 13464) (punctuation 13456 . 13457) (symbol 13451 . 13456) (TYPENAME 13442 . 13450) (punctuation 13441 . 13442) (TEMPLATE 13433 . 13441) (punctuation 7462 . 7463) (punctuation 7461 . 7462) (punctuation 7460 . 7461) (symbol 7455 . 7460) (punctuation 7454 . 7455) (symbol 7441 . 7454) (TYPENAME 7432 . 7440) (INLINE 7425 . 7431) (punctuation 7423 . 7424) (symbol 7418 . 7423) (TYPENAME 7409 . 7417) (punctuation 7408 . 7409) (TEMPLATE 7400 . 7408) (punctuation 7145 . 7146) (punctuation 7144 . 7145) (punctuation 7143 . 7144) (symbol 7138 . 7143) (punctuation 7137 . 7138) (symbol 7124 . 7137) (TYPENAME 7115 . 7123) (INLINE 7108 . 7114) (punctuation 7106 . 7107) (symbol 7101 . 7106) (TYPENAME 7092 . 7100) (punctuation 7091 . 7092) (TEMPLATE 7083 . 7091) (punctuation 6899 . 6900) (punctuation 6898 . 6899) (punctuation 6897 . 6898) (symbol 6892 . 6897) (punctuation 6891 . 6892) (symbol 6878 . 6891) (TYPENAME 6869 . 6877) (INLINE 6862 . 6868) (punctuation 6860 . 6861) (symbol 6855 . 6860) (TYPENAME 6846 . 6854) (punctuation 6845 . 6846) (TEMPLATE 6837 . 6845) (punctuation 5520 . 5521) (punctuation 5519 . 5520) (punctuation 5518 . 5519) (symbol 5513 . 5518) (punctuation 5512 . 5513) (symbol 5499 . 5512) (TYPENAME 5490 . 5498) (INLINE 5483 . 5489) (punctuation 5481 . 5482) (symbol 5476 . 5481) (TYPENAME 5467 . 5475) (punctuation 5466 . 5467) (TEMPLATE 5458 . 5466) (TYPEDEF 1776 . 1783) (TYPEDEF 1709 . 1716))
+      :lexical-table 
+        '(("BOOST_TEST_BASIC_CSTRING_HPP_071894GER")
+          )
+)
+    (semanticdb-table "basic_cstring_fwd.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_TEST_BASIC_CSTRING_FWD_HPP_071894GER" variable (:constant-flag t) nil [589 631])
+            ("boost/detail/workaround.hpp" include (:system-flag t) nil [633 671])
+            ("boost" type
+               (:members 
+                  ( ("unit_test" type
+                       (:members 
+                          ( ("basic_cstring" type
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :prototype t)
+                                (reparse-symbol namespacesubparts) [715 765])
+                            ("const_string" type
+                               (:typedef ("basic_cstring" type
+                                     (:template-specifier 
+                                        ( ("char" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [766 815])
+                            ("literal_string" type
+                               (:typedef ("const_string" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [936 987])
+                            ("c_literal_string" type
+                               (:typedef ("char")
+                                :pointer 1
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [996 1049]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [692 1052]))                  
+                :type "namespace")
+                nil [673 1078]))          
+      :file "basic_cstring_fwd.hpp"
+      :pointmax 1153
+      :fsize 1152
+      :lastmodtime '(21705 5908 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_TEST_BASIC_CSTRING_FWD_HPP_071894GER")
+          )
+)
+    (semanticdb-table "bcs_char_traits.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_TEST_BCS_CHAR_TRAITS_HPP_071894GER" variable (:constant-flag t) nil [546 586])
+            ("boost/config.hpp" include (:system-flag t) nil [597 624])
+            ("boost/detail/workaround.hpp" include (:system-flag t) nil [625 663])
+            ("boost/test/detail/config.hpp" include (:system-flag t) nil [664 703])
+            ("boost/type_traits/add_const.hpp" include (:system-flag t) nil [704 746])
+            ("string" include (:system-flag t) nil [755 772])
+            ("cstddef" include (:system-flag t) nil [815 833])
+            ("boost/test/detail/suppress_warnings.hpp" include (:system-flag t) nil [871 921])
+            ("boost" type
+               (:members 
+                  ( ("unit_test" type
+                       (:members 
+                          ( ("ut_detail" type
+                               (:members 
+                                  ( ("bcs_base_char" type
+                                       (:template 
+                                          ( ("CharT" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("CharT" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1128 1147]))                                          )
+                                        (reparse-symbol namespacesubparts) [1070 1150])
+                                    ("bcs_base_char" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("char")
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1210 1228]))                                          
+                                        :template-specifier 
+                                          ( ("char" type (:constant-flag t) nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [1152 1231])
+                                    ("bcs_base_char" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("char")
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1290 1308]))                                          
+                                        :template-specifier 
+                                          ( ("unsigned char" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [1232 1311])
+                                    ("bcs_base_char" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:typedef ("wchar_t")
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1518 1539]))                                          
+                                        :template-specifier 
+                                          ( ("wchar_t" type (:constant-flag t) nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [1460 1542])
+                                    ("bcs_char_traits_impl" type
+                                       (:template 
+                                          ( ("CharT" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("const_char" type
+                                               (:typedef ("boost::add_const::type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1948 2006])
+                                            ("eq" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("c1" variable (:type ("CharT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2034 2043])
+                                                    ("c2" variable (:type ("CharT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2044 2054]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [2018 2091])
+                                            ("lt" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("c1" variable (:type ("CharT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2112 2121])
+                                                    ("c2" variable (:type ("CharT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2122 2132]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [2096 2168])
+                                            ("compare" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("cstr1" variable
+                                                       (:pointer 1
+                                                        :type ("const_char" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2194 2212])
+                                                    ("cstr2" variable
+                                                       (:pointer 1
+                                                        :type ("const_char" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2213 2231])
+                                                    ("n" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2232 2247]))                                                  
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [2174 2466])
+                                            ("length" function
+                                               (:typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("cstr" variable
+                                                       (:pointer 1
+                                                        :type ("const_char" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2499 2517]))                                                  
+                                                :type ("std::size_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2472 2689])
+                                            ("find" function
+                                               (:pointer 1
+                                                :typemodifiers ("static")
+                                                :arguments 
+                                                  ( ("s" variable
+                                                       (:pointer 1
+                                                        :type ("const_char" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2720 2734])
+                                                    ("n" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2735 2749])
+                                                    ("c" variable (:type ("CharT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2750 2759]))                                                  
+                                                :type ("const_char" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2695 2915]))                                          )
+                                        (reparse-symbol namespacesubparts) [1788 2918])
+                                    ("bcs_char_traits_impl" type
+                                       (:type "struct"
+                                        :superclasses 
+                                          ( ("std::char_traits" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :template-specifier 
+                                          ( ("char" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [3441 3514])
+                                    ("bcs_char_traits_impl" type
+                                       (:type "struct"
+                                        :superclasses 
+                                          ( ("std::char_traits" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :template-specifier 
+                                          ( ("wchar_t" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [3515 3594])
+                                    ("bcs_char_traits" type
+                                       (:template 
+                                          ( ("CharT" type (:type "class") nil nil))                                          
+                                        :type "class"
+                                        :members 
+                                          ( ("the_base_char" type
+                                               (:typedef ("ut_detail::bcs_base_char::type" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3693 3791])
+                                            ("public" label nil (reparse-symbol classsubparts) [3792 3799])
+                                            ("std_string" type
+                                               (:typedef ("std::basic_string" type
+                                                     (:template-specifier 
+                                                        ( ("the_base_char" type nil nil nil)
+                                                          ("std::char_traits" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3941 4036]))                                          
+                                        :superclasses 
+                                          ( ("bcs_char_traits_impl" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [3603 4046]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1047 4049]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1024 4075]))                  
+                :type "namespace")
+                nil [1005 4101])
+            ("boost/test/detail/enable_warnings.hpp" include (:system-flag t) nil [4204 4252]))          
+      :file "bcs_char_traits.hpp"
+      :pointmax 4305
+      :fsize 4304
+      :lastmodtime '(21705 5908 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_TEST_BCS_CHAR_TRAITS_HPP_071894GER")
+          )
+))
+  :file "!usr!include!boost!test!utils!basic_cstring!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

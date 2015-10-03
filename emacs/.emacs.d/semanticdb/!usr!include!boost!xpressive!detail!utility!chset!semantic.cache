@@ -1,0 +1,114 @@
+;; Object chset/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "chset/"
+  :tables
+  (list
+    (semanticdb-table "chset.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_XPRESSIVE_DETAIL_CHSET_CHSET_HPP_EAN_10_04_2005" variable (:constant-flag t) nil [356 409])
+            ("vector" include (:system-flag t) nil [503 520])
+            ("boost/call_traits.hpp" include (:system-flag t) nil [521 553])
+            ("boost/xpressive/detail/detail_fwd.hpp" include (:system-flag t) nil [554 602])
+            ("boost/xpressive/detail/utility/algorithm.hpp" include (:system-flag t) nil [603 658])
+            ("boost/xpressive/detail/utility/chset/basic_chset.ipp" include (:system-flag t) nil [659 722])
+            ("boost" type
+               (:members 
+                  ( ("xpressive" type
+                       (:members 
+                          ( ("detail" type
+                               (:members 
+                                  ( ("set_char" function
+                                       (:template 
+                                          ( ("Char" type (:type "class") nil nil)
+                                            ("Traits" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("chset" variable
+                                               (:reference 1
+                                                :type ("compound_charset" type
+                                                     (:template-specifier 
+                                                        ( ("Traits" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [3974 4006])
+                                            ("ch" variable (:type ("Char" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4007 4015])
+                                            ("tr" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Traits" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4016 4033])
+                                            ("icase" variable (:type "bool") (reparse-symbol arg-sub-list) [4034 4045]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [3912 4084])
+                                    ("set_range" function
+                                       (:template 
+                                          ( ("Char" type (:type "class") nil nil)
+                                            ("Traits" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("chset" variable
+                                               (:reference 1
+                                                :type ("compound_charset" type
+                                                     (:template-specifier 
+                                                        ( ("Traits" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [4149 4181])
+                                            ("from" variable (:type ("Char" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4182 4192])
+                                            ("to" variable (:type ("Char" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4193 4201])
+                                            ("tr" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Traits" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4202 4219])
+                                            ("icase" variable (:type "bool") (reparse-symbol arg-sub-list) [4220 4231]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [4086 4277])
+                                    ("set_class" function
+                                       (:template 
+                                          ( ("Traits" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("chset" variable
+                                               (:reference 1
+                                                :type ("compound_charset" type
+                                                     (:template-specifier 
+                                                        ( ("Traits" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [4327 4359])
+                                            ("char_class" variable
+                                               (:typemodifiers ("typename")
+                                                :type ("Traits::char_class_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4360 4404])
+                                            ("no" variable (:type "bool") (reparse-symbol arg-sub-list) [4405 4413])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Traits" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4414 4429]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [4279 4470]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [764 4473]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [742 4474]))                  
+                :type "namespace")
+                nil [724 4475]))          
+      :file "chset.hpp"
+      :pointmax 4523
+      :fsize 4522
+      :lastmodtime '(21790 57547 0 0)
+      :unmatched-syntax '((punctuation 3817 . 3818) (semantic-list 989 . 3817) (punctuation 987 . 988) (symbol 978 . 987) (punctuation 977 . 978) (punctuation 976 . 977) (symbol 970 . 976) (TYPENAME 961 . 969) (punctuation 960 . 961) (symbol 949 . 960) (PRIVATE 941 . 948) (punctuation 939 . 940) (symbol 920 . 936) (STRUCT 913 . 919) (punctuation 911 . 912) (symbol 905 . 911) (TYPENAME 896 . 904) (punctuation 895 . 896) (TEMPLATE 887 . 895))
+      :lexical-table 
+        '(("BOOST_XPRESSIVE_DETAIL_CHSET_CHSET_HPP_EAN_10_04_2005")
+          )
+)
+    (semanticdb-table "basic_chset.ipp"
+      :file "basic_chset.ipp"
+      :fsize 10560
+      :lastmodtime '(21790 57547 0 0)))
+  :file "!usr!include!boost!xpressive!detail!utility!chset!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

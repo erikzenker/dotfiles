@@ -1,0 +1,76 @@
+;; Object pattern/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pattern/"
+  :tables
+  (list
+
+    (semanticdb-table "GridDiagonal.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("graybat" type
+               (:members 
+                  ( ("pattern" type
+                       (:members 
+                          ( ("VertexID" type
+                               (:typedef ("unsigned int")
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [248 329])
+                            ("EdgeDescription" type
+                               (:typedef ("std::pair" type
+                                     (:template-specifier 
+                                        ( ("VertexID" type nil nil nil)
+                                          ("VertexID" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [334 422])
+                            ("GraphDescription" type
+                               (:typedef ("std::pair" type
+                                     (:template-specifier 
+                                        ( ("std::vector" type nil nil nil)
+                                          ("std::vector" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [427 516])
+                            ("GridDiagonal" type
+                               (:members 
+                                  ( ("height" variable
+                                       (:constant-flag t
+                                        :type "unsigned int")
+                                        (reparse-symbol classsubparts) [546 568])
+                                    ("width" variable
+                                       (:constant-flag t
+                                        :type "unsigned int")
+                                        (reparse-symbol classsubparts) [570 591])
+                                    ("GridDiagonal" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("height" variable
+                                               (:constant-flag t
+                                                :type "unsigned int")
+                                                (reparse-symbol arg-sub-list) [608 630])
+                                            ("width" variable
+                                               (:constant-flag t
+                                                :type "unsigned int")
+                                                (reparse-symbol arg-sub-list) [631 652]))                                          
+                                        :type ("GridDiagonal" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [595 698])
+                                    ("()" function
+                                       (:operator-flag t
+                                        :type ("GraphDescription" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [705 2167]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [522 2176]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [223 2181]))                  
+                :type "namespace")
+                nil [200 2198]))          
+      :file "GridDiagonal.hpp"
+      :pointmax 2213
+      :fsize 2212
+      :lastmodtime '(21818 14165 492858 531000)
+      :unmatched-syntax nil))
+  :file "!home!erik!projects!GrayBat!include!pattern!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

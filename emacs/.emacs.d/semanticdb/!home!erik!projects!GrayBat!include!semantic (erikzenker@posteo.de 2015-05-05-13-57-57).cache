@@ -1,0 +1,51 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables
+  (list
+    (semanticdb-table "graybat.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BGL.hpp" include (:system-flag t) nil [158 176])
+            ("BMPI.hpp" include (:system-flag t) nil [213 232])
+            ("Cage.hpp" include (:system-flag t) nil [277 296])
+            ("pattern.hpp" include (:system-flag t) nil [320 342]))          
+      :file "graybat.hpp"
+      :pointmax 382
+      :fsize 443
+      :lastmodtime '(21824 52585 854283 866000)
+      :unmatched-syntax '((thing 9 . 13) (thing 2 . 8) (thing 1 . 2)))
+    (semanticdb-table "Cage.hpp"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "Cage.hpp"
+      :pointmax 19802
+      :fsize 19801
+      :lastmodtime '(21832 52312 657810 367000)
+      :unmatched-syntax nil)
+    (semanticdb-table "utils.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iterator" include (:system-flag t) nil [1 20])
+            ("utils" type
+               (:members 
+                  ( ("exclusivePrefixSum" function
+                       (:template 
+                          ( ("InputIterator" type (:type "class") nil nil)
+                            ("OutputIterator" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("first" variable (:type ("InputIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [155 175])
+                            ("last" variable (:type ("InputIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [176 195])
+                            ("result" variable (:type ("OutputIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [196 218]))                          )
+                        (reparse-symbol namespacesubparts) [74 468]))                  
+                :type "namespace")
+                nil [50 471]))          
+      :file "utils.hpp"
+      :pointmax 484
+      :fsize 483
+      :lastmodtime '(21832 52209 882674 278000)
+      :unmatched-syntax '((thing 451 . 452) (thing 2 . 3))))
+  :file "!home!erik!projects!GrayBat!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

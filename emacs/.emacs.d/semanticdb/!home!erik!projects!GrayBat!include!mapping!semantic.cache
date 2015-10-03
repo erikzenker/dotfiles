@@ -1,0 +1,86 @@
+;; Object mapping/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mapping/"
+  :tables
+  (list
+    (semanticdb-table "Consecutive.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("algorithm" include (:system-flag t) nil [15 35])
+            ("vector" include (:system-flag t) nil [51 68])
+            ("assert.h" include (:system-flag t) nil [90 109])
+            ("graybat" type
+               (:members 
+                  ( ("mapping" type
+                       (:members 
+                          ( ("Consecutive" type
+                               (:members 
+                                  ( ("()" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("processID" variable
+                                               (:constant-flag t
+                                                :type "unsigned int")
+                                                (reparse-symbol arg-sub-list) [288 313])
+                                            ("processCount" variable
+                                               (:constant-flag t
+                                                :type "unsigned int")
+                                                (reparse-symbol arg-sub-list) [314 342])
+                                            ("graph" variable
+                                               (:reference 1
+                                                :type ("T_Graph" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [343 358]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [277 1130]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [180 1135]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [154 1142]))                  
+                :type "namespace")
+                nil [125 1163]))          
+      :file "Consecutive.hpp"
+      :pointmax 1178
+      :fsize 1177
+      :lastmodtime '(21824 50982 226874 827000)
+      :unmatched-syntax '((thing 275 . 276) (thing 269 . 275) (thing 268 . 269) (thing 267 . 268) (thing 260 . 267) (thing 251 . 259) (thing 250 . 251) (thing 244 . 250) (thing 243 . 244) (thing 242 . 243) (thing 239 . 242) (thing 232 . 233) (thing 225 . 232) (thing 216 . 224) (thing 215 . 216) (thing 207 . 215) (thing 9 . 13) (thing 2 . 8) (thing 1 . 2)))
+    (semanticdb-table "Roundrobin.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("vector" include (:system-flag t) nil [15 32])
+            ("graybat" type
+               (:members 
+                  ( ("mapping" type
+                       (:members 
+                          ( ("Roundrobin" type
+                               (:members 
+                                  ( ("()" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("processID" variable
+                                               (:constant-flag t
+                                                :type "unsigned int")
+                                                (reparse-symbol arg-sub-list) [210 235])
+                                            ("processCount" variable
+                                               (:constant-flag t
+                                                :type "unsigned int")
+                                                (reparse-symbol arg-sub-list) [236 264])
+                                            ("cage" variable
+                                               (:reference 1
+                                                :type ("T_Cage" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [265 278]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [199 817]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [101 822]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [80 829]))                  
+                :type "namespace")
+                nil [55 829]))          
+      :file "Roundrobin.hpp"
+      :pointmax 865
+      :fsize 864
+      :lastmodtime '(21843 13509 416186 748000)
+      :unmatched-syntax '((thing 849 . 850) (thing 821 . 822) (thing 119 . 817) (thing 790 . 796) (thing 790 . 796) (thing 790 . 796) (thing 197 . 198) (thing 197 . 198) (thing 197 . 198) (thing 191 . 197) (thing 191 . 197) (thing 191 . 197) (thing 190 . 191) (thing 190 . 191) (thing 190 . 191) (thing 189 . 190) (thing 189 . 190) (thing 189 . 190) (thing 183 . 189) (thing 183 . 189) (thing 183 . 189) (thing 174 . 182) (thing 174 . 182) (thing 174 . 182) (thing 173 . 174) (thing 173 . 174) (thing 173 . 174) (thing 167 . 173) (thing 167 . 173) (thing 167 . 173) (thing 166 . 167) (thing 166 . 167) (thing 166 . 167) (thing 165 . 166) (thing 165 . 166) (thing 165 . 166) (thing 162 . 165) (thing 162 . 165) (thing 162 . 165) (thing 155 . 156) (thing 155 . 156) (thing 155 . 156) (thing 149 . 155) (thing 149 . 155) (thing 149 . 155) (thing 140 . 148) (thing 140 . 148) (thing 140 . 148) (thing 139 . 140) (thing 139 . 140) (thing 139 . 140) (thing 131 . 139) (thing 131 . 139) (thing 131 . 139) (thing 108 . 118) (thing 101 . 107) (thing 9 . 13) (thing 9 . 13) (thing 2 . 8) (thing 2 . 8) (thing 1 . 2) (thing 1 . 2))))
+  :file "!home!erik!projects!GrayBat!include!mapping!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,111 @@
+;; Object unittests/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "unittests/"
+  :tables
+  (list
+    (semanticdb-table "CageUT.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_TEST_DYN_LINK" variable (:constant-flag t) nil [19 38])
+            ("BOOST_TEST_MODULE" variable (:constant-flag t) nil [47 64])
+            ("boost/test/unit_test.hpp" include (:system-flag t) nil [70 105])
+            ("graybat.hpp" include (:system-flag t) nil [118 140])
+            ("mapping/Random.hpp" include (:system-flag t) nil [141 170])
+            ("mapping/Consecutive.hpp" include (:system-flag t) nil [171 205])
+            ("pattern/FullyConnected.hpp" include (:system-flag t) nil [206 243])
+            ("pattern/Star.hpp" include (:system-flag t) nil [244 271])
+            ("pattern/Grid.hpp" include (:system-flag t) nil [272 299])
+            ("array" include (:system-flag t) nil [309 325])
+            ("vector" include (:system-flag t) nil [326 343])
+            ("iostream" include (:system-flag t) nil [344 363])
+            ("functional" include (:system-flag t) nil [364 385])
+            ("CP" type
+               (:typedef ("graybat::communicationPolicy::BMPI" type (:type "class") nil nil)
+                :type "typedef")
+                nil [584 630])
+            ("GP" type
+               (:typedef ("graybat::graphPolicy::BGL" type (:type "class") nil nil)
+                :type "typedef")
+                nil [651 692])
+            ("MyCage" type
+               (:typedef ("graybat::Cage" type
+                     (:template-specifier 
+                        ( ("CP" type nil nil nil)
+                          ("GP" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [706 745])
+            ("Event" type
+               (:typedef ("MyCage::Event" type (:type "class") nil nil)
+                :type "typedef")
+                nil [746 784])
+            ("Vertex" type
+               (:typedef ("MyCage::Vertex" type (:type "class") nil nil)
+                :type "typedef")
+                nil [785 824])
+            ("Edge" type
+               (:typedef ("MyCage::Edge" type (:type "class") nil nil)
+                :type "typedef")
+                nil [825 862])
+            ("allToAll" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("graybat::pattern::FullyConnected" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1092 1127]))                  
+                :type ("MyCage" type (:type "class") nil nil))
+                nil [1076 1129])
+            ("star" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("graybat::pattern::Star" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1142 1167]))                  
+                :type ("MyCage" type (:type "class") nil nil))
+                nil [1130 1169])
+            ("BOOST_AUTO_TEST_CASE" function
+               (:arguments 
+                  ( ("" variable (:type ("send_recv" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1193 1204]))                  
+                :type "int")
+                nil [1171 2089])
+            ("BOOST_AUTO_TEST_CASE" function
+               (:arguments 
+                  ( ("" variable (:type ("asyncSend_recv" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2114 2130]))                  
+                :type "int")
+                nil [2092 3190])
+            ("grid" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("graybat::pattern::Grid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3272 3299]))                  
+                :type ("MyCage" type (:type "class") nil nil))
+                nil [3260 3301])
+            ("BOOST_AUTO_TEST_CASE" function
+               (:arguments 
+                  ( ("" variable (:type ("reduce" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3325 3333]))                  
+                :type "int")
+                nil [3303 3853])
+            ("BOOST_AUTO_TEST_CASE" function
+               (:arguments 
+                  ( ("" variable (:type ("allReduce" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3878 3889]))                  
+                :type "int")
+                nil [3856 4299])
+            ("BOOST_AUTO_TEST_CASE" function
+               (:arguments 
+                  ( ("" variable (:type ("gather" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4323 4331]))                  
+                :type "int")
+                nil [4301 4928])
+            ("BOOST_AUTO_TEST_CASE" function
+               (:arguments 
+                  ( ("" variable (:type ("allGather" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4952 4963]))                  
+                :type "int")
+                nil [4930 5449]))          
+      :file "CageUT.cc"
+      :pointmax 5479
+      :fsize 5478
+      :lastmodtime '(21832 51231 565420 20000)
+      :unmatched-syntax '((thing 1164 . 1167) (thing 1124 . 1127) (thing 1057 . 1073) (thing 1036 . 1057) (thing 3193 . 3218) (thing 3218 . 3220) (thing 3222 . 3243) (thing 3243 . 3258) (thing 3294 . 3299) (thing 5451 . 5476) (thing 5476 . 5478))
+      :lexical-table 
+        '(("BOOST_TEST_MODULE" . ((symbol "Cage" 65 . 69)))
+          ("BOOST_TEST_DYN_LINK")
+          )
+))
+  :file "!home!erik!projects!GrayBat!utils!unittests!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

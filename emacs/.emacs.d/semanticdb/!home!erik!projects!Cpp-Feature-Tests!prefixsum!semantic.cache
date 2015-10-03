@@ -1,0 +1,38 @@
+;; Object prefixsum/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "prefixsum/"
+  :tables
+  (list
+    (semanticdb-table "prefixsum.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("algorithm" include (:system-flag t) nil [1 21])
+            ("iostream" include (:system-flag t) nil [22 41])
+            ("vector" include (:system-flag t) nil [42 59])
+            ("prefixsum" function
+               (:template 
+                  ( ("InputIterator" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("first" variable (:type ("InputIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [109 129])
+                    ("last" variable (:type ("InputIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [130 149]))                  )
+                nil [63 384])
+            ("prefixsum" function
+               (:template 
+                  ( ("InputIterator" type (:type "class") nil nil)
+                    ("OutputIterator" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("first" variable (:type ("InputIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [454 474])
+                    ("last" variable (:type ("InputIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [475 494])
+                    ("result" variable (:type ("OutputIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [495 517]))                  )
+                nil [386 784])
+            ("main" function (:type "int") nil [787 1027]))          
+      :file "prefixsum.cc"
+      :pointmax 1028
+      :fsize 1027
+      :lastmodtime '(21831 48203 631637 767000)
+      :unmatched-syntax nil))
+  :file "!home!erik!projects!Cpp-Feature-Tests!prefixsum!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

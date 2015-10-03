@@ -1,0 +1,1110 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables
+  (list
+    (semanticdb-table "graybat.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("graphPolicy/BGL.hpp" include (:system-flag t) nil [158 188])
+            ("communicationPolicy/BMPI.hpp" include (:system-flag t) nil [225 264])
+            ("communicationPolicy/MinBMPI.hpp" include (:system-flag t) nil [309 351])
+            ("Cage.hpp" include (:system-flag t) nil [399 418]))          
+      :file "graybat.hpp"
+      :pointmax 444
+      :fsize 443
+      :lastmodtime '(21824 52585 854283 866000)
+      :unmatched-syntax nil)
+    (semanticdb-table "Cave.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("map" include (:system-flag t) nil [14 28])
+            ("set" include (:system-flag t) nil [45 59])
+            ("exception" include (:system-flag t) nil [76 96])
+            ("sstream" include (:system-flag t) nil [121 139])
+            ("assert.h" include (:system-flag t) nil [166 185])
+            ("cstddef" include (:system-flag t) nil [200 218])
+            ("binaryOperation.hpp" include (:system-flag t) nil [239 269])
+            ("dout.hpp" include (:system-flag t) nil [288 307])
+            ("graybat" type
+               (:members 
+                  ( ("Cave" type
+                       (:template 
+                          ( ("T_CAL" type (:type "class") nil nil)
+                            ("T_Graph" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("CAL" type
+                               (:typedef ("T_CAL" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [865 910])
+                            ("Graph" type
+                               (:typedef ("T_Graph" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [912 959])
+                            ("Vertex" type
+                               (:typedef ("Graph::Vertex" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [961 1009])
+                            ("Edge" type
+                               (:typedef ("Graph::Edge" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1011 1057])
+                            ("GraphID" type
+                               (:typedef ("Graph::GraphID" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1059 1108])
+                            ("EdgeDescription" type
+                               (:typedef ("Graph::EdgeDescription" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1110 1167])
+                            ("GraphDescription" type
+                               (:typedef ("Graph::GraphDescription" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1169 1227])
+                            ("VertexID" type
+                               (:typedef ("Vertex::ID" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1229 1279])
+                            ("VAddr" type
+                               (:typedef ("CAL::VAddr" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1281 1328])
+                            ("Event" type
+                               (:typedef ("CAL::Event" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1330 1377])
+                            ("Context" type
+                               (:typedef ("CAL::Context" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1379 1428])
+                            ("ContextID" type
+                               (:typedef ("CAL::ContextID" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1430 1481])
+                            ("cal" variable (:type ("CAL" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1495 1503])
+                            ("graph" variable (:type ("Graph" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1505 1517])
+                            ("hostedVertices" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("Vertex" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1519 1554])
+                            ("Cave" function
+                               (:template 
+                                  ( ("T_Functor" type (:type "class") nil nil))                                  
+                                :type ("Cave" type (:type "struct") nil nil)
+                                :arguments 
+                                  ( ("graphFunctor" variable (:type ("T_Functor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1590 1613]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol classsubparts) [1557 1649])
+                            ("getVertices" function (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("Vertex" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1839 1915])
+                            ("getVertex" function
+                               (:arguments 
+                                  ( ("vertexID" variable (:type ("VertexID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1936 1954]))                                  
+                                :type ("Vertex" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1919 2010])
+                            ("getAdjacentVertices" function
+                               (:arguments 
+                                  ( ("v" variable
+                                       (:constant-flag t
+                                        :type ("Vertex" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2053 2068]))                                  
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("Vertex" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [2013 2120])
+                            ("getOutEdges" function
+                               (:arguments 
+                                  ( ("v" variable
+                                       (:constant-flag t
+                                        :type ("Vertex" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2173 2188]))                                  
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::pair" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [2124 2232])
+                            ("getInEdges" function
+                               (:arguments 
+                                  ( ("v" variable
+                                       (:constant-flag t
+                                        :type ("Vertex" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2283 2298]))                                  
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::pair" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [2235 2341])
+                            ("distribute" function
+                               (:template 
+                                  ( ("T_Functor" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("distFunctor" variable (:type ("T_Functor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2942 2964]))                                  )
+                                (reparse-symbol classsubparts) [2899 3114])
+                            ("announce" function
+                               (:arguments 
+                                  ( ("graph" variable
+                                       (:reference 1
+                                        :type ("Graph" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4426 4439])
+                                    ("vertices" variable
+                                       (:constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("Vertex" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4440 4475])
+                                    ("global" variable
+                                       (:constant-flag t
+                                        :default-value "true"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [4476 4498]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4412 6933])
+                            ("locateVertex" function
+                               (:arguments 
+                                  ( ("graph" variable
+                                       (:reference 1
+                                        :type ("Graph" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7320 7333])
+                                    ("vertex" variable (:type ("Vertex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7334 7348]))                                  
+                                :type ("VAddr" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7301 7485])
+                            ("getHostedVertices" function
+                               (:arguments 
+                                  ( ("graph" variable
+                                       (:reference 1
+                                        :type ("Graph" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7672 7685])
+                                    ("vAddr" variable (:type ("VAddr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7686 7698]))                                  
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("Vertex" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [7634 7741])
+                            ("getGraphContext" function
+                               (:arguments 
+                                  ( ("graph" variable
+                                       (:reference 1
+                                        :type ("Graph" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7915 7928]))                                  
+                                :type ("Context" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7891 7965])
+                            ("nHosts" function (:type "unsigned int") (reparse-symbol classsubparts) [8058 8122])
+                            ("peerHostsVertex" function
+                               (:arguments 
+                                  ( ("vertex" variable (:type ("Vertex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8259 8273]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8238 8495])
+                            ("send" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("destVertex" variable
+                                       (:constant-flag t
+                                        :type ("Vertex" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9091 9115])
+                                    ("edge" variable
+                                       (:constant-flag t
+                                        :type ("Edge" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9116 9132])
+                                    ("data" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9133 9147]))                                  
+                                :typemodifiers ("inline"))
+                                (reparse-symbol classsubparts) [9051 9309])
+                            ("asyncSend" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type ("Event" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("destVertex" variable
+                                       (:constant-flag t
+                                        :type ("Vertex" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9839 9863])
+                                    ("edge" variable
+                                       (:constant-flag t
+                                        :type ("Edge" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9864 9880])
+                                    ("data" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9881 9895]))                                  )
+                                (reparse-symbol classsubparts) [9800 10068])
+                            ("recv" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("srcVertex" variable
+                                       (:constant-flag t
+                                        :type ("Vertex" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10442 10465])
+                                    ("edge" variable
+                                       (:constant-flag t
+                                        :type ("Edge" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10466 10482])
+                                    ("data" variable
+                                       (:reference 1
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10483 10491]))                                  
+                                :typemodifiers ("inline"))
+                                (reparse-symbol classsubparts) [10402 10649])
+                            ("asyncRecv" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type ("Event" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("srcVertex" variable
+                                       (:constant-flag t
+                                        :type ("Vertex" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11111 11134])
+                                    ("edge" variable
+                                       (:constant-flag t
+                                        :type ("Edge" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11135 11151])
+                                    ("data" variable
+                                       (:reference 1
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11152 11160]))                                  )
+                                (reparse-symbol classsubparts) [11072 11328])
+                            ("reduce" function
+                               (:template 
+                                  ( ("T_Data" type (:type "class") nil nil)
+                                    ("Op" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("rootVertex" variable
+                                       (:constant-flag t
+                                        :type ("Vertex" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11581 11605])
+                                    ("srcVertex" variable
+                                       (:constant-flag t
+                                        :type ("Vertex" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11606 11629])
+                                    ("op" variable (:type ("Op" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11630 11636])
+                                    ("sendData" variable
+                                       (:constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("T_Data" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [11637 11672])
+                                    ("recvData" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("T_Data" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [11673 11703]))                                  )
+                                (reparse-symbol classsubparts) [11528 12811])
+                            ("allReduce" function
+                               (:template 
+                                  ( ("T_Data" type (:type "class") nil nil)
+                                    ("T_Recv" type (:type "class") nil nil)
+                                    ("Op" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("srcVertex" variable
+                                       (:constant-flag t
+                                        :type ("Vertex" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12887 12910])
+                                    ("op" variable (:type ("Op" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12911 12917])
+                                    ("sendData" variable
+                                       (:constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("T_Data" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [12918 12953])
+                                    ("recvData" variable
+                                       (:reference 1
+                                        :type ("T_Recv" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12954 12971]))                                  )
+                                (reparse-symbol classsubparts) [12814 13951])
+                            ("gather" function
+                               (:template 
+                                  ( ("T_Send" type (:type "class") nil nil)
+                                    ("T_Recv" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("rootVertex" variable
+                                       (:constant-flag t
+                                        :type ("Vertex" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14139 14163])
+                                    ("srcVertex" variable
+                                       (:constant-flag t
+                                        :type ("Vertex" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14164 14187])
+                                    ("sendData" variable
+                                       (:constant-flag t
+                                        :type ("T_Send" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14188 14210])
+                                    ("recvData" variable
+                                       (:reference 1
+                                        :type ("T_Recv" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14211 14228])
+                                    ("reorder" variable
+                                       (:constant-flag t
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [14229 14248]))                                  )
+                                (reparse-symbol classsubparts) [14077 16302])
+                            ("allGather" function
+                               (:template 
+                                  ( ("T_Send" type (:type "class") nil nil)
+                                    ("T_Recv" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("srcVertex" variable
+                                       (:constant-flag t
+                                        :type ("Vertex" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16490 16513])
+                                    ("sendData" variable (:type ("T_Send" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16514 16530])
+                                    ("recvData" variable
+                                       (:reference 1
+                                        :type ("T_Recv" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16531 16548])
+                                    ("reorder" variable
+                                       (:constant-flag t
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [16549 16568]))                                  )
+                                (reparse-symbol classsubparts) [16430 17990])
+                            ("synchronize" function
+                               (:arguments 
+                                  ( ("graph" variable
+                                       (:reference 1
+                                        :type ("Graph" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18010 18023]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [17993 18106])
+                            ("private" label nil (reparse-symbol classsubparts) [18117 18125])
+                            ("vertexMap" variable (:type ("std::map" type
+                                 (:template-specifier 
+                                    ( ("GraphID" type nil nil nil)
+                                      ("std::map" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [18333 18389])
+                            ("graphMap" variable (:type ("std::map" type
+                                 (:template-specifier 
+                                    ( ("GraphID" type nil nil nil)
+                                      ("Context" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [18446 18482])
+                            ("peerMap" variable (:type ("std::map" type
+                                 (:template-specifier 
+                                    ( ("GraphID" type nil nil nil)
+                                      ("std::map" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [18531 18596])
+                            ("vertexCount" variable (:type ("std::map" type
+                                 (:template-specifier 
+                                    ( ("GraphID" type nil nil nil)
+                                      ("std::map" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [18670 18730])
+                            ("getGraphHostVAddrs" function
+                               (:arguments 
+                                  ( ("graph" variable
+                                       (:reference 1
+                                        :type ("Graph" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19040 19053]))                                  
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("VAddr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [19002 19297])
+                            ("generateID" function
+                               (:arguments 
+                                  ( ("graph" variable
+                                       (:reference 1
+                                        :type ("Graph" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19323 19336])
+                                    ("vertex" variable (:type ("Vertex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19337 19351]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [19300 19646])
+                            ("createGraphContext" function
+                               (:arguments 
+                                  ( ("graph" variable
+                                       (:reference 1
+                                        :type ("Graph" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19903 19916])
+                                    ("subGraph" variable
+                                       (:reference 1
+                                        :type ("Graph" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19917 19933]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [19879 20191])
+                            ("createGraphContext" function
+                               (:arguments 
+                                  ( ("graph" variable
+                                       (:reference 1
+                                        :type ("Graph" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [20490 20503]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [20466 20728]))                          )
+                        (reparse-symbol namespacesubparts) [802 20736]))                  
+                :type "namespace")
+                nil [777 20739]))          
+      :file "Cave.hpp"
+      :pointmax 20761
+      :fsize 20760
+      :lastmodtime '(21832 52216 309035 446000)
+      :unmatched-syntax '((thing 9 . 13) (thing 2 . 8) (thing 1 . 2)))
+    (semanticdb-table "Cage.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("map" include (:system-flag t) nil [14 28])
+            ("set" include (:system-flag t) nil [45 59])
+            ("exception" include (:system-flag t) nil [76 96])
+            ("sstream" include (:system-flag t) nil [121 139])
+            ("assert.h" include (:system-flag t) nil [166 185])
+            ("cstddef" include (:system-flag t) nil [200 218])
+            ("algorithm" include (:system-flag t) nil [238 258])
+            ("dout.hpp" include (:system-flag t) nil [275 294])
+            ("utils.hpp" include (:system-flag t) nil [338 358])
+            ("Edge.hpp" include (:system-flag t) nil [384 403])
+            ("Vertex.hpp" include (:system-flag t) nil [404 425])
+            ("graybat" type
+               (:members 
+                  ( ("Cage" type
+                       (:template 
+                          ( ("T_CommunicationPolicy" type (:type "class") nil nil)
+                            ("T_GraphPolicy" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("CommunicationPolicy" type
+                               (:typedef ("T_CommunicationPolicy" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1247 1315])
+                            ("GraphPolicy" type
+                               (:typedef ("T_GraphPolicy" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1324 1384])
+                            ("Edge" type
+                               (:typedef ("EdgeTest" type
+                                     (:template-specifier 
+                                        ( ("Cage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1386 1451])
+                            ("Vertex" type
+                               (:typedef ("VertexTest" type
+                                     (:template-specifier 
+                                        ( ("Cage" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1453 1520])
+                            ("GraphID" type
+                               (:typedef ("GraphPolicy::GraphID" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1522 1578])
+                            ("EdgeDescription" type
+                               (:typedef ("GraphPolicy::EdgeDescription" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1580 1644])
+                            ("GraphDescription" type
+                               (:typedef ("GraphPolicy::GraphDescription" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1646 1711])
+                            ("VertexID" type
+                               (:typedef ("Vertex::VertexID" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1713 1770])
+                            ("VAddr" type
+                               (:typedef ("CommunicationPolicy::VAddr" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1772 1826])
+                            ("Event" type
+                               (:typedef ("CommunicationPolicy::Event" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1828 1882])
+                            ("Context" type
+                               (:typedef ("CommunicationPolicy::Context" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1884 1940])
+                            ("ContextID" type
+                               (:typedef ("CommunicationPolicy::ContextID" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1942 2000])
+                            ("Cage" function
+                               (:template 
+                                  ( ("T_Functor" type (:type "class") nil nil))                                  
+                                :type ("Cage" type (:type "struct") nil nil)
+                                :arguments 
+                                  ( ("graphFunctor" variable (:type ("T_Functor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2038 2061]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol classsubparts) [2005 2103])
+                            ("comm" variable (:type ("CommunicationPolicy" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2295 2320])
+                            ("graph" variable (:type ("GraphPolicy" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2329 2355])
+                            ("graphContext" variable (:type ("Context" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2364 2397])
+                            ("hostedVertices" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("Vertex" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2399 2434])
+                            ("vertexMap" variable (:type ("std::map" type
+                                 (:template-specifier 
+                                    ( ("VertexID" type nil nil nil)
+                                      ("VAddr" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2649 2685])
+                            ("graphMap" variable (:type ("std::map" type
+                                 (:template-specifier 
+                                    ( ("GraphID" type nil nil nil)
+                                      ("Context" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2742 2778])
+                            ("peerMap" variable (:type ("std::map" type
+                                 (:template-specifier 
+                                    ( ("VAddr" type nil nil nil)
+                                      ("std::vector" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2816 2862])
+                            ("getVertices" function (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("Vertex" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [3078 3458])
+                            ("getVertex" function
+                               (:arguments 
+                                  ( ("vertexID" variable
+                                       (:constant-flag t
+                                        :type ("VertexID" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3480 3504]))                                  
+                                :type ("Vertex" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3463 3807])
+                            ("getAdjacentVertices" function
+                               (:arguments 
+                                  ( ("v" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Vertex" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3852 3868]))                                  
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("Vertex" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [3812 4271])
+                            ("getOutEdges" function
+                               (:arguments 
+                                  ( ("v" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Vertex" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4305 4321]))                                  
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("Edge" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [4275 4861])
+                            ("getInEdges" function
+                               (:arguments 
+                                  ( ("v" variable
+                                       (:constant-flag t
+                                        :type ("Vertex" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5271 5286]))                                  
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("Edge" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [5242 5822])
+                            ("distribute" function
+                               (:template 
+                                  ( ("T_Functor" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("distFunctor" variable (:type ("T_Functor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6450 6472]))                                  )
+                                (reparse-symbol classsubparts) [6407 6618])
+                            ("announce" function
+                               (:arguments 
+                                  ( ("vertices" variable
+                                       (:constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("Vertex" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [7930 7965])
+                                    ("global" variable
+                                       (:constant-flag t
+                                        :default-value "true"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [7966 7988]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7916 10038])
+                            ("maximum" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("()" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("a" variable
+                                               (:constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [10100 10110])
+                                            ("b" variable
+                                               (:constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [10111 10121]))                                          
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [10087 10154]))                                  )
+                                (reparse-symbol classsubparts) [10041 10164])
+                            ("locateVertex" function
+                               (:arguments 
+                                  ( ("vertex" variable (:type ("Vertex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10504 10518]))                                  
+                                :type ("VAddr" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10485 10560])
+                            ("getHostedVertices" function
+                               (:arguments 
+                                  ( ("vAddr" variable
+                                       (:constant-flag t
+                                        :type ("VAddr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10747 10765]))                                  
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("Vertex" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [10709 10796])
+                            ("peerHostsVertex" function
+                               (:arguments 
+                                  ( ("vertex" variable (:type ("Vertex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10932 10946]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [10911 11119])
+                            ("send" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("destVertex" variable
+                                       (:constant-flag t
+                                        :type ("Vertex" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11741 11765])
+                                    ("edge" variable
+                                       (:constant-flag t
+                                        :type ("Edge" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11766 11782])
+                                    ("data" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11783 11797]))                                  
+                                :typemodifiers ("inline"))
+                                (reparse-symbol classsubparts) [11701 11909])
+                            ("asyncSend" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type ("Event" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("destVertex" variable
+                                       (:constant-flag t
+                                        :type ("Vertex" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12439 12463])
+                                    ("edge" variable
+                                       (:constant-flag t
+                                        :type ("Edge" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12464 12480])
+                                    ("data" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12481 12495]))                                  )
+                                (reparse-symbol classsubparts) [12400 12619])
+                            ("recv" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("srcVertex" variable
+                                       (:constant-flag t
+                                        :type ("Vertex" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12993 13016])
+                                    ("edge" variable
+                                       (:constant-flag t
+                                        :type ("Edge" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13017 13033])
+                                    ("data" variable
+                                       (:reference 1
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13034 13042]))                                  
+                                :typemodifiers ("inline"))
+                                (reparse-symbol classsubparts) [12953 13151])
+                            ("asypncRecv" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type ("Event" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("srcVertex" variable
+                                       (:constant-flag t
+                                        :type ("Vertex" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13614 13637])
+                                    ("edge" variable
+                                       (:constant-flag t
+                                        :type ("Edge" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13638 13654])
+                                    ("data" variable
+                                       (:reference 1
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13655 13663]))                                  )
+                                (reparse-symbol classsubparts) [13574 13782])
+                            ("reduce" function
+                               (:template 
+                                  ( ("T_Data" type (:type "class") nil nil)
+                                    ("Op" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("rootVertex" variable
+                                       (:constant-flag t
+                                        :type ("Vertex" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14073 14097])
+                                    ("srcVertex" variable
+                                       (:constant-flag t
+                                        :type ("Vertex" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14098 14121])
+                                    ("op" variable (:type ("Op" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14122 14128])
+                                    ("sendData" variable
+                                       (:constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("T_Data" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [14129 14164])
+                                    ("recvData" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("T_Data" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [14165 14195]))                                  )
+                                (reparse-symbol classsubparts) [14020 15274])
+                            ("allReduce" function
+                               (:template 
+                                  ( ("T_Data" type (:type "class") nil nil)
+                                    ("T_Recv" type (:type "class") nil nil)
+                                    ("Op" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("srcVertex" variable
+                                       (:constant-flag t
+                                        :type ("Vertex" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15350 15373])
+                                    ("op" variable (:type ("Op" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15374 15380])
+                                    ("sendData" variable
+                                       (:constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("T_Data" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [15381 15416])
+                                    ("recvData" variable
+                                       (:reference 1
+                                        :type ("T_Recv" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15417 15434]))                                  )
+                                (reparse-symbol classsubparts) [15277 16391])
+                            ("gather" function
+                               (:template 
+                                  ( ("T_Send" type (:type "class") nil nil)
+                                    ("T_Recv" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("rootVertex" variable
+                                       (:constant-flag t
+                                        :type ("Vertex" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16566 16590])
+                                    ("srcVertex" variable
+                                       (:constant-flag t
+                                        :type ("Vertex" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16591 16614])
+                                    ("sendData" variable
+                                       (:constant-flag t
+                                        :type ("T_Send" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16615 16637])
+                                    ("recvData" variable
+                                       (:reference 1
+                                        :type ("T_Recv" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16638 16655])
+                                    ("reorder" variable
+                                       (:constant-flag t
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [16656 16675]))                                  )
+                                (reparse-symbol classsubparts) [16509 18102])
+                            ("allGather" function
+                               (:template 
+                                  ( ("T_Send" type (:type "class") nil nil)
+                                    ("T_Recv" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("srcVertex" variable
+                                       (:constant-flag t
+                                        :type ("Vertex" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18290 18313])
+                                    ("sendData" variable (:type ("T_Send" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18314 18330])
+                                    ("recvData" variable
+                                       (:reference 1
+                                        :type ("T_Recv" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18331 18348])
+                                    ("reorder" variable
+                                       (:constant-flag t
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [18349 18368]))                                  )
+                                (reparse-symbol classsubparts) [18230 20848])
+                            ("synchronize" function (:type "void") (reparse-symbol classsubparts) [20851 20911])
+                            ("private" label nil (reparse-symbol classsubparts) [20928 20936])
+                            ("reorder" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("data" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [21056 21083])
+                                    ("recvCount" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("unsigned int" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [21084 21123])
+                                    ("dataReordered" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [21124 21154]))                                  )
+                                (reparse-symbol classsubparts) [21023 21962]))                          )
+                        (reparse-symbol namespacesubparts) [1162 21971]))                  
+                :type "namespace")
+                nil [427 21974]))          
+      :file "Cage.hpp"
+      :pointmax 22104
+      :fsize 22103
+      :lastmodtime '(21843 16910 79062 174000)
+      :unmatched-syntax '((thing 9 . 13) (thing 2 . 8) (thing 1 . 2)))
+    (semanticdb-table "utils.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iterator" include (:system-flag t) nil [1 20])
+            ("utils" type
+               (:members 
+                  ( ("exclusivePrefixSum" function
+                       (:template 
+                          ( ("InputIterator" type (:type "class") nil nil)
+                            ("OutputIterator" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("first" variable (:type ("InputIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [155 175])
+                            ("last" variable (:type ("InputIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [176 195])
+                            ("result" variable (:type ("OutputIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [196 218]))                          )
+                        (reparse-symbol namespacesubparts) [74 468]))                  
+                :type "namespace")
+                nil [50 471]))          
+      :file "utils.hpp"
+      :pointmax 484
+      :fsize 483
+      :lastmodtime '(21832 52209 882674 278000)
+      :unmatched-syntax nil)
+    (semanticdb-table "Edge.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("EdgeTest" type
+               (:template 
+                  ( ("T_Cage" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("Cage" type
+                       (:typedef ("T_Cage" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [62 82])
+                    ("GraphPolicy" type
+                       (:typedef ("Cage::GraphPolicy" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [87 134])
+                    ("Vertex" type
+                       (:typedef ("Cage::Vertex" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [139 176])
+                    ("EdgeProperty" type
+                       (:typedef ("GraphPolicy::EdgeProperty" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [181 237])
+                    ("Event" type
+                       (:typedef ("Cage::Event" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [242 277])
+                    ("id" variable (:type "unsigned int") (reparse-symbol classsubparts) [289 301])
+                    ("vertex" variable
+                       (:constant-flag t
+                        :type ("Vertex" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [306 326])
+                    ("edgeProperty" variable (:type ("EdgeProperty" type (:type "class") nil nil)) (reparse-symbol classsubparts) [335 362])
+                    ("cage" variable (:type ("Cage" type (:type "class") nil nil)) (reparse-symbol classsubparts) [367 378])
+                    ("EdgeTest" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("id" variable
+                               (:constant-flag t
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [400 418])
+                            ("vertex" variable
+                               (:constant-flag t
+                                :type ("Vertex" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [419 439])
+                            ("edgeProperty" variable
+                               (:reference 1
+                                :type ("EdgeProperty" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [440 467])
+                            ("cage" variable
+                               (:reference 1
+                                :type ("Cage" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [468 479]))                          
+                        :type ("EdgeTest" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [391 561])
+                    ("()" function
+                       (:operator-flag t
+                        :type ("EdgeProperty" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [567 621])
+                    ("<<" function
+                       (:template 
+                          ( ("T_Send" type (:type "class") nil nil))                          
+                        :type ("Event" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T_Send" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [672 691]))                          
+                        :operator-flag t)
+                        (reparse-symbol classsubparts) [627 743])
+                    (">>" function
+                       (:template 
+                          ( ("T_Recv" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :type ("T_Recv" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [793 806]))                          
+                        :operator-flag t)
+                        (reparse-symbol classsubparts) [749 846]))                  )
+                nil [15 851]))          
+      :file "Edge.hpp"
+      :pointmax 852
+      :fsize 851
+      :lastmodtime '(21843 14461 262819 662000)
+      :unmatched-syntax '((thing 9 . 13) (thing 9 . 13) (thing 9 . 13) (thing 9 . 13) (thing 9 . 13) (thing 9 . 13) (thing 9 . 13) (thing 9 . 13) (thing 9 . 13) (thing 9 . 13) (thing 9 . 13) (thing 2 . 8) (thing 2 . 8) (thing 2 . 8) (thing 2 . 8) (thing 2 . 8) (thing 2 . 8) (thing 2 . 8) (thing 2 . 8) (thing 2 . 8) (thing 2 . 8) (thing 2 . 8) (thing 1 . 2) (thing 1 . 2) (thing 1 . 2) (thing 1 . 2) (thing 1 . 2) (thing 1 . 2) (thing 1 . 2) (thing 1 . 2) (thing 1 . 2) (thing 1 . 2) (thing 1 . 2)))
+    (semanticdb-table "Vertex.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("VertexTest" type
+               (:template 
+                  ( ("T_Cage" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("Cage" type
+                       (:typedef ("T_Cage" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [128 148])
+                    ("GraphPolicy" type
+                       (:typedef ("Cage::GraphPolicy" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [153 200])
+                    ("VertexProperty" type
+                       (:typedef ("GraphPolicy::VertexProperty" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [205 265])
+                    ("VertexID" type
+                       (:typedef ("GraphPolicy::VertexID" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [270 318])
+                    ("id" variable (:type ("VertexID" type (:type "class") nil nil)) (reparse-symbol classsubparts) [324 336])
+                    ("vertexProperty" variable (:type ("VertexProperty" type (:type "class") nil nil)) (reparse-symbol classsubparts) [341 372])
+                    ("cage" variable (:type ("Cage" type (:type "class") nil nil)) (reparse-symbol classsubparts) [377 388])
+                    ("VertexTest" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("id" variable
+                               (:constant-flag t
+                                :type ("VertexID" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [406 424])
+                            ("vertexProperty" variable
+                               (:reference 1
+                                :type ("VertexProperty" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [425 456])
+                            ("cage" variable
+                               (:reference 1
+                                :type ("Cage" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [457 468]))                          
+                        :type ("VertexTest" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [395 537])
+                    ("()" function
+                       (:operator-flag t
+                        :type ("VertexProperty" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [543 602])
+                    ("VertexTest" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("other" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("VertexTest" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [619 643]))                          
+                        :type ("VertexTest" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [608 736])
+                    ("=" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("other" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("VertexTest" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [764 788]))                          
+                        :type ("VertexTest" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [742 867]))                  )
+                nil [75 872]))          
+      :file "Vertex.hpp"
+      :pointmax 873
+      :fsize 872
+      :lastmodtime '(21843 16799 883398 740000)
+      :unmatched-syntax '((thing 9 . 13) (thing 9 . 13) (thing 9 . 13) (thing 9 . 13) (thing 9 . 13) (thing 2 . 8) (thing 2 . 8) (thing 2 . 8) (thing 2 . 8) (thing 2 . 8) (thing 1 . 2) (thing 1 . 2) (thing 1 . 2) (thing 1 . 2) (thing 1 . 2))))
+  :file "!home!erik!projects!GrayBat!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

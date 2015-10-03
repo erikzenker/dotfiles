@@ -1,0 +1,717 @@
+;; Object communicationPolicy/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "communicationPolicy/"
+  :tables
+  (list
+    (semanticdb-table "BMPI.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("assert.h" include (:system-flag t) nil [14 33])
+            ("array" include (:system-flag t) nil [49 65])
+            ("numeric" include (:system-flag t) nil [83 101])
+            ("map" include (:system-flag t) nil [128 142])
+            ("exception" include (:system-flag t) nil [167 187])
+            ("sstream" include (:system-flag t) nil [215 233])
+            ("algorithm" include (:system-flag t) nil [263 283])
+            ("mpi.h" include (:system-flag t) nil [308 325])
+            ("dout.hpp" include (:system-flag t) nil [345 364])
+            ("boost/mpi/environment.hpp" include (:system-flag t) nil [400 436])
+            ("boost/mpi/communicator.hpp" include (:system-flag t) nil [437 474])
+            ("boost/mpi/collectives.hpp" include (:system-flag t) nil [475 511])
+            ("boost/mpi/datatype.hpp" include (:system-flag t) nil [512 545])
+            ("boost/optional.hpp" include (:system-flag t) nil [546 575])
+            ("mpi" type
+               (:kind alias
+                :members 
+                  ( ("boost::mpi" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [578 605])
+            ("graybat" type
+               (:members 
+                  ( ("communicationPolicy" type
+                       (:members 
+                          ( ("BMPI" type
+                               (:members 
+                                  ( ("Context" type
+                                       (:members 
+                                          ( ("ContextID" type
+                                               (:typedef ("unsigned int")
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1159 1186])
+                                            ("VAddr" type
+                                               (:typedef ("unsigned int")
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1189 1212])
+                                            ("public" label nil (reparse-symbol classsubparts) [1224 1231])
+                                            ("Context" function
+                                               (:constructor-flag t
+                                                :type ("Context" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1234 1285])
+                                            ("Context" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("contextID" variable (:type ("ContextID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1297 1317])
+                                                    ("comm" variable (:type ("mpi::communicator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1318 1341]))                                                  
+                                                :type ("Context" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1289 1411])
+                                            ("=" function
+                                               (:operator-flag t
+                                                :arguments 
+                                                  ( ("otherContext" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Context" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1434 1462]))                                                  
+                                                :type ("Context" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1415 1617])
+                                            ("size" function (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1621 1671])
+                                            ("getVAddr" function (:type ("VAddr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1675 1729])
+                                            ("getID" function (:type ("ContextID" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1733 1779])
+                                            ("valid" function (:type "bool") (reparse-symbol classsubparts) [1783 1828])
+                                            ("comm" variable (:type ("mpi::communicator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1832 1855])
+                                            ("private" label nil (reparse-symbol classsubparts) [1863 1871])
+                                            ("id" variable (:type ("ContextID" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1875 1888])
+                                            ("isValid" variable (:type "bool") (reparse-symbol classsubparts) [1891 1909]))                                          
+                                        :type "class")
+                                        (reparse-symbol classsubparts) [1141 1917])
+                                    ("Event" type
+                                       (:members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [2214 2221])
+                                            ("Event" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("request" variable (:type ("mpi::request" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2230 2251]))                                                  
+                                                :type ("Event" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2224 2276])
+                                            ("Event" function
+                                               (:destructor-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [2280 2294])
+                                            ("wait" function (:type "void") (reparse-symbol classsubparts) [2298 2338])
+                                            ("ready" function (:type "bool") (reparse-symbol classsubparts) [2342 2501])
+                                            ("private" label nil (reparse-symbol classsubparts) [2508 2516])
+                                            ("request" variable (:type ("mpi::request" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2519 2540]))                                          
+                                        :type "class")
+                                        (reparse-symbol classsubparts) [2195 2548])
+                                    ("Tag" type
+                                       (:typedef ("unsigned int")
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2574 2595])
+                                    ("ContextID" type
+                                       (:typedef ("unsigned int")
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2645 2672])
+                                    ("VAddr" type
+                                       (:typedef ("unsigned int")
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2678 2701])
+                                    ("MsgType" type
+                                       (:typedef ("unsigned int")
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2708 2733])
+                                    ("Uri" type
+                                       (:typedef ("int")
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2739 2760])
+                                    ("BMPI" function
+                                       (:constructor-flag t
+                                        :type ("BMPI" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [2768 3011])
+                                    ("BMPI" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3037 3055])
+                                    ("asyncSend" function
+                                       (:template 
+                                          ( ("T_Send" type (:type "class") nil nil))                                          
+                                        :type ("Event" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("destVAddr" variable
+                                               (:constant-flag t
+                                                :type ("VAddr" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4208 4230])
+                                            ("tag" variable
+                                               (:constant-flag t
+                                                :type ("Tag" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4231 4245])
+                                            ("context" variable
+                                               (:constant-flag t
+                                                :type ("Context" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4246 4268])
+                                            ("sendData" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T_Send" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4269 4292]))                                          )
+                                        (reparse-symbol classsubparts) [4160 4472])
+                                    ("send" function
+                                       (:template 
+                                          ( ("T_Send" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("destVAddr" variable
+                                               (:constant-flag t
+                                                :type ("VAddr" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5348 5370])
+                                            ("tag" variable
+                                               (:constant-flag t
+                                                :type ("Tag" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5371 5385])
+                                            ("context" variable
+                                               (:constant-flag t
+                                                :type ("Context" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5386 5408])
+                                            ("sendData" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T_Send" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5409 5432]))                                          )
+                                        (reparse-symbol classsubparts) [5306 5562])
+                                    ("asyncRecv" function
+                                       (:template 
+                                          ( ("T_Recv" type (:type "class") nil nil))                                          
+                                        :type ("Event" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("srcVAddr" variable
+                                               (:constant-flag t
+                                                :type ("VAddr" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6493 6514])
+                                            ("tag" variable
+                                               (:constant-flag t
+                                                :type ("Tag" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6515 6529])
+                                            ("context" variable
+                                               (:constant-flag t
+                                                :type ("Context" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6530 6552])
+                                            ("recvData" variable
+                                               (:reference 1
+                                                :type ("T_Recv" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6553 6570]))                                          )
+                                        (reparse-symbol classsubparts) [6445 6753])
+                                    ("recv" function
+                                       (:template 
+                                          ( ("T_Recv" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("srcVAddr" variable
+                                               (:constant-flag t
+                                                :type ("VAddr" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7631 7652])
+                                            ("tag" variable
+                                               (:constant-flag t
+                                                :type ("Tag" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7653 7667])
+                                            ("context" variable
+                                               (:constant-flag t
+                                                :type ("Context" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7668 7690])
+                                            ("recvData" variable
+                                               (:reference 1
+                                                :type ("T_Recv" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7691 7708]))                                          )
+                                        (reparse-symbol classsubparts) [7589 7836])
+                                    ("gather" function
+                                       (:template 
+                                          ( ("T_Send" type (:type "class") nil nil)
+                                            ("T_Recv" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("rootVAddr" variable
+                                               (:constant-flag t
+                                                :type ("VAddr" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [8998 9020])
+                                            ("context" variable
+                                               (:constant-flag t
+                                                :type ("Context" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9021 9043])
+                                            ("sendData" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T_Send" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9044 9067])
+                                            ("recvData" variable
+                                               (:reference 1
+                                                :type ("T_Recv" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9068 9085]))                                          )
+                                        (reparse-symbol classsubparts) [8937 9228])
+                                    ("gatherVar" function
+                                       (:template 
+                                          ( ("T_Send" type (:type "class") nil nil)
+                                            ("T_Recv" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("rootVAddr" variable
+                                               (:constant-flag t
+                                                :type ("VAddr" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [10530 10552])
+                                            ("context" variable
+                                               (:constant-flag t
+                                                :type ("Context" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [10553 10575])
+                                            ("sendData" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T_Send" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [10576 10599])
+                                            ("recvData" variable
+                                               (:reference 1
+                                                :type ("T_Recv" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [10600 10617])
+                                            ("recvCount" variable
+                                               (:reference 1
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("unsigned int" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [10618 10651]))                                          )
+                                        (reparse-symbol classsubparts) [10466 11625])
+                                    ("allGather" function
+                                       (:template 
+                                          ( ("T_Send" type (:type "class") nil nil)
+                                            ("T_Recv" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("context" variable (:type ("Context" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12124 12140])
+                                            ("sendData" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T_Send" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [12141 12164])
+                                            ("recvData" variable
+                                               (:reference 1
+                                                :type ("T_Recv" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [12165 12182]))                                          )
+                                        (reparse-symbol classsubparts) [12060 12277])
+                                    ("allGatherVar" function
+                                       (:template 
+                                          ( ("T_Send" type (:type "class") nil nil)
+                                            ("T_Recv" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("context" variable
+                                               (:constant-flag t
+                                                :type ("Context" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [12906 12928])
+                                            ("sendData" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T_Send" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [12929 12952])
+                                            ("recvData" variable
+                                               (:reference 1
+                                                :type ("T_Recv" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [12953 12970])
+                                            ("recvCount" variable
+                                               (:reference 1
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("unsigned int" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [12971 13004]))                                          )
+                                        (reparse-symbol classsubparts) [12838 13928])
+                                    ("scatter" function
+                                       (:template 
+                                          ( ("T_Send" type (:type "class") nil nil)
+                                            ("T_Recv" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("rootVAddr" variable
+                                               (:constant-flag t
+                                                :type ("VAddr" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [14576 14598])
+                                            ("context" variable
+                                               (:constant-flag t
+                                                :type ("Context" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [14599 14621])
+                                            ("sendData" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T_Send" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [14622 14645])
+                                            ("recvData" variable
+                                               (:reference 1
+                                                :type ("T_Recv" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [14646 14663]))                                          )
+                                        (reparse-symbol classsubparts) [14514 14817])
+                                    ("allToAll" function
+                                       (:template 
+                                          ( ("T_Send" type (:type "class") nil nil)
+                                            ("T_Recv" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("context" variable
+                                               (:constant-flag t
+                                                :type ("Context" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [15509 15531])
+                                            ("sendData" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T_Send" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [15532 15555])
+                                            ("recvData" variable
+                                               (:reference 1
+                                                :type ("T_Recv" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [15556 15573]))                                          )
+                                        (reparse-symbol classsubparts) [15446 15737])
+                                    ("reduce" function
+                                       (:template 
+                                          ( ("T_Send" type (:type "class") nil nil)
+                                            ("T_Recv" type (:type "class") nil nil)
+                                            ("T_Op" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("rootVAddr" variable
+                                               (:constant-flag t
+                                                :type ("VAddr" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [16759 16781])
+                                            ("context" variable
+                                               (:constant-flag t
+                                                :type ("Context" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [16782 16804])
+                                            ("op" variable
+                                               (:constant-flag t
+                                                :type ("T_Op" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [16805 16819])
+                                            ("sendData" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T_Send" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [16820 16843])
+                                            ("recvData" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T_Recv" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [16844 16867]))                                          )
+                                        (reparse-symbol classsubparts) [16683 17024])
+                                    ("allReduce" function
+                                       (:template 
+                                          ( ("T_Send" type (:type "class") nil nil)
+                                            ("T_Recv" type (:type "class") nil nil)
+                                            ("T_Op" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("context" variable
+                                               (:constant-flag t
+                                                :type ("Context" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [17771 17793])
+                                            ("op" variable (:type ("T_Op" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17794 17802])
+                                            ("sendData" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T_Send" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [17803 17826])
+                                            ("recvData" variable
+                                               (:reference 1
+                                                :type ("T_Recv" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [17827 17844]))                                          )
+                                        (reparse-symbol classsubparts) [17692 17947])
+                                    ("broadcast" function
+                                       (:template 
+                                          ( ("T_SendRecv" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("rootVAddr" variable
+                                               (:constant-flag t
+                                                :type ("VAddr" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [18538 18560])
+                                            ("context" variable
+                                               (:constant-flag t
+                                                :type ("Context" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [18561 18583])
+                                            ("data" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T_SendRecv" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [18584 18607]))                                          )
+                                        (reparse-symbol classsubparts) [18487 18746])
+                                    ("synchronize" function
+                                       (:arguments 
+                                          ( ("context" variable
+                                               (:constant-flag t
+                                                :type ("Context" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [18932 18954]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [18915 18990])
+                                    ("synchronize" function (:type "void") (reparse-symbol classsubparts) [19189 19259])
+                                    ("createContext" function
+                                       (:arguments 
+                                          ( ("vAddrs" variable
+                                               (:constant-flag t
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("VAddr" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [19651 19683])
+                                            ("oldContext" variable
+                                               (:constant-flag t
+                                                :type ("Context" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [19684 19709]))                                          
+                                        :type ("Context" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [19629 20637])
+                                    ("getGlobalContext" function (:type ("Context" type (:type "class") nil nil)) (reparse-symbol classsubparts) [20731 20795])
+                                    ("private" label nil (reparse-symbol classsubparts) [20818 20826])
+                                    ("contextCount" variable (:type ("ContextID" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21043 21087])
+                                    ("uriMap" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("std::vector" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [21093 21131])
+                                    ("initialContext" variable (:type ("Context" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21137 21183])
+                                    ("env" variable (:type ("mpi::environment" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21189 21224])
+                                    ("error" function
+                                       (:arguments 
+                                          ( ("vAddr" variable (:type ("VAddr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21466 21478])
+                                            ("msg" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21479 21495]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [21455 21628])
+                                    ("getVAddrUri" function
+                                       (:template 
+                                          ( ("T_Context" type (:type "class") nil nil))                                          
+                                        :type ("Uri" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("context" variable
+                                               (:constant-flag t
+                                                :type ("T_Context" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [21799 21823])
+                                            ("vAddr" variable
+                                               (:constant-flag t
+                                                :type ("VAddr" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [21824 21842]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol classsubparts) [21741 22283]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [983 22288]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [636 22295]))                  
+                :type "namespace")
+                nil [607 22332]))          
+      :file "BMPI.hpp"
+      :pointmax 22354
+      :fsize 22353
+      :lastmodtime '(21818 9553 653895 452000)
+      :unmatched-syntax '((thing 9 . 13) (thing 9 . 13) (thing 2 . 8) (thing 2 . 8) (thing 1 . 2) (thing 1 . 2)))
+    (semanticdb-table "MinBMPI.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("assert.h" include (:system-flag t) nil [14 33])
+            ("array" include (:system-flag t) nil [49 65])
+            ("numeric" include (:system-flag t) nil [83 101])
+            ("map" include (:system-flag t) nil [128 142])
+            ("exception" include (:system-flag t) nil [167 187])
+            ("sstream" include (:system-flag t) nil [215 233])
+            ("algorithm" include (:system-flag t) nil [263 283])
+            ("mpi.h" include (:system-flag t) nil [308 325])
+            ("dout.hpp" include (:system-flag t) nil [345 364])
+            ("boost/mpi/environment.hpp" include (:system-flag t) nil [400 436])
+            ("boost/mpi/communicator.hpp" include (:system-flag t) nil [437 474])
+            ("boost/mpi/collectives.hpp" include (:system-flag t) nil [475 511])
+            ("boost/mpi/datatype.hpp" include (:system-flag t) nil [512 545])
+            ("boost/optional.hpp" include (:system-flag t) nil [546 575])
+            ("mpi" type
+               (:kind alias
+                :members 
+                  ( ("boost::mpi" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [578 605])
+            ("graybat" type
+               (:members 
+                  ( ("communicationPolicy" type
+                       (:members 
+                          ( ("MinBMPI" type
+                               (:members 
+                                  ( ("Context" type
+                                       (:members 
+                                          ( ("ContextID" type
+                                               (:typedef ("unsigned int")
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1161 1188])
+                                            ("VAddr" type
+                                               (:typedef ("unsigned int")
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1191 1214])
+                                            ("public" label nil (reparse-symbol classsubparts) [1226 1233])
+                                            ("Context" function
+                                               (:constructor-flag t
+                                                :type ("Context" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1236 1287])
+                                            ("Context" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("contextID" variable (:type ("ContextID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1299 1319])
+                                                    ("comm" variable (:type ("mpi::communicator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1320 1343]))                                                  
+                                                :type ("Context" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1291 1413])
+                                            ("=" function
+                                               (:operator-flag t
+                                                :arguments 
+                                                  ( ("otherContext" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Context" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1436 1464]))                                                  
+                                                :type ("Context" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1417 1619])
+                                            ("size" function (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1623 1673])
+                                            ("getVAddr" function (:type ("VAddr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1677 1731])
+                                            ("getID" function (:type ("ContextID" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1735 1781])
+                                            ("valid" function (:type "bool") (reparse-symbol classsubparts) [1785 1830])
+                                            ("comm" variable (:type ("mpi::communicator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1834 1857])
+                                            ("private" label nil (reparse-symbol classsubparts) [1865 1873])
+                                            ("id" variable (:type ("ContextID" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1877 1890])
+                                            ("isValid" variable (:type "bool") (reparse-symbol classsubparts) [1893 1911]))                                          
+                                        :type "class")
+                                        (reparse-symbol classsubparts) [1143 1919])
+                                    ("Event" type
+                                       (:members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [2216 2223])
+                                            ("Event" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("request" variable (:type ("mpi::request" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2232 2253]))                                                  
+                                                :type ("Event" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2226 2278])
+                                            ("Event" function
+                                               (:destructor-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [2282 2296])
+                                            ("wait" function (:type "void") (reparse-symbol classsubparts) [2300 2340])
+                                            ("ready" function (:type "bool") (reparse-symbol classsubparts) [2344 2503])
+                                            ("private" label nil (reparse-symbol classsubparts) [2510 2518])
+                                            ("request" variable (:type ("mpi::request" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2521 2542]))                                          
+                                        :type "class")
+                                        (reparse-symbol classsubparts) [2197 2550])
+                                    ("Tag" type
+                                       (:typedef ("unsigned int")
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2576 2597])
+                                    ("ContextID" type
+                                       (:typedef ("unsigned int")
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2647 2674])
+                                    ("VAddr" type
+                                       (:typedef ("unsigned int")
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2680 2703])
+                                    ("MsgType" type
+                                       (:typedef ("unsigned int")
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2710 2735])
+                                    ("Uri" type
+                                       (:typedef ("int")
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2741 2762])
+                                    ("MinBMPI" function
+                                       (:constructor-flag t
+                                        :type ("MinBMPI" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [2770 3016])
+                                    ("MinBMPI" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3042 3063])
+                                    ("allGather" function
+                                       (:template 
+                                          ( ("T_Send" type (:type "class") nil nil)
+                                            ("T_Recv" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("context" variable
+                                               (:constant-flag t
+                                                :type ("Context" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [12386 12408])
+                                            ("sendData" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T_Send" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [12409 12432])
+                                            ("recvData" variable
+                                               (:reference 1
+                                                :type ("T_Recv" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [12433 12450]))                                          )
+                                        (reparse-symbol classsubparts) [12322 12545])
+                                    ("allReduce" function
+                                       (:template 
+                                          ( ("T_Send" type (:type "class") nil nil)
+                                            ("T_Recv" type (:type "class") nil nil)
+                                            ("T_Op" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("context" variable
+                                               (:constant-flag t
+                                                :type ("Context" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [18229 18251])
+                                            ("op" variable (:type ("T_Op" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18252 18260])
+                                            ("sendData" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T_Send" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [18261 18284])
+                                            ("recvData" variable
+                                               (:reference 1
+                                                :type ("T_Recv" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [18285 18302]))                                          )
+                                        (reparse-symbol classsubparts) [18150 18405])
+                                    ("createContext" function
+                                       (:arguments 
+                                          ( ("vAddrs" variable
+                                               (:constant-flag t
+                                                :type ("std::vector" type
+                                                     (:template-specifier 
+                                                        ( ("VAddr" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [20140 20172])
+                                            ("oldContext" variable
+                                               (:constant-flag t
+                                                :type ("Context" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [20173 20198]))                                          
+                                        :type ("Context" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [20118 21126])
+                                    ("getGlobalContext" function (:type ("Context" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21220 21284])
+                                    ("private" label nil (reparse-symbol classsubparts) [21307 21315])
+                                    ("contextCount" variable (:type ("ContextID" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21532 21576])
+                                    ("uriMap" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("std::vector" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [21582 21620])
+                                    ("initialContext" variable (:type ("Context" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21626 21672])
+                                    ("env" variable (:type ("mpi::environment" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21678 21713])
+                                    ("error" function
+                                       (:arguments 
+                                          ( ("vAddr" variable (:type ("VAddr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21955 21967])
+                                            ("msg" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21968 21984]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [21944 22117])
+                                    ("getVAddrUri" function
+                                       (:template 
+                                          ( ("T_Context" type (:type "class") nil nil))                                          
+                                        :type ("Uri" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("context" variable
+                                               (:constant-flag t
+                                                :type ("T_Context" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [22288 22312])
+                                            ("vAddr" variable
+                                               (:constant-flag t
+                                                :type ("VAddr" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [22313 22331]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol classsubparts) [22230 22772]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [982 22777]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [636 22784]))                  
+                :type "namespace")
+                nil [607 22821]))          
+      :file "MinBMPI.hpp"
+      :pointmax 22843
+      :fsize 22842
+      :lastmodtime '(21818 1751 482719 697000)
+      :unmatched-syntax '((thing 9 . 13) (thing 2 . 8) (thing 1 . 2))))
+  :file "!home!erik!projects!GrayBat!include!communicationPolicy!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

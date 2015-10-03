@@ -1,0 +1,392 @@
+;; Object detail/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "detail/"
+  :tables
+  (list
+    (semanticdb-table "config.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_TEST_CONFIG_HPP_071894GER" variable (:constant-flag t) nil [540 571])
+            ("boost/config.hpp" include (:system-flag t) nil [582 609])
+            ("boost/detail/workaround.hpp" include (:system-flag t) nil [635 673])
+            ("BOOST_TEST_CALL_DECL" variable (:constant-flag t) nil [1229 1249])
+            ("BOOST_TEST_PROTECTED_VIRTUAL" variable (:constant-flag t) nil [2238 2266])
+            ("BOOST_TEST_DECL" variable (:constant-flag t) nil [3095 3110]))          
+      :file "config.hpp"
+      :pointmax 3387
+      :fsize 3386
+      :lastmodtime '(21705 5908 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_TEST_DECL")
+          ("BOOST_TEST_PROTECTED_VIRTUAL")
+          ("BOOST_TEST_CONFIG_HPP_071894GER")
+          ("BOOST_TEST_CALL_DECL")
+          )
+)
+    (semanticdb-table "global_typedef.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_TEST_GLOBAL_TYPEDEF_HPP_021005GER" variable (:constant-flag t) nil [524 563])
+            ("boost/test/utils/basic_cstring/basic_cstring.hpp" include (:system-flag t) nil [565 624])
+            ("BOOST_TEST_L" variable (:constant-flag t) nil [633 645])
+            ("BOOST_TEST_STRINGIZE" variable (:constant-flag t) nil [720 740])
+            ("BOOST_TEST_EMPTY_STRING" variable (:constant-flag t) nil [791 814])
+            ("boost/test/detail/suppress_warnings.hpp" include (:system-flag t) nil [837 887])
+            ("boost" type
+               (:members 
+                  ( ("unit_test" type
+                       (:members 
+                          ( ("counter_t" type
+                               (:typedef ("unsigned long")
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1013 1047])
+                            ("report_level" type
+                               (:members 
+                                  ( ("INV_REPORT_LEVEL" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1152 1169])
+                                    ("CONFIRMATION_REPORT" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1170 1190])
+                                    ("SHORT_REPORT" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1191 1204])
+                                    ("DETAILED_REPORT" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1205 1221])
+                                    ("NO_REPORT" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1222 1233]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [1131 1234])
+                            ("output_format" type
+                               (:members 
+                                  ( ("INV_OF" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1339 1346])
+                                    ("CLF" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1347 1377])
+                                    ("XML" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1378 1393]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [1318 1394])
+                            ("test_unit_type" type
+                               (:members 
+                                  ( ("tut_case" variable
+                                       (:constant-flag t
+                                        :default-value (1511 1515)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1500 1515])
+                                    ("tut_suite" variable
+                                       (:constant-flag t
+                                        :default-value (1529 1533)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1517 1533])
+                                    ("tut_any" variable
+                                       (:constant-flag t
+                                        :default-value (1545 1549)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1535 1549]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [1478 1552])
+                            ("test_unit_id" type
+                               (:typedef ("unsigned long")
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1636 1673])
+                            ("INV_TEST_UNIT_ID" variable
+                               (:constant-flag t
+                                :default-value "0xFFFFFFFF"
+                                :type ("test_unit_id" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1675 1725])
+                            ("MAX_TEST_CASE_ID" variable
+                               (:constant-flag t
+                                :default-value "0xFFFFFFFE"
+                                :type ("test_unit_id" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1726 1776])
+                            ("MIN_TEST_CASE_ID" variable
+                               (:constant-flag t
+                                :default-value "0x00010000"
+                                :type ("test_unit_id" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1777 1827])
+                            ("MAX_TEST_SUITE_ID" variable
+                               (:constant-flag t
+                                :default-value "0x0000FF00"
+                                :type ("test_unit_id" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1828 1878])
+                            ("MIN_TEST_SUITE_ID" variable
+                               (:constant-flag t
+                                :default-value "0x00000001"
+                                :type ("test_unit_id" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1879 1929])
+                            ("ut_detail" type
+                               (:members 
+                                  ( ("test_id_2_unit_type" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("id" variable (:type ("test_unit_id" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2079 2096]))                                          
+                                        :type ("test_unit_type" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [2036 2158])
+                                    ("static_constant" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("value" variable
+                                               (:typemodifiers ("static")
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2338 2353]))                                          )
+                                        (reparse-symbol namespacesubparts) [2289 2357])
+                                    ("static_constant::value" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol namespacesubparts) [2360 2407]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [2013 2494]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [990 2520]))                  
+                :type "namespace")
+                nil [971 2546])
+            ("boost/test/detail/enable_warnings.hpp" include (:system-flag t) nil [2649 2697]))          
+      :file "global_typedef.hpp"
+      :pointmax 2749
+      :fsize 2748
+      :lastmodtime '(21705 5908 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_TEST_STRINGIZE" (spp-arg-list ("s") 740 . 745) . ((symbol "BOOST_TEST_L" 746 . 758) (semantic-list "( BOOST_STRINGIZE( s ) )" 758 . 782)))
+          ("BOOST_TEST_GLOBAL_TYPEDEF_HPP_021005GER")
+          ("BOOST_TEST_L" (spp-arg-list ("s") 645 . 650) . 
+              ((symbol "boost" 659 . 664) (punctuation ":" 664 . 665) (punctuation ":" 665 . 666) (symbol "unit_test" 666 . 675) (punctuation ":" 675 . 676) (punctuation ":" 676 . 677) (symbol "const_string" 677 . 689) (semantic-list "( s, sizeof( s ) - 1 )" 689 . 711)))
+          ("BOOST_TEST_EMPTY_STRING" . ((symbol "BOOST_TEST_L" 817 . 829) (semantic-list "( \"\" )" 829 . 835)))
+          )
+)
+    (semanticdb-table "workaround.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_TEST_WORKAROUND_HPP_021005GER" variable (:constant-flag t) nil [519 554])
+            ("boost/config.hpp" include (:system-flag t) nil [565 592])
+            ("iterator" include (:system-flag t) nil [645 664])
+            ("boost/test/detail/suppress_warnings.hpp" include (:system-flag t) nil [691 741])
+            ("boost" type
+               (:members 
+                  ( ("unit_test" type
+                       (:members 
+                          ( ("ut_detail" type
+                               (:members 
+                                  ( ("std::distance" using (:type ("std::distance" type
+                                         (:prototype t
+                                          :type "class")
+                                          nil nil)) (reparse-symbol namespacesubparts) [1164 1184])
+                                    ("ignore_unused_variable_warning" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1255 1264]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [1193 1267]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [867 1270]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [844 1296])
+                    ("unit_test_framework" type
+                       (:kind alias
+                        :members 
+                          ( ("unit_test" type (:type "namespace") nil nil))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1321 1363]))                  
+                :type "namespace")
+                nil [825 1366])
+            ("boost/test/detail/enable_warnings.hpp" include (:system-flag t) nil [1469 1517]))          
+      :file "workaround.hpp"
+      :pointmax 1565
+      :fsize 1564
+      :lastmodtime '(21705 5908 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_TEST_WORKAROUND_HPP_021005GER")
+          )
+)
+    (semanticdb-table "suppress_warnings.hpp"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "suppress_warnings.hpp"
+      :pointmax 1607
+      :fsize 1606
+      :lastmodtime '(21705 5908 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "enable_warnings.hpp"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "enable_warnings.hpp"
+      :pointmax 1618
+      :fsize 1617
+      :lastmodtime '(21705 5908 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "log_level.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_TEST_LOG_LEVEL_HPP_011605GER" variable (:constant-flag t) nil [533 567])
+            ("boost" type
+               (:members 
+                  ( ("unit_test" type
+                       (:members 
+                          ( ("log_level" type
+                               (:members 
+                                  ( ("invalid_log_level" variable
+                                       (:constant-flag t
+                                        :default-value (977 979)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [950 979])
+                                    ("log_successful_tests" variable
+                                       (:constant-flag t
+                                        :default-value (1012 1013)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [985 1013])
+                                    ("log_test_units" variable
+                                       (:constant-flag t
+                                        :default-value (1046 1047)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1019 1047])
+                                    ("log_messages" variable
+                                       (:constant-flag t
+                                        :default-value (1080 1081)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1053 1081])
+                                    ("log_warnings" variable
+                                       (:constant-flag t
+                                        :default-value (1114 1115)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1087 1115])
+                                    ("log_all_errors" variable
+                                       (:constant-flag t
+                                        :default-value (1148 1149)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1121 1149])
+                                    ("log_cpp_exception_errors" variable
+                                       (:constant-flag t
+                                        :default-value (1214 1215)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1187 1215])
+                                    ("log_system_errors" variable
+                                       (:constant-flag t
+                                        :default-value (1275 1276)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1248 1276])
+                                    ("log_fatal_errors" variable
+                                       (:constant-flag t
+                                        :default-value (1347 1348)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1320 1348])
+                                    ("log_nothing" variable
+                                       (:constant-flag t
+                                        :default-value (1471 1472)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1444 1472]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [918 1475]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [587 1478]))                  
+                :type "namespace")
+                nil [569 1503]))          
+      :file "log_level.hpp"
+      :pointmax 1569
+      :fsize 1568
+      :lastmodtime '(21705 5908 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_TEST_LOG_LEVEL_HPP_011605GER")
+          )
+)
+    (semanticdb-table "fwd_decl.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_TEST_FWD_DECL_HPP_011605GER" variable (:constant-flag t) nil [544 577])
+            ("boost" type
+               (:members 
+                  ( ("execution_monitor" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [598 623])
+                    ("execution_exception" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [624 651])
+                    ("unit_test" type
+                       (:members 
+                          ( ("test_unit" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [676 693])
+                            ("test_case" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [694 711])
+                            ("test_suite" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [712 730])
+                            ("master_test_suite_t" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [731 758])
+                            ("test_tree_visitor" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [760 785])
+                            ("test_observer" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [786 807])
+                            ("unit_test_monitor_t" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [823 850])
+                            ("unit_test_log_t" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [851 874])
+                            ("unit_test_log_formatter" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [876 907])
+                            ("log_entry_data" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [908 930])
+                            ("log_checkpoint_data" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [931 958])
+                            ("lazy_ostream" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [960 979]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [653 982]))                  
+                :type "namespace")
+                nil [579 1008]))          
+      :file "fwd_decl.hpp"
+      :pointmax 1074
+      :fsize 1073
+      :lastmodtime '(21705 5908 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_TEST_FWD_DECL_HPP_011605GER")
+          )
+))
+  :file "!usr!include!boost!test!detail!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

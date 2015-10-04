@@ -1,30 +1,41 @@
+!Colours
+URxvt.depth: 32
 URxvt.background: black
-URxvt.foreground: grey
-URxvt.saveLines: 10000
-URxvt.shading: 20
-URxvt.tintColor: white
-URxvt.inheritPixmap: true
+URxvt.foreground: white
+URxvt.cursorColor: red
+
+!Behaviour
+URxvt.saveLines: 100000
 URxvt.scrollBar: false
 URxvt.visualBell: true
-URxvt.font: -misc-fixed-medium-r-normal-*-12-*-*-*-*-*-*-*
-!URxvt.blurRadius: 10
+URxvt.jumpScroll: true
+URxvt.urgentOnBell: true
+URxvt.modifier: mod3
+URxvt.secondaryWheel: true
 
+!Fonts
+URxvt.font: xft:DejaVu Sans Mono:size=11
+URxvt.boldFont: xft:DejaVu Sans Mono:style=Bold:size=10
+URxvt.italicFont: xft:DejaVu Sans Mono:style=Oblique:size=10
+URxvt.boldItalicFont: xft:DejaVu Sans Mono:style=Bold Oblique:size=10
+
+URxvt.perl-ext-common: default,url-select,keyboard-select,clipboard
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+
+URxvt.url-select.autocopy: false
+URxvt.url-select.button: 1
+URxvt.url-select.launcher: firefox
+URxvt.url-select.underline: true
+
+!URxvt.keysym.M-c:   perl:clipboard:copy
+!URxvt.keysym.M-v:   perl:clipboard:paste
+!URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+
+!Transparency
+URxvt.inheritPixmap: false
+URxvt.transparent: false
+URxvt.shading: 10
+
+!Emacs
 emacs.background: black
-
-
-
-!emacs*Background: grey0
-!emacs*Foreground: Wheat
-!emacs*pointerColor: Orchid
-!emacs*cursorColor: Orchid
-!emacs*bitmapIcon: on
-!emacs*font: fixed
-!emacs.geometry: 80x25
-
-!emacs23*Background: grey0
-!emacs23*Foreground: Wheat
-!emacs23*pointerColor: Orchid
-!emacs23*cursorColor: Orchid
-!emacs23*bitmapIcon: on
-!emacs23*font: -misc-fixed-medium-r-normal-*-12-*-*-*-*-*-*-*
-!emacs23.geometry: 123x54

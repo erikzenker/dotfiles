@@ -312,9 +312,10 @@ globalkeys = awful.util.table.join(
     --awful.key({ modkey }, "p", function() menubar.show() end),
 
     -- Multimedia Keys
-    awful.key({ }, "XF86AudioRaiseVolume",    function () awful.util.spawn("amixer set Master 2%+",false) end),
-    awful.key({ }, "XF86AudioLowerVolume",    function () awful.util.spawn("amixer set Master 2%-",false) end),
-    awful.key({ }, "XF86AudioMute",           function () awful.util.spawn("amixer set Master toggle",false) end),
+    awful.key({ }, "XF86AudioRaiseVolume",    function () awful.util.spawn("pactl set-sink-volume 0 +5%",false) end),
+    awful.key({ }, "XF86AudioLowerVolume",    function () awful.util.spawn("pactl set-sink-volume 0 -5%",false) end),
+    awful.key({ }, "XF86AudioMute",           function () awful.util.spawn("pactl set-sink-mute 0 toggle",false) end),
+    awful.key({ }, "XF86AudioMicMute",        function () awful.util.spawn("pactl set-source-mute 0 toggle",false) end),    
     awful.key({ }, "XF86AudioPause",          function () awful.util.spawn("sudo pm-suspend",false) end),
     awful.key({ }, "XF86AudioPlay",           function () awful.util.spawn("sudo pm-suspend",false) end),
     awful.key({ }, "XF86MonBrightnessUp",     function () awful.util.spawn("xbacklight -inc 5",false) end),

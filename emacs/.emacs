@@ -27,21 +27,21 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; CEDET
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;(semantic-mode)
-;;(global-semantic-idle-scheduler-mode)
-;;(global-semantic-idle-completions-mode)
-;;(global-semantic-decoration-mode)
-;;(global-semantic-highlight-func-mode)
-;;(global-semantic-show-unmatched-syntax-mode)
-;(require 'semantic/ia)
-;(require 'semantic/bovine/gcc)
-;; Add additional header files examples
-;;(semantic-add-system-include "~/exp/include/boost_1_37" 'c++-mode)
+(semantic-mode)
+(global-semantic-idle-scheduler-mode)
+(global-semantic-idle-completions-mode)
+(global-semantic-decoration-mode)
+(global-semantic-highlight-func-mode)
+(global-semantic-show-unmatched-syntax-mode)
+require 'semantic/ia)
+require 'semantic/bovine/gcc)
+ Add additional header files examples
+(semantic-add-system-include "~/exp/include/boost_1_37" 'c++-mode)
 
 ;; CC-mode
-;;(add-hook 'c-mode-common-hook '(lambda ()
-;;        (setq ac-sources (append '(ac-source-semantic) ac-sources))
-;;))
+(add-hook 'c-mode-common-hook '(lambda ()
+        (setq ac-sources (append '(ac-source-semantic) ac-sources))
+))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; AUTO SYNC MODIFIED FILES

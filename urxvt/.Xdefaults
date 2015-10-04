@@ -1,0 +1,30 @@
+URxvt.background: black
+URxvt.foreground: grey
+URxvt.saveLines: 10000
+URxvt.shading: 20
+URxvt.tintColor: white
+URxvt.inheritPixmap: true
+URxvt.scrollBar: false
+URxvt.visualBell: true
+URxvt.font: -misc-fixed-medium-r-normal-*-12-*-*-*-*-*-*-*
+!URxvt.blurRadius: 10
+
+emacs.background: black
+
+
+
+!emacs*Background: grey0
+!emacs*Foreground: Wheat
+!emacs*pointerColor: Orchid
+!emacs*cursorColor: Orchid
+!emacs*bitmapIcon: on
+!emacs*font: fixed
+!emacs.geometry: 80x25
+
+!emacs23*Background: grey0
+!emacs23*Foreground: Wheat
+!emacs23*pointerColor: Orchid
+!emacs23*cursorColor: Orchid
+!emacs23*bitmapIcon: on
+!emacs23*font: -misc-fixed-medium-r-normal-*-12-*-*-*-*-*-*-*
+!emacs23.geometry: 123x54

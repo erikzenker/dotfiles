@@ -10,106 +10,324 @@
             ("cassert" include (:system-flag t) nil [780 798])
             ("cstdlib" include (:system-flag t) nil [799 817])
             ("vector" include (:system-flag t) nil [826 843])
-            ("utility" include (:system-flag t) nil [844 862])
-            ("type_traits" include (:system-flag t) nil [882 904])
-            ("types.hpp" include (:system-flag t) nil [1414 1434])
-            ("alpaka/alpaka.hpp" include (:system-flag t) nil [1498 1526])
-            ("SEED" variable (:constant-flag t) nil [1578 1582])
-            ("EmptyKernel" type
-               (:members 
-                  ( ("()" function
-                       (:operator-flag t
-                        :arguments 
-                          ( ("acc" variable
-                               (:reference 1
-                                :constant-flag t
-                                :type ("T_Acc" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [2470 2488]))                          
-                        :type "void")
-                        (reparse-symbol classsubparts) [2454 2509]))                  
-                :type "struct")
-                nil [2385 2513])
-            ("has_destructor" type
+            ("alpaka/alpaka.hpp" include (:system-flag t) nil [855 883])
+            ("importance_sampling.hpp" include (:system-flag t) nil [1007 1041])
+            ("types.hpp" include (:system-flag t) nil [1111 1131])
+            ("mesh.hpp" include (:system-flag t) nil [1199 1218])
+            ("parser.hpp" include (:system-flag t) nil [1219 1240])
+            ("map_rays_to_prisms.hpp" include (:system-flag t) nil [1271 1304])
+            ("calc_sample_gain_sum.hpp" include (:system-flag t) nil [1329 1364])
+            ("SEED" variable (:constant-flag t) nil [1399 1403])
+            ("initHostBuffer" function
                (:template 
-                  ( ("T" type (:type "class") nil nil))                  
-                :type "struct"
-                :members 
-                  ( ("test" function
-                       (:template 
-                          ( ("A" type (:type "class") nil nil))                          
-                        :type ("std::true_type" type (:type "class") nil nil)
-                        :arguments 
-                          ( ("" variable (:type ("decltype" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2651 2683]))                          
-                        :typemodifiers ("static"))
-                        (reparse-symbol classsubparts) [2597 2727])
-                    ("test" function
-                       (:template 
-                          ( ("A" type (:type "class") nil nil))                          
-                        :type ("std::false_type" type (:type "class") nil nil)
-                        :arguments 
-                          ( ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [2817 2821]))                          
-                        :typemodifiers ("static"))
-                        (reparse-symbol classsubparts) [2764 2864])
-                    ("type" variable (:type "int") (reparse-symbol classsubparts) [2967 2972])
-                    ("type::value" variable (:type "int") (reparse-symbol classsubparts) [3004 3016]))                  )
-                nil [2516 3038])
-            ("alpaka" type
-               (:members 
-                  ( ("acc" type
-                       (:members 
-                          ( ("AccGpuCudaRt" type
-                               (:template 
-                                  ( ("T1" type (:type "class") nil nil)
-                                    ("T2" type (:type "class") nil nil))                                  
-                                :type "class"
-                                :prototype t)
-                                (reparse-symbol namespacesubparts) [3087 3150])
-                            ("AccCpuSerial" type
-                               (:template 
-                                  ( ("T1" type (:type "class") nil nil)
-                                    ("T2" type (:type "class") nil nil))                                  
-                                :type "class"
-                                :prototype t)
-                                (reparse-symbol namespacesubparts) [3160 3223]))                          
-                        :type "namespace")
-                        (reparse-symbol namespacesubparts) [3063 3229]))                  
-                :type "namespace")
-                nil [3040 3231])
+                  ( ("T_Buf" type (:type "class") nil nil)
+                    ("T_Extents" type (:type "class") nil nil)
+                    ("T_Value" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("buf" variable
+                       (:reference 1
+                        :type ("T_Buf" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1675 1686])
+                    ("extents" variable
+                       (:constant-flag t
+                        :type ("T_Extents" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1687 1711])
+                    ("value" variable
+                       (:constant-flag t
+                        :type ("T_Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1712 1732]))                  )
+                nil [1591 1865])
+            ("initHostBuffer" function
+               (:template 
+                  ( ("T_Buf" type (:type "class") nil nil)
+                    ("T_Extents" type (:type "class") nil nil)
+                    ("T_It" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("buf" variable
+                       (:reference 1
+                        :type ("T_Buf" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1948 1959])
+                    ("extents" variable
+                       (:constant-flag t
+                        :type ("T_Extents" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1960 1984])
+                    ("begin" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T_It" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1985 2003])
+                    ("end" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T_It" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2004 2020]))                  )
+                nil [1867 2195])
+            ("generateRaysPerSampleExpList" function
+               (:arguments 
+                  ( ("minRaysPerSample" variable (:type "int") (reparse-symbol arg-sub-list) [2244 2265])
+                    ("maxRaysPerSample" variable (:type "int") (reparse-symbol arg-sub-list) [2266 2287])
+                    ("steps" variable (:type "int") (reparse-symbol arg-sub-list) [2288 2298]))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2198 2687])
+            ("exclusivePrefixSum" function
+               (:template 
+                  ( ("T_Value" type (:type "class") nil nil)
+                    ("T_Stream" type (:type "class") nil nil)
+                    ("T_Buf" type (:type "class") nil nil)
+                    ("T_Extents" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("stream" variable
+                       (:reference 1
+                        :type ("T_Stream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2796 2813])
+                    ("inBuf" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T_Buf" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2814 2833])
+                    ("outBuf" variable
+                       (:reference 1
+                        :type ("T_Buf" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2834 2848])
+                    ("extents" variable
+                       (:constant-flag t
+                        :type ("T_Extents" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2849 2873]))                  )
+                nil [2689 3470])
+            ("reduce" function
+               (:template 
+                  ( ("T_Stream" type (:type "class") nil nil)
+                    ("T_Buf" type (:type "class") nil nil)
+                    ("T_Value" type (:type "class") nil nil)
+                    ("T_Extents" type (:type "class") nil nil))                  
+                :type ("T_Value" type (:type "class") nil nil)
+                :arguments 
+                  ( ("stream" variable
+                       (:reference 1
+                        :type ("T_Stream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3573 3590])
+                    ("buf" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("T_Buf" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3591 3608])
+                    ("extents" variable
+                       (:constant-flag t
+                        :type ("T_Extents" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3609 3633])
+                    ("init" variable
+                       (:constant-flag t
+                        :type ("T_Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3634 3653]))                  )
+                nil [3475 4153])
+            ("calcMSE" function
+               (:arguments 
+                  ( ("phiAse" variable
+                       (:constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [4355 4375])
+                    ("phiAseSquare" variable
+                       (:constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [4376 4402])
+                    ("raysPerSample" variable
+                       (:constant-flag t
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [4403 4432]))                  
+                :type "double")
+                nil [4340 4591])
             ("calcPhiAse" function
                (:arguments 
                   ( ("experiment" variable
                        (:reference 1
                         :constant-flag t
                         :type ("ExperimentParameters" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [3252 3291])
+                        (reparse-symbol arg-sub-list) [4612 4651])
                     ("compute" variable
                        (:reference 1
                         :constant-flag t
                         :type ("ComputeParameters" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [3297 3330])
+                        (reparse-symbol arg-sub-list) [4657 4690])
                     ("result" variable
                        (:reference 1
                         :type ("Result" type (:type "class") nil nil))
-                        (reparse-symbol arg-sub-list) [3336 3351])
+                        (reparse-symbol arg-sub-list) [4696 4711])
                     ("minSample_i" variable
                        (:constant-flag t
                         :type "unsigned int")
-                        (reparse-symbol arg-sub-list) [3357 3384])
+                        (reparse-symbol arg-sub-list) [4717 4744])
                     ("maxSample_i" variable
                        (:constant-flag t
                         :type "unsigned int")
-                        (reparse-symbol arg-sub-list) [3390 3417])
+                        (reparse-symbol arg-sub-list) [4750 4777])
                     ("runtime" variable
                        (:reference 1
                         :type "float")
-                        (reparse-symbol arg-sub-list) [3423 3439]))                  
+                        (reparse-symbol arg-sub-list) [4783 4799]))                  
                 :type "float")
-                nil [3233 12544]))          
+                nil [4593 22448]))          
       :file "calc_phi_ase.cc"
-      :pointmax 12545
-      :fsize 12544
-      :lastmodtime '(21997 36767 910665 491000)
-      :unmatched-syntax '((thing 2410 . 2418) (thing 2419 . 2420) (thing 2420 . 2428) (thing 2429 . 2434) (thing 2434 . 2435) (thing 2440 . 2453) (thing 2659 . 2683) (thing 2684 . 2685) (thing 2938 . 2945) (thing 2946 . 2954) (thing 2954 . 2966) (thing 2962 . 2965) (thing 2978 . 2984) (thing 2985 . 2990) (thing 2991 . 2995) (thing 2996 . 3001) (thing 3002 . 3003))))
+      :pointmax 22449
+      :fsize 22448
+      :lastmodtime '(22034 31794 566774 959000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SEED" . ((number "4321" 1404 . 1408)))
+          )
+)
+    (semanticdb-table "calc_phi_ase_graybat.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("vector" include (:system-flag t) nil [762 779])
+            ("algorithm" include (:system-flag t) nil [780 800])
+            ("graybat/Cage.hpp" include (:system-flag t) nil [829 856])
+            ("graybat/communicationPolicy/BMPI.hpp" include (:system-flag t) nil [857 904])
+            ("graybat/graphPolicy/BGL.hpp" include (:system-flag t) nil [905 943])
+            ("graybat/pattern/BidirectionalStar.hpp" include (:system-flag t) nil [944 992])
+            ("graybat/mapping/Roundrobin.hpp" include (:system-flag t) nil [993 1034])
+            ("calc_phi_ase.hpp" include (:system-flag t) nil [1049 1076])
+            ("logging.hpp" include (:system-flag t) nil [1077 1099])
+            ("progressbar.hpp" include (:system-flag t) nil [1100 1126])
+            ("types.hpp" include (:system-flag t) nil [1127 1147])
+            ("abortTag" variable
+               (:constant-flag t
+                :default-value "-1"
+                :type "int")
+                nil [1168 1196])
+            ("requestTag" variable
+               (:constant-flag t
+                :default-value "-1.0"
+                :type "float")
+                nil [1197 1227])
+            ("requestMsg" variable
+               (:constant-flag t
+                :type ("std::array" type
+                     (:template-specifier 
+                        ( ("float" type nil nil nil)
+                          ("4"))                        
+                      :type "class")
+                      nil nil))
+                nil [1228 1289])
+            ("abortMsg" variable
+               (:constant-flag t
+                :type ("std::array" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil)
+                          ("1"))                        
+                      :type "class")
+                      nil nil))
+                nil [1290 1336])
+            ("distributeSamples" function
+               (:template 
+                  ( ("Vertex" type (:type "class") nil nil)
+                    ("Cage" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("master" variable (:type ("Vertex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1397 1411])
+                    ("samples" variable
+                       (:constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("unsigned int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1435 1471])
+                    ("cage" variable
+                       (:reference 1
+                        :type ("Cage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1495 1506])
+                    ("result" variable
+                       (:reference 1
+                        :type ("Result" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1530 1546]))                  )
+                nil [1338 2756])
+            ("processSamples" function
+               (:template 
+                  ( ("Vertex" type (:type "class") nil nil)
+                    ("Cage" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("slave" variable
+                       (:constant-flag t
+                        :type ("Vertex" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2814 2833])
+                    ("master" variable
+                       (:constant-flag t
+                        :type ("Vertex" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2840 2860])
+                    ("cage" variable
+                       (:reference 1
+                        :type ("Cage" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2867 2878])
+                    ("experiment" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ExperimentParameters" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2885 2924])
+                    ("compute" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ComputeParameters" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2931 2964])
+                    ("result" variable
+                       (:reference 1
+                        :type ("Result" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2971 2987]))                  )
+                nil [2758 3966])
+            ("calcPhiAseGrayBat" function
+               (:arguments 
+                  ( ("experiment" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ExperimentParameters" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3995 4034])
+                    ("compute" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ComputeParameters" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4040 4073])
+                    ("result" variable
+                       (:reference 1
+                        :type ("Result" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4079 4095]))                  
+                :type "float")
+                nil [3969 5891]))          
+      :file "calc_phi_ase_graybat.cc"
+      :pointmax 5892
+      :fsize 5891
+      :lastmodtime '(22033 12883 276358 193000)
+      :unmatched-syntax nil)
+    (semanticdb-table "propagate_ray.cc"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "propagate_ray.cc"
+      :pointmax 9007
+      :fsize 9006
+      :lastmodtime '(22000 10401 136276 352000)
+      :unmatched-syntax nil)
+    (semanticdb-table "reflection.cc"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "reflection.cc"
+      :pointmax 3964
+      :fsize 3963
+      :lastmodtime '(22034 15041 952372 418000)
+      :unmatched-syntax nil)
+    (semanticdb-table "importance_sampling.cu~"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "importance_sampling.cu~"
+      :pointmax 1
+      :fsize 0
+      :lastmodtime '(22012 3977 631032 671000)
+      :unmatched-syntax nil))
   :file "!home!erik!projects!haseongpu!src!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

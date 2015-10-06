@@ -27,21 +27,21 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; CEDET
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(semantic-mode)
-(global-semantic-idle-scheduler-mode)
-(global-semantic-idle-completions-mode)
-(global-semantic-decoration-mode)
-(global-semantic-highlight-func-mode)
-(global-semantic-show-unmatched-syntax-mode)
-require 'semantic/ia)
-require 'semantic/bovine/gcc)
- Add additional header files examples
-(semantic-add-system-include "~/exp/include/boost_1_37" 'c++-mode)
+;(semantic-mode)
+;(global-semantic-idle-scheduler-mode)
+;(global-semantic-idle-completions-mode)
+;(global-semantic-decoration-mode)
+;(global-semantic-highlight-func-mode)
+;(global-semantic-show-unmatched-syntax-mode)
+;require 'semantic/ia)
+;require 'semantic/bovine/gcc)
+; Add additional header files examples
+;(semantic-add-system-include "~/exp/include/boost_1_37" 'c++-mode)
 
 ;; CC-mode
-(add-hook 'c-mode-common-hook '(lambda ()
-        (setq ac-sources (append '(ac-source-semantic) ac-sources))
-))
+;(add-hook 'c-mode-common-hook '(lambda ()
+;        (setq ac-sources (append '(ac-source-semantic) ac-sources))
+;))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; AUTO SYNC MODIFIED FILES
@@ -64,6 +64,13 @@ require 'semantic/bovine/gcc)
 (setq ac-comphist-file (expand-file-name "~/.emacs.d/ac-comphist.dat"))
 
 (ac-config-default)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; CMAKE-MODE
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(add-to-list 'load-path "~/.emacs.d/plugins/cmake-mode/")
+(require 'cmake-mode)
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; TABBAR-MODE
@@ -124,6 +131,8 @@ require 'semantic/bovine/gcc)
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . conf-mode))
 (add-to-list 'auto-mode-alist '("\\.txt\\'" . conf-mode))
+(add-to-list 'auto-mode-alist '("\\CMakeLists.txt\\'" . cmake-mode))
+(add-to-list 'auto-mode-alist '("\\.cmake\\'" . cmake-mode))
 (add-to-list 'auto-mode-alist '("\\.lua\\'" . lua-mode))
 (add-to-list 'auto-mode-alist '("\\.p\\'" . gnuplot-mode))
 (add-to-list 'auto-mode-alist '("\\.gnuplot\\'" . gnuplot-mode))

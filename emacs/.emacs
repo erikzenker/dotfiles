@@ -134,6 +134,8 @@
 (add-to-list 'auto-mode-alist '("\\.m\\'" . octave-mode))
 (add-to-list 'auto-mode-alist '("\\.cu\\'" . c++-mode))
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
+(add-to-list 'auto-mode-alist '("\\.tpp\\'" . c++-mode))
+(add-to-list 'auto-mode-alist '("\\.kernel\\'" . c++-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . conf-mode))
 (add-to-list 'auto-mode-alist '("\\.txt\\'" . conf-mode))
 (add-to-list 'auto-mode-alist '("\\CMakeLists.txt\\'" . cmake-mode))

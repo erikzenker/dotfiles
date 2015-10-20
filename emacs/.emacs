@@ -66,7 +66,14 @@
 (ac-config-default)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; CMAKE-MODE
+;; RUST--MODE
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(add-to-list 'load-path "~/.emacs.d/plugins/rust-mode/")
+(require 'rust-mode)
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; JULIA-MODE
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (add-to-list 'load-path "~/.emacs.d/plugins/julia-mode/")
 (require 'julia-mode)
@@ -136,6 +143,8 @@
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
 (add-to-list 'auto-mode-alist '("\\.tpp\\'" . c++-mode))
 (add-to-list 'auto-mode-alist '("\\.kernel\\'" . c++-mode))
+(add-to-list 'auto-mode-alist '("\\.unitless\\'" . c++-mode))
+(add-to-list 'auto-mode-alist '("\\.param\\'" . c++-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . conf-mode))
 (add-to-list 'auto-mode-alist '("\\.txt\\'" . conf-mode))
 (add-to-list 'auto-mode-alist '("\\CMakeLists.txt\\'" . cmake-mode))
@@ -147,6 +156,7 @@
 (add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.rs\\'" . rust-mode))
 
 ;; Set C indention to 4 spaces
 (setq-default c-basic-offset 4)

@@ -10,7 +10,7 @@ URxvt.scrollBar: false
 URxvt.visualBell: true
 URxvt.jumpScroll: true
 URxvt.urgentOnBell: true
-URxvt.modifier: mod3
+!URxvt.modifier: mod3
 URxvt.secondaryWheel: true
 
 !Fonts

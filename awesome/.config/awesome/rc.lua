@@ -12,6 +12,8 @@ local beautiful = require("beautiful")
 local naughty = require("naughty")
 local menubar = require("menubar")
 
+-- Quake like terminal
+local quake = require("quake")
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -71,6 +73,15 @@ local layouts =
     awful.layout.suit.max.fullscreen,
     awful.layout.suit.magnifier
 }
+-- }}}
+
+-- {{{ Quake Console
+local quakeconsole = {}
+for s = 1, screen.count() do
+   quakeconsole[s] = quake({ terminal = terminal,
+			     height = 0.3,
+			     screen = s })
+end
 -- }}}
 
 -- {{{ Wallpaper
@@ -147,6 +158,8 @@ menubar.utils.terminal = terminal -- Set the terminal for applications that requ
   vicious.register(cpuwidget, vicious.widgets.cpu, " CPU $1% ", 3)
 
 -- }}}
+
+
 
 
 mytextclock = awful.widget.textclock()
@@ -324,7 +337,8 @@ globalkeys = awful.util.table.join(
     awful.key({ }, "XF86MonBrightnessUp",     function () awful.util.spawn("xbacklight -inc 5",false) end),
     awful.key({ }, "XF86MonBrightnessDown",   function () awful.util.spawn("xbacklight -dec 5",false) end),    
     -- move focus to a different screen
-    awful.key({ modkey }, "p",  	    function () awful.screen.focus_relative( 1) end)
+    awful.key({ modkey }, "p",  	    function () awful.screen.focus_relative( 1) end),
+    awful.key({ modkey }, "`", function () quakeconsole[mouse.screen]:toggle() end)    
 )
 
 clientkeys = awful.util.table.join(
@@ -497,4 +511,6 @@ end)
 
 client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
+
+
 -- }}}

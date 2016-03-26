@@ -98,6 +98,8 @@ awful.util.spawn_with_shell("run_once firefox", www)
 awful.util.spawn_with_shell("run_once thunderbird", mail)
 awful.util.spawn_with_shell("urxvt -pe tabbed", term)
 awful.util.spawn_with_shell("run_once seafile-applet")
+awful.util.spawn_with_shell("run_once nm-applet")
+awful.util.spawn_with_shell("run_once blueman-applet")
 
 
 -- }}

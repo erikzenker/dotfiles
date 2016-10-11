@@ -1,10 +1,4 @@
-# PICONGPU
-set PICHOME /home/erik/projects/picongpu
-set PATH $PICHOME/src/picongpu/src/tools/bin/ $PATH
-set -x PICSRC $PICHOME/src/picongpu
-
-
-
-# CUDA
-set PATH /opt/cuda/bin $PATH
-
+setxkbmap us
+set -x LS_COLORS di=36
+set -x VISUAL emacs
+set -x EDITOR $VISUAL

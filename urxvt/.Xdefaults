@@ -1,6 +1,6 @@
 !Colours
 URxvt.depth: 32
-URxvt.background: black
+URxvt.background: #303030
 URxvt.foreground: white
 URxvt.cursorColor: red
 
@@ -14,7 +14,7 @@ URxvt.modifier: mod3
 URxvt.secondaryWheel: true
 
 !Fonts
-URxvt.font: xft:DejaVu Sans Mono:size=11
+URxvt.font: xft:DejaVu Sans Mono:size=12
 URxvt.boldFont: xft:DejaVu Sans Mono:style=Bold:size=10
 URxvt.italicFont: xft:DejaVu Sans Mono:style=Oblique:size=10
 URxvt.boldItalicFont: xft:DejaVu Sans Mono:style=Bold Oblique:size=10
@@ -39,3 +39,6 @@ URxvt.shading: 10
 
 !Emacs
 emacs.background: black
+
+!dpi
+Xft.dpi: 144

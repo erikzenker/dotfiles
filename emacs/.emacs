@@ -15,7 +15,7 @@
  '(column-number-mode t)
  '(custom-enabled-themes (quote (tsdh-dark)))
  '(ede-project-directories (quote ("/home/erik")))
- '(package-selected-packages (quote (##)))
+ '(package-selected-packages (quote (clang-format ##)))
  '(safe-local-variable-values (quote ((TeX-master . "diplom"))))
  '(show-paren-mode t))
 (custom-set-faces
@@ -129,7 +129,6 @@
 (column-number-mode)
 (show-paren-mode)
 
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; CONFIGURATION
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -166,3 +165,15 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (global-set-key (kbd "C-c C-c") 'comment-region)
 (global-set-key (kbd "C-c C-v") 'uncomment-region)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; MELPA
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(require 'package)
+;;;; stable packages:
+;;(add-to-list 'package-archives
+;;             '("melpa-stable" . "https://stable.melpa.org/packages/"))
+;;;; unstable packeges:
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+;;;; Initialize package lists
+(package-initialize) 

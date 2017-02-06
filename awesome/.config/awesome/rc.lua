@@ -93,10 +93,12 @@ end
 
 -- {{{ Autostarts
 
-awful.util.spawn_with_shell("pidgin", im)
+--awful.util.spawn_with_shell("pidgin", im)
 awful.util.spawn_with_shell("firefox", www)
-awful.util.spawn_with_shell("thunderbird", mail)
+--awful.util.spawn_with_shell("thunderbird", mail)
 awful.util.spawn_with_shell("urxvt -pe tabbed", term)
+awful.util.spawn_with_shell("nm-applet", term)
+
 
 
 -- }}
@@ -131,8 +133,6 @@ menubar.utils.terminal = terminal -- Set the terminal for applications that requ
 --- Battery widget
   batwidget0 = wibox.widget.textbox()
   vicious.register(batwidget0, vicious.widgets.bat, " BAT0 $2% ", 61, "BAT0")
-  batwidget1 = wibox.widget.textbox()
-  vicious.register(batwidget1, vicious.widgets.bat, " BAT1 $2% ", 61, "BAT1")
 
 --- Memory widget
   memwidget = wibox.widget.textbox()
@@ -228,7 +228,6 @@ for s = 1, screen.count() do
     right_layout:add(cpuwidget)
     right_layout:add(memwidget)
     right_layout:add(batwidget0)
-    right_layout:add(batwidget1)    
     right_layout:add(mytextclock)
     right_layout:add(mylayoutbox[s])
 

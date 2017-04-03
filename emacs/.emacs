@@ -58,6 +58,13 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (global-auto-revert-mode t)
 
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; CLANG-FORMAT
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(add-to-list 'load-path "~/.emacs.d/plugins/clang-format/")
+(require 'clang-format)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; POPUP
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -177,3 +184,17 @@
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 ;;;; Initialize package lists
 (package-initialize) 
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; CLANG-FORMAT-KEYBINDING
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defun clang-format-before-save ()
+  "Add this to .emacs to clang-format on save
+ (add-hook 'before-save-hook 'clang-format-before-save)."
+
+  (interactive)
+  (when (eq major-mode 'c++-mode) (clang-format-buffer)))
+
+(add-hook 'before-save-hook 'clang-format-before-save)
+(add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))

@@ -1,4 +1,3 @@
 function backup
-	sudo mount /mnt/paris/
-cp /home/erik/. /mnt/paris/ -urv
+         rsync -azv /home/erik excelsior@defiant:/home/excelsior/backup --exclude 'Downloads'
 end

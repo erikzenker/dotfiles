@@ -14,6 +14,9 @@ local hotkeys_popup = require("awful.hotkeys_popup").widget
 local wibox = require("wibox")
 vicious     = require("vicious")
 
+-- Quake like terminal
+local quake = require("quake")
+
 -- {{{ Widgets
 --- Battery widget
   batwidget0 = wibox.widget.textbox()
@@ -60,10 +63,10 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-beautiful.init(awful.util.get_themes_dir() .. "default/theme.lua")
+beautiful.init("~/.config/awesome/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
-terminal = "urxvt -pe tabbed"
+terminal = "konsole"
 editor = os.getenv("EDITOR") or "emacs"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -109,6 +112,18 @@ local function client_menu_toggle_fn()
     end
 end
 -- }}}
+
+
+-- {{{ Autostarts
+
+awful.util.spawn_with_shell("run_once pidgin", im)
+awful.util.spawn_with_shell("run_once signal-desktop-beta", im)
+awful.util.spawn_with_shell("run_once Whatsapp", im)
+awful.util.spawn_with_shell("run_once firefox", www)
+awful.util.spawn_with_shell("run_once thunderbird", mail)
+awful.util.spawn_with_shell("run_once nm-applet")
+awful.util.spawn_with_shell("run_once blueman-applet")
+-- }}
 
 -- {{{ Menu
 -- Create a launcher widget and a main menu
@@ -202,7 +217,7 @@ awful.screen.connect_for_each_screen(function(s)
     set_wallpaper(s)
 
     -- Each screen has its own tag table.
-    awful.tag({ "term", "craft", "www", "im", "mail"}, s, awful.layout.layouts[1])
+    awful.tag({ "term", "craft", "www", "im", "mail", "music"}, s, awful.layout.layouts[1])
 
     -- Create a promptbox for each screen
     s.mypromptbox = awful.widget.prompt()
@@ -254,6 +269,15 @@ root.buttons(awful.util.table.join(
     awful.button({ }, 4, awful.tag.viewnext),
     awful.button({ }, 5, awful.tag.viewprev)
 ))
+-- }}}
+
+-- {{{ Quake Console
+local quakeconsole = {}
+for s = 1, screen.count() do
+   quakeconsole[s] = quake({ terminal = terminal,
+			     height = 0.3,
+			     screen = s })
+end
 -- }}}
 
 -- {{{ Key bindings
@@ -353,8 +377,21 @@ globalkeys = awful.util.table.join(
               end,
               {description = "lua execute prompt", group = "awesome"}),
     -- Menubar
-    awful.key({ modkey }, "p", function() menubar.show() end,
-              {description = "show the menubar", group = "launcher"})
+    -- awful.key({ modkey }, "p", function() menubar.show() end,
+    --          {description = "show the menubar", group = "launcher"})
+
+    -- Multimedia Keys
+    awful.key({ }, "XF86AudioRaiseVolume",    function () awful.util.spawn("amixer -D pulse sset Master 5%+",false) end),
+    awful.key({ }, "XF86AudioLowerVolume",    function () awful.util.spawn("amixer -D pulse sset Master 5%-",false) end),
+    awful.key({ }, "XF86AudioMute",           function () awful.util.spawn("amixer set Master toggle",false) end),
+    awful.key({ }, "XF86AudioMicMute",        function () awful.util.spawn("amixer set Capture toggle",false) end),    
+    awful.key({ }, "XF86AudioPause",          function () awful.util.spawn("sudo pm-suspend",false) end),
+    awful.key({ }, "XF86AudioPlay",           function () awful.util.spawn("sudo pm-suspend",false) end),
+    awful.key({ }, "XF86MonBrightnessUp",     function () awful.util.spawn("xbacklight -inc 5",false) end),
+    awful.key({ }, "XF86MonBrightnessDown",   function () awful.util.spawn("xbacklight -dec 5",false) end),    
+    -- move focus to a different screen
+    awful.key({ modkey }, "p",  	    function () awful.screen.focus_relative( 1) end),
+    awful.key({ modkey }, "`", function () quakeconsole[mouse.screen]:toggle() end) 
 )
 
 clientkeys = awful.util.table.join(

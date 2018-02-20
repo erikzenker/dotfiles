@@ -1,3 +1,3 @@
 function backup
-         rsync -azv /home/erik excelsior@defiant:/home/excelsior/backup --exclude 'Downloads'
+  borg create ssh://alarm@alarmpi:22/backup/borg::(hostname)-(uuidgen) ~/ --progress --exclude ~/Downloads --exclude ~/.cache --exclude ~/.local
 end

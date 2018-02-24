@@ -123,6 +123,7 @@ awful.util.spawn_with_shell("run_once firefox", www)
 awful.util.spawn_with_shell("run_once thunderbird", mail)
 awful.util.spawn_with_shell("run_once nm-applet")
 awful.util.spawn_with_shell("run_once blueman-applet")
+awful.util.spawn_with_shell("libinput-gestures-setup start")
 -- }}
 
 -- {{{ Menu
@@ -265,7 +266,7 @@ end)
 
 -- {{{ Mouse bindings
 root.buttons(awful.util.table.join(
-    awful.button({ }, 3, function () mymainmenu:toggle() end),
+    -- awful.button({ }, 3, function () mymainmenu:toggle() end),
     awful.button({ }, 4, awful.tag.viewnext),
     awful.button({ }, 5, awful.tag.viewprev)
 ))
@@ -325,6 +326,17 @@ globalkeys = awful.util.table.join(
             end
         end,
         {description = "go back", group = "client"}),
+    awful.key({ modkey }, "a",
+         function ()
+             awful.layout.set(awful.layout.suit.corner.nw)
+             for _, c in ipairs(client.get()) do
+                 if c.maximized then
+                     c.maximized = not c.maximized
+                     c:raise()
+                 end 
+             end
+         end,
+        {description = "show all open windows of workspace", group = "client"}),         
 
     -- Standard program
     awful.key({ modkey,           }, "Return", function () awful.spawn(terminal) end,

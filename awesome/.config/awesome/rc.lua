@@ -117,13 +117,13 @@ end
 -- {{{ Autostarts
 
 awful.util.spawn_with_shell("run_once pidgin", im)
-awful.util.spawn_with_shell("run_once signal-desktop-beta", im)
-awful.util.spawn_with_shell("run_once Whatsapp", im)
+awful.util.spawn_with_shell("run_once signal-desktop", im)
 awful.util.spawn_with_shell("run_once firefox", www)
 awful.util.spawn_with_shell("run_once thunderbird", mail)
 awful.util.spawn_with_shell("run_once nm-applet")
 awful.util.spawn_with_shell("run_once blueman-applet")
 awful.util.spawn_with_shell("libinput-gestures-setup start")
+awful.util.spawn_with_shell("run_once jetbrains-toolbox", craft)
 -- }}
 
 -- {{{ Menu

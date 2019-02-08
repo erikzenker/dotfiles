@@ -6,6 +6,7 @@ set -gx CMAKE_PREFIX_PATH $ISAAC_ROOT $CMAKE_PREFIX_PATH
 set EDITOR emacs
 set VISUAL emacs
 
+neofetch
 #sudo tpacpi-bat -s ST 0 40
 #sudo tpacpi-bat -s ST 1 40
 #sudo tpacpi-bat -s ST 2 40
